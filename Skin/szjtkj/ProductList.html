@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$ModuleTitle$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$ProductCategoryKeyword$}">
+<meta name="description" content="{$ProductCategoryDescription$}">
+<link rel="stylesheet" href="{$SiteSkin$}css/owl.carousel.min.css">
+{$File(head_public_js)$}
+</head>
+<body>
+{$File(head)$}
+
+<!-- banner -->
+<section class="ny_banner">				
+	{$Info(121)$}				
+</section>
+
+<section class="site">
+	<div class="qebang-container">
+		<h3 class="fl">{$ModuleName$}</h3>
+		<div class="fr path">{$PageNows$}</div>
+	</div>
+</section>
+
+<section class="content" style="padding-bottom: 0;">
+	<div class="qebang-container">
+		<h3 class="info_title">捷通优势</h3>	
+		<ul class="product_youshi">
+			<li>
+				<i><img src="{$SiteSkin$}images/icon/product_icon01.png"/></i>
+				<h3>专业优势</h3>
+				<h5>国家高新技术企业</h5>
+				<span></span>
+				<p>技术团队拥有10年以上研发经验集研发，制造，销售和服务于一体</p>
+			</li>
+			<li>
+				<i><img src="{$SiteSkin$}images/icon/product_icon02.png"/></i>
+				<h3>产品优势</h3>
+				<h5>产品自主核心研发支持定制化需求</h5>
+				<span></span>
+				<p>覆盖RFID全频段技术的首家企业 厂家直销，提供高性价比产品方案</p>
+			</li>
+			<li>
+				<i><img src="{$SiteSkin$}images/icon/product_icon03.png"/></i>
+				<h3>品质优势</h3>
+				<h5>获得多项专利通过ISO9001质量管理体系认证</h5>
+				<span></span>
+				<p> 获得SRRC、欧盟CE，ROHS，美国FCC，澳洲C-TICk，日本 TELEC6000V工业防雷技术</p>
+			</li>
+			<li>
+				<i><img src="{$SiteSkin$}images/icon/product_icon04.png"/></i>
+				<h3>服务优势</h3>
+				<h5>针对项目应用需求一对一制定产品方案</h5>
+				<span></span>
+				<p>读写产品2年免费质保，提供终身免费技术服务支持提供DEMO软件及C++、C#、Android、Java开发例程</p>
+			</li>
+		</ul>    
+	</div>
+	<div class="subProducts">
+		<div class="qebang-container">
+			<div class="qebang-row List clearfix">
+				<div class="qebang-col-md9 products" style="float: right;">
+					<div class="qebang-row">						
+						{$For(ProductList,1/{$ModuleId$}/1/0/1/0/0/16)$}
+						<div class="qebang-col-xs12 qebang-col-sm6 qebang-col-md4 products_li">
+							<a href="{$ProductListUrl$}" title="{$ProductListTitleAll$}" target="_blank">
+								<div><img src="{$ProductListPic$}" title="{$ProductListTitleAll$}"/></div>
+								<h3>{$ProductListTitle$}</h3>
+								<p>{$ProductListContent$}</p>
+								<h6>{$ProductList_type$}</h6>
+							</a>
+						</div>
+						{$Next$}
+					</div>
+					<div class="page">{$ProductCategoryPage$}</div>
+				</div>
+				<aside class="qebang-col-md3">
+					<nav class="Product_Category">		
+						<h3>捷通产品</h3>
+						<ul class="left-list">
+					    {$For(Nav,1/1152/2/0)$}
+					    <li><a href="{$NavUrl$}">{$NavName$}</a>{$NavSub$}</li>
+					    {$Next$}
+				   </ul> 
+					</nav>
+				</aside>
+			</div>
+		</div>
+	</div>
+</section>
+
+{$File(foot)$}
+<script type="text/javascript">	
+	$(".left-list > li").mouseenter(function(){
+		$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+		$(this).addClass("hover").siblings("li").removeClass('hover');
+	})
+	$(".left-list > li").mouseleave(function(){
+		$(this).children("ul").stop(true,true).slideUp("fast");
+		$(this).removeClass("hover");
+	})
+</script>
+</body>
+</html>
+

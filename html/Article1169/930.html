@@ -1,0 +1,685 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>RFID读写器的详细介绍-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="RFID读写器 远距离读写器 RFID天线 RFID电子标签">
+<meta name="description" content="RFID读写器(远距离读写器)一般认为是射频识别即的读写终端设备。它不但可以读取数据，还可以擦写数据，故叫RFID读写器。若只能阅读不能擦写，则叫或识别器。RFID读写器应用非常广泛，主要应用于身份">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> RFID读写器 远距离读写器 RFID天线 RFID电子标签</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">RFID读写器的详细介绍</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2016-6-24 15:57:15</p>
+        <div class="neiye-detail-text"><div style="height:0px;width:0px;clear:both;">
+</div>
+<div class="lemma-summary">
+	<div class="para">
+		&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.jt-rfid.com/" target="_blank" title="RFID读写器">RFID读写器</a>(<a href="http://www.jt-rfid.com/?Product1182/Index.html" target="_blank" title="远距离读写器">远距离读写器</a>)一般认为是射频识别即的读写终端设备。它不但可以读取数据，还可以擦写数据，故叫RFID读写器。若只能阅读不能擦写，则叫或识别器。RFID读写器应用非常广泛，主要应用于身份识别、货物识别、安全认证和数据收录等方面，具备安全、准确、快速、扩展、兼容性强等特点。
+	</div>
+</div>
+<div class="basic-info cmn-clearfix">
+</div>
+<div class="para-title level-2">
+	<h2>
+		<a href="http://www.jt-rfid.com/?Product1162/Index.html" target="_blank"><span style="background-color:#cccccc;">RFID读写器</span></a>的概念
+	</h2>
+</div>
+<div class="para">
+	&nbsp;&nbsp;&nbsp;&nbsp;RFID读写器即射频标签读写设备，是的两个重要组成部分（<a href="http://www.jt-rfid.com/?Product1166/Index.html" target="_blank" title="RFID电子标签">RFID电子标签</a>与RFID读写器）之一。读写设备根据具体实现功能也有一些其他较为流行的别称，如：（Reader），查询器（Interrogator），通信器（Communicator），（Scanner），读写器（Reader and Writer），（Programmer），读出装置（Reading Device），便携式读出器（Portable Readout Device），AEI设备（ Automatic Equipment Identification Device）等。 通常情况下，RFID电子标签读写设备应根据射频标签的读写要求以及应用需求情况来设计。随着的发展，RFID电子标签读写设备也形成了一些典型的系统实现模式，本章的重点也在于介绍这种读写器的实现原理。 从最基本的原理角度出发，RFID电子标签和RFID读写设备一般均遵循如图所示的基本模式。
+</div>
+<div class="para">
+</div>
+<div class="para-title level-2">
+	<h2>
+		<span>RFID</span>读写器的功能
+	</h2>
+</div>
+<div class="para">
+	RFID读写器之所以非常重要，这是由它的功能所决定的，它的主要功能有以下几点：
+</div>
+<div class="para">
+	①实现与的通讯：最常见的就是对标签进行读数，这项功能需要有一个可靠的软件算法确保安全性、可靠性等。除了进行读数以外，有时还需要对标签进行写入，这样就可以对标签批量生产，由用户按照自己需要对标签进行写入。
+</div>
+<div class="para">
+	②给标签供能:在标签是被动式或者半被动式的情况下，需要读写器提供能量来激活场周围的电子标签；阅读器射频场所能达到的范围主要由的大小以及阅读器的决定的。天线的大小主要是根据应用要求来考虑的，而输出功率在不同国家和地区，都有不同的规定。
+</div>
+<div class="para">
+	③实现与计算机网络的通讯：这一功能也很重要，读写器能够利用一些接口实现与上位机的通讯，并能够给上位机提供一些必要的信息。
+</div>
+<div class="para">
+	④实现多标签识别：读写器能够正确的识别其工作范围内的多个标签。
+</div>
+<div class="para">
+	⑤实现移动目标识别：读写器不但可以识别静止不动的物体，也可以识别移动的物体。
+</div>
+<div class="para">
+	⑥实现错误信息提示：对于在识别过程中产生的一些错误，读写器可以发出一些提示。
+</div>
+<div class="para">
+	⑦对于标签，读写器能够读出有源标签的电池信息：如电池的总电量、剩余电量等。
+</div>
+<div class="para-title level-2">
+	<h2>
+		<span>RFID</span>读写器的基本组成
+	</h2>
+</div>
+<div class="para">
+	典型的RFID读写器终端一般由天线、射频接口模块和逻辑控制模块三部分构成，其结构图如下所示：
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>RFID</span>天线
+	</h3>
+</div>
+<div class="para">
+	RFID读写器的是发射和接收的设备， 它主要负责将读写器中的电流信号转换成射频载波信号并发送给，或者接收标签发送过来的射频载波信号并将其转化为电流信号，读写器的天线可以外置也可以内置，天线的设计对阅读器的工作性能来说非常重要，对于标签来说，它的工作能量全部由阅读器的天线提供。
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>RFID读写器</span>射频接口模块
+	</h3>
+</div>
+<div class="para">
+	RFID<span style="display:none;"></span>读写器的接口模块主要包括发射器、射频接收器、和等。该模块是读写器的射频前端，同时也是影响读写器成本的关键部位，主要负责的发射及接收。 其中的调制电路负责将需要发送给的信号加以调制，然后再发送； 解调电路负责将解调标签送过来的信号并进行放大； 时钟发生器负责产生系统的正常工作时钟。
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>读写器</span>逻辑控制模块
+	</h3>
+</div>
+<div class="para">
+	读写器的模块是整个读写器工作的控制中心、智能单元，是读写器的“大脑”， 读写器在工作时由逻辑控制模块发出指令，接口模块按照不同的指令做出不同的操作。 它主要包括、和应用接口等。 微控制器可以完成信号的编解码、数据的加解密以及执行防碰撞算法； 存储单元负责存储一些程序和数据； 应用接口负责与进行输入或输出的通信。
+</div>
+<div class="para">
+	下面以频段读写器为例，详细介绍一下读写器的射频模块是如何工作的。射频模块又可以分为发射和接收两部分。 读写器的发射电路部分主要由(Mixer)、(DAC)、(Attenuator)、可变放大器(VGA)、 (Power Splitter)、(Filter)、以及(PA)。发射部分的工作过程如下：
+</div>
+<div class="para">
+	（1）阅读器控制，产生出频率为860-96OMHZ的，然后把这个信号传送给；
+</div>
+<div class="para">
+	（2）功率分配器把要发射的信号分成两部分，一部分发送到接收电路，作为接收信号进行时的信号源，另外一路则先经过再送到Mixer；
+</div>
+<div class="para">
+	（3）通过混频，使阅读器的控制传送过来的载波信号的幅度相位变化，然后经过可变增益（VGA）和射频滤波器以后，传至；
+</div>
+<div class="para">
+	（4）阅读器根据实际情况，自动调节发射信号的增益，然后经过进行放大，最后再经过传送到阅读器天线准备发射。这里环行器的作用就是将阅读器天线接收到的信号与发送的信号隔离开来，避免出现。
+</div>
+<div class="para">
+	读写器的接收部分主要包括、、(ADC)以及，接收部分的工作流程是：
+</div>
+<div class="para">
+	（1）由标签通过反向散射传递过来的信号通常功率比较小，它会首先进入环行器，以便与阅读器发射的分离，避免出现同频干扰。在通过射频滤波器后，进入到功率分配器，从这里出来的信号又分成了两路；
+</div>
+<div class="para">
+	（2）自发射线路的未载波作为接收线路的信号产生两路，两路参考信号差是90；
+</div>
+<div class="para">
+	（3）两路参考信号与从第一步分离出来的两路信号进行，生成两路，然后分别经过各自的和以后，返回到阅读器的信号处理单元进行相关处理。
+</div>
+<div class="para-title level-2">
+	<h2>
+		<span>读写器</span>读写器的I/O接口形式
+	</h2>
+</div>
+<div class="para">
+	一般读写器的形式主要有：
+</div>
+<div class="para">
+	①串行接口：计算机普遍适用的标准，能够进行双向的数据信息传递。它的优势在于通用、标准，缺点是传输距离不会达到很远，传输速度也不会很快。
+</div>
+<div class="para">
+	②串行接口：也是一类标准接口，数据传递运用，抵抗干扰能力较强，传输距离比RS-232传输距离较远，传输速度与RS-232差不多。
+</div>
+<div class="para">
+	③接口：阅读器可以通过该接口直接进入网络。
+</div>
+<div class="para">
+	④接口：也是一类标准串行通信接口，传输距离较短，传输速度较高。
+</div>
+<div class="para-title level-2">
+	<h2>
+		<span>读写器</span>读写器的工作方式
+	</h2>
+</div>
+<div class="para">
+	读写器主要有两种工作方式，一种是读写器先发言方式（Reader Talks First，），另一种是标签先发言方式（Tag Talks First， ）。
+</div>
+<div class="para">
+	在一般情况下，处于等待或休眠状态，当电子标签进入读写器的作用范围被激活以后，便从休眠状态转为接收状态，接受读写器发出的命令，进行相应的处理，并将结果返回给读写器。
+</div>
+<div class="para">
+	这类只有接收到读写器特殊命令才发送数据的电子标签被称为RTF方式；
+</div>
+<div class="para">
+	与此相反，进入读写器的即主动发送数据的电子标签被称为TTF方式。
+</div>
+<div class="para-title level-2">
+	<h2>
+		<span>读写器</span>读写器的分类
+	</h2>
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>读写器</span>从接触方式分
+	</h3>
+</div>
+<div class="para">
+	读写器分为接触式读写器，非接触式读写器，单界面读写器和以及多接触式读写器。
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>读写器</span>从接口分
+	</h3>
+</div>
+<div class="para">
+	读写器从接口上来看主要有：读写器、读写器、读写器、读写器和读写器。
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>读写器</span>从频率分
+	</h3>
+</div>
+<div class="para">
+	从频率上分：低频阅读器、高频阅读器、433MHz有源读写器、有源读写器等。
+</div>
+<div class="para-title level-2">
+	<h2>
+		<span>RFID读写器</span>产品原理
+	</h2>
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>读写器</span>通过空间信道实现读写器向射频标签发送命令
+	</h3>
+</div>
+<div class="para">
+	读写设备与之间必然通过空间实现读写器向标签发送命令，射频标签接收读写器的命令后做出必要的响应，由此实现射频识别。此外，在应用系统中，一般情况下，通过读写器实现的对射频标签数据的无接触收集或读写器向射频标签中写入的标签信息均要回送到应用系统中或来自应用系统，这就形成了射频标签读写设备与应用系统程序之间的接口（Application Program Interface）。
+</div>
+<div class="para">
+	一般情况下，要求读写器能够接收来自应用系统的命令，并且根据应用系统的命令或约定的协议作出相应的响应（回送收集到的标签数据等）。<sup>[1]</sup> 
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>读写器</span>射频模块（射频通道）与基带模块
+	</h3>
+</div>
+<div class="para">
+	读写器本身从电路实现角度来说，又可划分为两大部分，即：模块（射频）与模块。
+</div>
+<div class="para">
+	射频模块实现的任务主要有两项，第一项是实现将读写器欲发往射频标签的命令（）到（也称为读写器/射频标签的射频）上，经由发射天线发送出去。发送出去的射频信号（可能包含有传向标签的命令信息）经过空间传送（）到射频标签上，射频标签对照射其上的射频信号作出响应，形成返回读写器天线的反射信号。射频模块的第二项任务即是实现将射频标签反射回读写器的回波信号进行必要的加工处理，并从中（）提取出射频标签回送的数据。
+</div>
+<div class="para">
+	基带模块实现的任务也包含两项，第一项是将读写器智能单元（通常为计算机单元或）发出的命令加工（）为便于调制（装载）到上的信号。第二项任务即是对经过射频模块解调处理的标签的回送数据信号进行必要的处理（包含），并将处理后的结果送入读写器智能单元。
+</div>
+<div class="para">
+	一般情况下，读写器的智能单元也划归基带模块部分。智能单元从原理上来说，是读写器的控制核心，从实现角度来说，通常采用嵌入式MPU，并通过编制相应的MPU控制程序对收发信号实现智能处理以及与应用程序之间的接口。 射频模块与基带模块的接口为调制（装载）/解调（卸载），在系统实现中，通常射频模块包括调制/解调部分，并且也包括解调之后对回波信号的必要加工处理（如、）等。射频模块的收发分离是采用单天线系统时射频模块必须处理好的一个关键问题<sup>[1]</sup> 
+</div>
+<div class="para-title level-2">
+	<h2>
+		<span>读写器</span>发展历史
+	</h2>
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>读写器</span>读写器的历史
+	</h3>
+</div>
+<div class="para">
+	从信息传递的基本原理来说，射频识别技术在段基于耦合模型(初级与次级之间的能量及信号传递)，在高频段基于探测目标的空间模型 (雷达发射电磁波信号碰到目标后携带目标信息返回雷达接收机)。1948年哈里斯托克曼发表的“利用反射功率的通信”奠定了射频识别射频识别技术的理论基础。 <br />
+　　技术的发展可按十年期划分如下： <br />
+　　1940-1950年：雷达的改进和应用催生了射频识别技术，1948年奠定了射频识别技术的理论基础。 <br />
+　　1950-1960年：早期射频识别技术的探索阶段，主要处于实验室实验研究。 <br />
+　　1960-1970年：射频识别技术的理论得到了发展，开始了一些应用尝试。 <br />
+　　1970-1980年：射频识别技术与产品研发处于一个大发展时期，各种射频识别技术测试得到加速。出现了一些最早的射频识别应用。 <br />
+　　1980-1990年：射频识别技术及产品进入商业应用阶段，各种规模应用开始出现。 <br />
+　　1990-2000年：射频识别技术标准化问题日趋得到重视，射频识别产品得到广泛采用，射频识别产品逐渐成为人们生活中的一部分。 <br />
+　　2000年后：标准化问题日趋为人们所重视，射频识别产品种类更加丰富，、及半无源均得到发展，电子标签成本不断降低，规模应用行业扩大。 <br />
+　　至今，射频识别技术的理论得到丰富和完善。单芯片电子标签、多电子标签识读、无线可读可写、无源电子标签的远距离识别、适应高速移动物体的射频识别技术与产品正在成为现实并走向应用。 <br />
+　　特别值得一提的是，在1998年美国麻省理工学院的David Brock博士和Sanjay Sarma教授在喝咖啡聊天时，谈及物品自动识别技术问题时产生的从系统的角度来解决物品自动识别问题的灵感，由此导致了供应链中物品自动识别概念的一次革命，并最终在1999年10月1日正式创建Auto-ID Center这一非盈利性的开发组织。Auto-ID Center诞生后，迅速提出了EPC(Electronic Product Code)的概念以及的概念与构架，并积极推进有关概念的基础研究与实验工作。可以说，EPC与物联网的概念将射频识别技术的应用推到了极致，对射频识别技术的发展与应用的推广起到了极大的推动作用。<sup>[2]</sup> 
+</div>
+<div class="para-title level-3">
+	<h3>
+		<span>读写器</span>读写器的发展趋势
+	</h3>
+</div>
+<div class="para">
+	射频识别技术的发展，一方面受到应用需求的驱动，另一方面射频识别技术的成功应用反过来又将极大地促进应用需求的扩展。从技术角度说，射频识别技术的发展体现在若干关键技术的突破。从应用角度来说，射频识别技术的发展目的在于不断满足日益增涨的应用需求。 <br />
+　　射频识别技术的发展得益于多项技术的综合发展。所涉及的关键技术大致包括：芯片技术、天线技术、无线收发技术、数据变换与编码技术、电磁传播特性。 <br />
+　　随着技术的不断进步，射频识别产品的种类将越来越丰富，应用也越来越广泛。可以预计，在未来的几年中，射频识别技术将持续保持高速发展的势头。射频识别技术的发展将会在(标签)、阅读器、系统种类等方面取得新进展。 <br />
+　　在电子标签方面，电子标签芯片所需的功耗更低，技术更趋成熟。其作用距离将更远，无线可读写性能也将更加完善，并且能够适合高速移动物品识别，识别速度也将更加快，具有快速多标签读写功能。与此同时，在强场强下的自保护功能也会更加完善、智能性更强，成本更低。在读写器方面，多功能读写器，包括与条码识别集成、无线数据传输、脱机工作等功能将被更多的应用。同时，多种数据接口包括，RS422/485，USB，红外，以太网口也将得到应用。而读写器将实现多制式多频段兼容，能够兼容读写多种标签类型和多个频段标签。读写器会朝着小型化、便携式、嵌入式、模块化方向发展，成本将更加低廉，应用范围更加广泛。在系统方面，低频近距离系统将具有更高的智能、安全特性；高频远距离系统性能将更加完善，成本更低。而2.45GHz和5.8GHz系统将更加完善。同时，无芯片系统将逐渐得到应用。 <br />
+　　总而言之，射频识别技术未来的发展中，在结合其它高新技术，比如GPS、生物识别等技术，由单一识别向多功能识别方向发展的同时，将结合现代通信及计算机技术，实现跨地区、跨行业应用。
+</div>
+<div class="para">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div class="para">
+	&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.jt-rfid.com/?Info1157.html" target="_blank"><span style="background-color:#cccccc;">深圳市捷通科技</span></a>有限公司是一家专注于无线射频识别（RFID）读写器的研发、生产及销售为一体的高新技术企业，其中以物联网关键技术之一的超高频无源远距离（UHF RFID）系列读写器技术见长，并能够根据现场环境需求进行个性设计和随机调试。
+</div>
+<div class="para">
+	&nbsp;&nbsp;&nbsp;&nbsp; 对于未来的发展，我们是满怀信心的。从行业的角度，这是一个新兴朝阳并且是从根本解决企业或用户问题的智能高新行业，所以必将是应用领域越来成熟，越来越广泛，并将逐渐从工业领域推向民用领域；从国家的角度，自改革开放以来，深圳的发展是飞速前进，而深圳的快速发展不仅得益于它具有优越的地理条件，更因为它是以科技发展为中心的地区；从公司的角度，我公司从创立伊始，就秉承：专注、创新、诚信的企业文化，力求以高、精、尖为自己的发展方向，着眼于业内领先的技术攻关项目，致力为全球用户提供物联网核心设备及RFID整体应用解决方案。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;所以我们将不断地改善已有产品，研发新产品，在完善现有的应用领域的前提下，不断地涉足其他不同的领域。并且为用户提供完整的项目解决方案及完善的售后服务和技术支持。
+</div></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/933.html">RFID读写器货箱出库管理及远距离电子标签</a><br />下一篇：<a href="/html/Article1169/928.html">深圳市捷通科技_RFID读写器</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=930"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+<%'验证是否登录If Request.Cookies("FkAdminName")="" Or Request.Cookies("FkAdminPass")="" Then	Response.Redirect("/admin/")	Response.End()End If%>

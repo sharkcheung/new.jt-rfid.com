@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>{$GBookTitle$}</title>
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="{$SiteSkin$}css/css.css" rel="stylesheet" type="text/css">
+<script src="{$SiteSkin$}js/jquery-1.10.1.min.js" type="text/javascript"></script>
+</head>
+
+<body class="nybody">
+
+{$include(head)$}
+{$include(menu)$}
+
+<div class="nycenter ">
+  <div class="nycenter2 info">
+  	<div class="neiye-gbook">
+    <div class="gbookr">
+				<form id="GBookAdd" name="GBookAdd" method="post" action="GBookDo.asp?Type=1" data-ajax="false">
+					<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+              <td><input placeholder="姓名：" type="text" name="Fk_GBook_Name" id="Fk_GBook_Name"  /></td>
+            </tr>
+            <tr>
+                <td><input placeholder="联系方式：" type="text" name="Fk_GBook_Contact" id="Fk_GBook_Contact"  /></td>
+            </tr>
+            <tr>
+                <td><input placeholder="标题：" type="text" name="Fk_GBook_Title" id="Fk_GBook_Title" /></td>    
+            </tr>
+            <tr>
+                <td><textarea placeholder="内容：" name="Fk_GBook_Content"  rows="4" id="Fk_GBook_Content"></textarea></td>
+            </tr>            
+<tr >
+                <td align="center"><input type="hidden" name="Fk_GBook_Module" value="{$GBookId$}" /><input type="submit" name="Submit" id="Submit" value="提交" />&nbsp;&nbsp;<input type="reset" name="ReSet" id="ReSet" value="重置" /></td>
+            </tr>
+					</table>      
+				</form>
+      </div>
+      <ul>
+        {$For(GBookList,{$ModuleId$}/0/0/1)$}
+        <li><b style="color:#da5312;">{$GBookListName$}</b>&nbsp;问：<b style="color:#da5312;">{$GBookListTitle$}</b><br><span style="color:#999; font-size:0.85em;">时间：{$GBookListTime$}</span><br>{$GBookListContent$}</li>
+        <div class="gbook_content"><p>回复：{$GBookListReContent$}<br><span style="color:#999; font-size:0.85em;">时间：{$GBookListReTime$}</span></p></div>
+        {$Next$} 
+      </ul>
+			<div class="zdypage" style="margin: 1em 0; border:1px solid #eee;">{$GBookPage$}</div>
+         
+		</div>
+  </div>
+</div>
+
+{$include(footfix)$}
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$ModuleTitle$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$ArticleCategoryKeyword$}">
+<meta name="description" content="{$ArticleCategoryDescription$}">
+<link rel="stylesheet" href="{$SiteSkin$}css/owl.carousel.min.css">
+{$File(head_public_js)$}
+</head>
+<body>
+{$File(head)$}
+
+<!-- banner -->
+<section class="ny_banner">				
+	{$Info(118)$}				
+</section>
+
+<section class="info_subNav">
+	<div class="qebang-container">		
+		<ul class="sub_navList clearfix service_subIcon">
+			{$For(Nav,1/1156/1/0)$}
+			<li class="no{$ListNo$}"><a href="{$NavUrl$}">{$NavName$}</a></li>
+			{$Next$}
+		</ul>
+	</div>
+</section>
+
+<section class="content">
+	<div class="qebang-container">
+		<h3 class="info_title">{$ModuleName$}</h3>	
+		<div class="service_faqBox">
+			{$For(ArticleList,1/{$ModuleId$}/1/0/1/0/0/0)$}
+			<dl class="service_faq">
+				<dt><h3>{$ArticleListTitle$}</h3><span>更新时间:{$ArticleListTime$}</span></dt>
+				<dd>		
+					<div class="service_faqText">				
+						{$ArticleListContent$}	
+					</div>
+				</dd>
+			</dl>
+			{$Next$}
+		</div>			
+    <div class="page">{$ArticleCategoryPage$}</div>	
+	</div>
+</section>
+
+
+{$File(foot)$}
+<script type="text/javascript">
+	var FirstLevelName="{$ModuleName$}";
+	$(".sub_navList > li > a").each(function(){ 
+		var html = $(this).text();		
+		if(FirstLevelName == html){
+			$(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+		};
+	});
+	
+	$(".service_faq").click(function(){
+		$(this).toggleClass("on").siblings(".service_faq").removeClass("on");	
+	})
+</script>
+</body>
+</html>

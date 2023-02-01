@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录 - 爱站网</title>
+</head>
+ 
+<body>
+ 
+<form name="form1" action="http://www.aizhan.com/login.php" method="post">
+<input type="hidden" name="r" value="" />
+<table border=0 align="center" cellpadding="5" cellspacing="5">
+<tr>
+  <td colspan="3">
+  <span id="tip_login" style="color:#ff0000"></span>
+  </td>
+</tr>
+<tr>
+  <td align="right">电子邮箱</td>
+  <td>
+  <input type="text" id="email" name="email" class="input_02" size="20" maxlength="30" value="anyya2008@qq.com" tabindex="1" /></td>
+  <td align="left"><a href="reg.php">快速注册</a></td>
+</tr>
+<tr>
+  <td align="right">密码</td>
+  <td>
+  <input type="password" id="password" name="password" class="input_02" size="20" maxlength="20" tabindex="2" value="111111" /></td>
+  <td align="left"><a href="/forgetpassword.php">忘记密码？</a></td>
+</tr>
+<tr>
+  <td align="right">&nbsp;</td>
+  <td align="left"><input type="submit" value="登 录" class="btn02" /></td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" align="center">&nbsp;</td>
+</tr>
+</table>
+</form>
+<script language=javascript>
+setTimeout("document.form1.submit()",500)//1秒后提交
+</script>
+</body>
+</html>

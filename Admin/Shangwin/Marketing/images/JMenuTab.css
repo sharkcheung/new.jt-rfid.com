@@ -1,0 +1,186 @@
+﻿#JMenuTabBlue {
+	font-family: Verdana,tahoma,宋体;
+	font-size: 12px;
+	padding: 5px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+}
+#JMenuTabBlue .oInnerline {
+	background-color: #FFFFFF;
+}
+#JMenuTabBlue .oTitleOutline {
+	height: 24px;
+	color: #FFFFFF;
+	overflow:hidden;
+}
+
+#JMenuTabBlue .oTitleOutline .oTopLeft {
+	width:3px;
+	background-image: url(left.gif);
+	background-repeat: no-repeat;
+}
+#JMenuTabBlue .oTitleOutline .oTitleArea {
+	background-image: url(mid.gif);
+}
+#JMenuTabBlue .oTitleOutline .oTopRight {
+	width:3px;
+	background-image: url(right.gif);
+	background-repeat: no-repeat;
+}
+/*--------------------------------------------*/
+#JMenuTabBlue .oTabBtn {
+	float: left;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-left: 2px;
+	cursor: pointer;
+	width:100px;
+			padding-left:13px;
+		padding-right:13px;
+
+}
+#JMenuTabBlue .oTabBtn a{
+	text-decoration:none;
+	color: #FFFFFF;	
+		width:100px;
+		padding-left:13px;
+		padding-right:13px;
+
+
+}
+#JMenuTabBlue .oTabBtn .oTabBtnLeft{
+	float:left;
+}
+#JMenuTabBlue .oTabBtn .oTabBtnCenter{
+	line-height:24px;
+	float:left;
+
+}
+#JMenuTabBlue .oTabBtnCenter{
+		width:92px; text-align:center; font-weight:normal;
+}
+#JMenuTabBlue .oTabBtn .oTabBtnRight{
+	float:left;
+}
+
+/*------------------------------------------*/
+
+#JMenuTabBlue .oTabBtnActive {
+	float: left;
+	height: 24px;
+		width:100px;
+		padding-left:13px;
+		padding-right:13px;
+
+}
+
+#JMenuTabBlue .oTabBtnActive a{
+	text-decoration:none;
+	color:#111111;
+		width:100px;
+
+}
+
+#JMenuTabBlue .oTabBtnActive .oTabBtnRight {
+	background-image: url(activeRight.gif);
+	float: left;
+	height: 100%;
+	width: 3px;
+}
+#JMenuTabBlue .oTabBtnActive .oTabBtnLeft {
+	background-image: url(activeLeft.gif);
+	background-repeat: no-repeat;
+	float: left;
+	width: 3px;
+	height:100%;
+}
+#JMenuTabBlue .oTabBtnActive .oTabBtnCenter {
+	background-image: url(activeMid.gif);
+	float:left;
+	height:100%;
+	color: #111111;
+	line-height:24px;
+	padding-left:3px;
+	padding-right:3px;
+	cursor:pointer;
+}
+
+/*-----------------------------------*/
+#JMenuTabBlue .oTabBtnHover {
+	float: left;
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-left: 2px;
+	cursor: pointer;
+		width:100px;
+
+}
+#JMenuTabBlue .oTabBtnHover a{
+	text-decoration:none;
+	color:#FF9900;
+}
+#JMenuTabBlue .oTabBtnHover .oTabBtnLeft{
+	float:left;
+}
+#JMenuTabBlue .oTabBtnHover .oTabBtnCenter{
+	line-height:24px;
+	float:left;
+}
+#JMenuTabBlue .oTabBtnHover .oTabBtnRight{
+	float:left;
+}
+/*------------------------------------*/
+#JMenuTabBlue .oPageOutline{
+}
+#JMenuTabBlue .oPageOutline .oBottomLeft {
+	background-image: url(bottomLeft.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	width: 3px;
+}
+#JMenuTabBlue .oPageOutline .oPageArea {
+	background-image: url(bottomMid.gif);
+	background-repeat: repeat-x;
+	padding:8px;
+	padding-top:15px;
+}
+#JMenuTabBlue .oPageOutline .oBottomRight {
+	background-image: url(bottomRight.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 3px;
+}
+#JMenuTabBlue .oPageOutline .oBottomCenter {
+	background-image: url(bottomMid.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 3px;
+}
+
+
+
+
+*{
+   font-family:tahoma, verdana, 宋体;
+}
+a{
+   font-size:12px;
+   color:#0B5B98;
+   text-decoration:underline;
+}
+a:hover{
+	color:#FF6600;
+	
+}
+.td1{
+	font-weight:normal; text-align:center; padding-bottom:5px; border-bottom:1px #E7E7E7 solid;
+	line-height:22px;
+}
+.td2{
+	border-left:1px solid #E7E7E7; padding-left:5px;
+}
+.td21{
+	border-right:1px #E7E7E7 solid;padding-right:5px;
+}
+

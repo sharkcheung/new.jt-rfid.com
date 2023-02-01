@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜索“{$SearchStr$}”的结果-{$Info(113)$}</title>
+{$File(head_public_js)$}
+</head>
+<body>	
+{$File(head)$}
+
+<!-- banner -->
+<section class="ny_banner">				
+	<img src="{$SiteSkin$}images/nybanner_contact.jpg"/>				
+</section>
+
+<section class="site">
+	<div class="qebang-container">
+		<h3 class="fl">搜索“{$SearchStr$}”的结果</h3>
+	</div>
+</section>
+
+<section class="content">
+	<div class="qebang-container">
+		<div class="qebang-row qebang-col-space30 List">
+			<div class="qebang-col-md10 products" style="float: right;">
+				{$If({$SearchType$},0,=)$}
+					<div class="qebang-row qebang-col-space20">
+	          {$For(ProductList,1/0/1/0/1/0/0/0)$}
+	          <div class="qebang-col-xs12 qebang-col-sm6 qebang-col-md4 products_li">
+							<a href="{$ProductListUrl$}" title="{$ProductListTitleAll$}" target="_blank">
+								<img src="{$ProductListPic$}" title="{$ProductListTitleAll$}"/>
+								<p>{$ProductListTitle$}</p>
+							</a>
+						</div>
+	          {$Next$}                
+		      </div>  
+	        <div class="page">{$SearchPageCode(0)$}</div>
+        {$Else$}
+        {$End If$}
+	        {$If({$SearchType$},1,=)$}
+	          {$For(ArticleList,1/0/0/0/1/0/0/0)$}
+	          <article class="newslist">
+		      		<a href="{$ArticleListUrl$}" title="{$ArticleListTitleAll$}">
+		      			<b>{$ArticleListTitle$}</b>
+			      		<p>{$ArticleListContent$}</p>
+		      		</a>
+		      	</article>
+	          {$Next$}             
+	        <div class="page">{$SearchPageCode(0)$}</div>
+	        {$Else$}
+        {$End If$} 
+			</div>
+			{$File(left)$}
+		</div>
+	</div>
+</section>
+
+{$File(foot)$}
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$ModuleTitle$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$InfoKeyword$}">
+<meta name="description" content="{$InfoDescription$}">
+<link rel="stylesheet" href="{$SiteSkin$}css/owl.carousel.min.css">
+<link rel="stylesheet" href="{$SiteSkin$}css/swiper.min.css">
+{$File(head_public_js)$}
+</head>
+<body>
+{$File(head)$}
+
+<!-- banner -->
+<section class="ny_banner">				
+	{$Info(117)$}				
+</section>
+
+<section class="info_subNav">
+	<div class="qebang-container">		
+		<ul class="sub_navList clearfix info_subIcon">
+			{$For(Nav,1/1151/1/0)$}
+			<li class="no{$ListNo$}"><a href="#content{$ListNo$}">{$NavName$}</a></li>
+			{$Next$}
+		</ul>
+	</div>
+</section>
+
+<section class="content" style="padding-bottom: 0;">
+	<div class="qebang-container" id="content1">		
+		<div class="info_about">
+			<h3 class="info_title">关于我们</h3>
+			<dl class="about_box clearfix">
+				<dt class="about_img"><a href="javascript:;">{$Info(104)$}</a></dt>
+				<dd class="about_content">
+					<h3>{$Info(113)$} <span>{$Info(116)$}</span></h3>
+					<em></em>
+					<div class="about_text">{$Info(86)$}</div>			
+				</dd>
+				<dd>
+					<ul class="info_aboutDate clearfix">
+						<li><span class="timer" data-to="2011" data-speed="1000">2011</span>年<p>公司成立于</p></li>
+						<li><span class="timer" data-to="10" data-speed="1000">10</span><span>+</span>年<p>技术研发人员行业经验</p></li>
+						<li><span class="timer" data-to="30" data-speed="1000">30</span><span>+</span>项<p>已获得专利认证</p></li>
+						<li><span class="timer" data-to="30" data-speed="1000">30</span><span>+</span>个<p>产品涉及行业</p></li>
+					</ul>
+				</dd>
+			</dl>			
+			<ul class="info_aboutImg owl-carousel">
+				{$For(ArticleList,1/1160/3/8/0/2/0/0)$}
+				<li><a href="{$ArticleListUrl$}" title="{$ArticleListTitleAll$}"><img src="{$ArticleListPic$}" alt="{$ArticleListTitleAll$}"/></a></li>
+				{$Next$}
+			</ul>
+		</div>					
+	</div>
+	<div class="info_aboutBox">
+		<div class="qebang-container">
+			<h3>捷通一直致力于为客户提供优质，高性能的超高频读写器厂家</h3>
+			<p>公司立足国内，放眼全球，在国内外建立了较完善的营销网络。秉持用户至上的原则，坚持以市场需求为导向，技术创新为根本，品质保证为生命以及售后服务为天职的经营理念，追求与所有客户合作共赢和业绩繁荣。 </p>
+			<ul class="info_aboutBoxImg clearfix">
+				{$For(ArticleList,1/1160/1/8/0/2/0/0)$}
+				<li class="no{$ListNo$}"><a href="{$ArticleListUrl$}" title="{$ArticleListTitleAll$}"><img src="{$ArticleListPic$}" alt="{$ArticleListTitleAll$}"/></a></li>
+				{$Next$}
+			</ul>
+		</div>			
+	</div>
+	
+	<div class="info_culture">		
+		<div class="qebang-container" id="content2">
+			<h3 class="info_title">企业文化</h3>	
+			<div class="info_cultureBox">
+				<dl class="info_cultureList">
+					<dt>{$Info(123)$}</dt>
+					<dd class="no1"><i><img src="{$SiteSkin$}images/icon/culture_icon01.png"/></i><p>愿景</p><span>成为RFID行业领军企业</span></dd>
+					<dd class="no2"><i><img src="{$SiteSkin$}images/icon/culture_icon02.png"/></i><p>使命</p><span>让识别更简单</span></dd>
+					<dd class="no3"><i><img src="{$SiteSkin$}images/icon/culture_icon03.png"/></i><p>原则</p><span>用户至上</span></dd>
+					<dd class="no4"><i><img src="{$SiteSkin$}images/icon/culture_icon04.png"/></i><p>服务理念</p><span>以最新的技术、最好的产品、最优的价格、最佳的服务奉献</span></dd>
+					<dd class="no5"><i><img src="{$SiteSkin$}images/icon/culture_icon05.png"/></i><p>经营理念</p><span>以市场为导向、技术为根本、质量为生命、服务为天职</span></dd>
+					<dd class="no6"><i><img src="{$SiteSkin$}images/icon/culture_icon06.png"/></i><p>核心价值</p><span>专注、创新、拼搏、共赢</span></dd>
+				</dl>
+			</div>
+		</div>					
+	</div>
+	
+	<div class="info_customer">
+		<div class="qebang-container">
+			<h3 class="info_title">合作客户</h3>	
+			<ul class="info_customerYoushi">
+				<li><i><img src="{$SiteSkin$}images/icon/customer_icon01.png"/></i><p>专业优势</p><div>研发技术团队拥有10年以上的研发经验；<br />专业、专注、创新、诚信；<br />可根据客户各种需要定制开发</div></li>
+				<li><i><img src="{$SiteSkin$}images/icon/customer_icon02.png"/></i><p>产品优势</p><div>提供高、中、低端系列产品一站式采购；<br />产品种类丰富，满足各种距离压要求；<br />产品自助研发、免费售后服务和技术支持；<br />厂家知晓，性价比更高。</div></li>
+				<li><i><img src="{$SiteSkin$}images/icon/customer_icon03.png"/></i><p>品质优势</p><div>产品已获国家专利；<br />已通过ISO9001国家质量管理认证；<br />已通过欧盟CE/美国FCC/澳洲C-TICK多项认证；<br />6000V工业防雷技术</div></li>
+				<li><i><img src="{$SiteSkin$}images/icon/customer_icon04.png"/></i><p>服务优势</p><div>读写设备二年免费质保，三年成本维修；<br />产品提供SDK开发包及条用历程，吃吃VB、Java、C#、C++、DELPHI等语言开发；<br />提供软件、硬件米恩菲售后服务及技术支持</div></li>
+			</ul>
+			<div class="info_customerBox">
+				<div class="swiper-container">
+	        <ul class="swiper-wrapper">
+            {$For(ArticleList,1/1247/0/18/0/2/0/0)$}
+            <li class="swiper-slide"><img src="{$ArticleListPic$}" alt="{$ArticleListTitleAll$}"/></li>
+            {$Next$}
+	        </ul>	        
+	    	</div>
+	    	<div class="swiper-button-prev"></div>
+    		<div class="swiper-button-next"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="qebang-container" id="content3">
+		<h3 class="info_title">荣誉资质</h3>	
+		<dl class="info_honor clearfix">
+			<dt class="info_honorImg swiper-container">
+				<ul class="swiper-wrapper">
+					{$For(ArticleList,1/1161/1/14/0/2/0/0)$}
+					<li class="swiper-slide"><img src="{$ArticleListPic$}"/></li>
+					{$Next$}
+				</ul>
+			</dt>
+			<dd class="info_honorText swiper-container">
+				<ul class="swiper-wrapper clearfix">
+					{$For(ArticleList,1/1161/1/14/0/2/0/0)$}
+					<li class="swiper-slide"><p>{$ArticleListTitleAll$}</p></li>
+					{$Next$}
+				</ul>
+				<div class="swiper-scrollbar"></div>
+			</dd>
+		</dl>
+	</div>
+	
+	<div class="info_certif">
+		<div class="qebang-container">
+			<h3 class="info_title">专利证书</h3>	
+			<ul class="info_certifList owl-carousel">
+				{$For(ArticleList,1/1246/0/8/0/2/0/0)$}
+				<li><a href="{$ArticleListUrl$}"title="{$ArticleListTitleAll$}"><p><img src="{$ArticleListPic$}" alt="{$ArticleListTitleAll$}" /></p><span>{$ArticleListTitle$}</span></a></li>
+				{$Next$}
+			</ul>
+		</div>			
+	</div>
+</section>
+
+{$File(foot)$}
+
+<script src="{$SiteSkin$}js/number.js" type="text/javascript" charset="utf-8"></script>
+<script src="{$SiteSkin$}js/jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var header = $("header").height() + 20;
+	$('.sub_navList > li > a').smoothScroll({
+		offset: - header,
+	});
+	
+	var FirstLevelName="{$ModuleName$}";
+	$(".sub_navList > li > a").each(function(){ 
+		var html = $(this).text();		
+		if(FirstLevelName == html){
+			$(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+		};
+		if(html == "新闻资讯"){
+			$(this).attr({"href":"{$HomeUrlMore(1155)$}"});
+		}else if(html == "联系捷通") {
+			$(this).attr({"href":"{$HomeUrlMore(1157)$}"});
+		}
+	});
+	
+	$('.info_aboutImg').owlCarousel({
+    loop:true,
+    nav:false,    
+    autoplay:true,
+    margin:10,
+    responsive:{
+	    	0:{
+            items:1,
+        },	       	
+       	520:{
+            items:2,
+       	},
+       	768:{
+            items:3,
+       	},
+       	992:{
+            items:4,
+       	},
+       	1200:{
+            items:5,
+       	}
+    },    
+	});	
+
+  var mySwiper = new Swiper('.info_customerBox .swiper-container', {     
+      slidesPerView: 6,
+      slidesPerColumn: 3,
+      prevButton:'.swiper-button-prev',
+			nextButton:'.swiper-button-next',
+			breakpoints: {		    
+		    1440: {
+		      slidesPerView: 5,
+		    },
+		    1200: {
+		      slidesPerView: 4,
+		    },
+		    992: {
+		      slidesPerView: 3,
+		    },
+		    768: {
+		      slidesPerView: 2,
+		    },
+		    480: { 
+		      slidesPerView: 1,
+		    }
+		  }
+  });
+  
+  var honorTextSwiper = new Swiper('.info_honorText', {
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide:false,
+        direction: 'vertical',
+        slidesPerView: 5,
+        slidesPerColumn: 2,
+        mousewheelControl: true,
+				roundLengths : true, //防止文字模糊
+    });
+    var honorImgSwiper = new Swiper('.info_honorImg', {
+        touchRatio: '0',
+        slidesPerView: 1,      
+    }) 
+   $('.info_honorText .swiper-slide').on('click', function () {
+        var index = $(this).index();
+        $(this).addClass('on').siblings(".swiper-slide").removeClass('on');
+        honorImgSwiper.slideTo(index);   //slideTo  Swiper切换到指定slide
+    }) 
+    
+    $('.info_certifList').owlCarousel({
+	    loop:true,
+	    nav:true,    
+	    autoplay:false,
+	    margin:10,
+	    navText:['<','>'],
+	    responsive:{
+		    	0:{
+	            items:1,
+	        },
+	        480:{
+	            items:2,
+	        },	       	
+	       	768:{
+	            items:3,
+	            margin:10,
+	       	},
+	       	1200:{
+	            items:4,
+	            margin:30,
+	       	}
+	    },   
+		});	
+</script>
+</body>
+</html>

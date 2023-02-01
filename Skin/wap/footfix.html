@@ -1,0 +1,23 @@
+﻿<section class="footfix">
+  <ul>
+    <li><a href="/wap"><i class="iconfont">&#xe605;</i><span>首页</span></a></li>
+    <li><a href="/wap{$HomeUrlMore(1151)$}"><i class="iconfont">&#xe604;</i><span>关于我们</span></a></li>
+    <li><a href="tel:{$Tel400$}"><i class="iconfont">&#xe606;</i><span>电话</span></a></li>
+    <li><a href="/wap{$HomeUrlMore(1157)$}"><i class="iconfont">&#xe607;</i><span>联系我们</span></a></li>
+  </ul>
+</section>
+<div style='display:none;'><script type='text/javascript' src='{$TjUrl$}/counter.asp?id={$Tjid$}&icon=2'></script></div>
+<script type="text/javascript">
+	window.onload=function(){
+		var w = $(".info").width();
+		$(".info img").each(function(i){
+		var img_w = $(this).width();
+		var img_h = $(this).height();		
+		if(img_w>w){
+			var height = (w*img_h)/img_w;
+			$(this).css({"width":w,"height":height});
+			}
+		});
+	}
+</script>
+

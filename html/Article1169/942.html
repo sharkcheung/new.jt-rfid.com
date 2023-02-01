@@ -1,0 +1,1331 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>RFID超高频手持机使用说明及应用领域-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="RFID手持机 RFID资产管理 RFID货物盘点 手持终端 超高频手持">
+<meta name="description" content="JT-900手持机是在标准配置Andriod 4.1操作系统基础上集成超高频（900MHz）读写组件的产品形态，可选配：条码扫描模块，前置NFC高频读写模块等，根据需要选择不同配置的读取模块">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> RFID手持机 RFID资产管理 RFID货物盘点 手持终端 超高频手持</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">RFID超高频手持机使用说明及应用领域</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2016-8-1 18:20:28</p>
+        <div class="neiye-detail-text"><p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:14pt;line-height:1.5;"><span style="line-height:1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:14pt;"><span><span style="line-height:1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span><span style="font-size:14pt;"><span><span style="line-height:1.5;"></span><span style="color:;line-height:1.5;"><a href="http://www.jt-rfid.com/?Product1164/1059.html" target="_blank"><span style="color:#003399;"><strong>JT-900手持机</strong></span></a></span></span></span><span style="font-size:14pt;font-family:宋体;line-height:1.5;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">是在标准配置</span><span style="font-size:14pt;line-height:1.5;"><span style="line-height:1.5;">Andriod 4.1</span></span><span style="font-size:14pt;font-family:宋体;line-height:1.5;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">操作系统基础上集成超高频（</span><span style="font-size:14pt;line-height:1.5;"><span style="line-height:1.5;">900MHz</span></span><span style="font-size:14pt;font-family:宋体;line-height:1.5;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">）读写组件的产品形态，可选配：条码扫描模块，前置</span><span style="font-size:14pt;line-height:1.5;"><span style="line-height:1.5;">NFC</span></span><span style="font-size:14pt;font-family:宋体;line-height:1.5;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">高频<a href="http://www.jt-rfid.com/?Product1163/Index.html" target="_blank" title="读写模块">读写模块</a>等，根据需要选择不同配置的读取模块读写距离可从</span><span style="font-size:14pt;line-height:1.5;"><span style="line-height:1.5;">15cm-5M</span></span><span style="font-size:14pt;font-family:宋体;line-height:1.5;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">之间选择。</span><span style="font-size:14pt;"></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:14pt;"></span>
+</p>
+<h2 style="margin:13pt 0cm;">
+	<span style="font-family:宋体;color:red;line-height:1.5;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;">性能：</span><span style="color:red;"></span> 
+</h2>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:14pt;font-family:宋体;line-height:1.5;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">频段：</span><span style="font-size:14pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">860 MHz—940 MHz</span><span style="font-size:14pt;"></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:14pt;font-family:宋体;line-height:1.5;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">天线：</span><span style="font-size:14pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">外置</span><span style="line-height:1.5;">180</span><span style="line-height:1.5;">°折叠天线，功率</span><span style="line-height:1.5;">3db-7db</span></span><span style="font-size:14pt;"></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:14pt;font-family:宋体;line-height:1.5;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">协议：</span><span style="font-size:14pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span style="line-height:1.5;">ISO 18000 6c/EPC Class1 Gen2</span><span style="line-height:1.5;">协议；</span></span><span style="font-size:14pt;font-family:宋体;mso-hansi-font-family:Calibri;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:14pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">读写距离：读写距离从</span><span style="line-height:1.5;">5-8m</span><span style="line-height:1.5;">。</span></span><span style="font-size:14pt;font-family:宋体;mso-hansi-font-family:Calibri;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:14pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持标签类型：英频杰</span><span style="line-height:1.5;">—Monza 3/4/5</span><span style="line-height:1.5;">、意联科技</span><span style="line-height:1.5;">—Higgs-3/4</span><span style="line-height:1.5;">、飞利浦</span><span style="line-height:1.5;">—UCODE EPC G2/UCODEG2XM/XL</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:14pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span></span></span><img style="height:302px;width:176px;" alt="" src="/up/image/201608/20160801181170247024.jpg" width="145" height="261" /><span style="font-size:14pt;"></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span></span>
+</p>
+<h2 style="margin:13pt 0cm;">
+	<span style="font-family:宋体;color:red;line-height:1.5;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;">规格：</span><span><span style="font-family:Cambria;color:red;"></span></span> 
+</h2>
+<table class="MsoNormalTable ke-zeroborder" style="width:482pt;border-collapse:collapse;margin:auto auto auto 4.65pt;mso-yfti-tbllook:160;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;" cellspacing="0" cellpadding="0" width="643" border="0">
+	<tbody>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-top-alt:1.5pt;mso-border-left-alt:1.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<b><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">总体特征</span><span></span></span></b> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:#f0f0f0;padding-right:5.4pt;mso-border-top-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<b><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">总体特征</span><span></span></span></b> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">产品型号</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:#f0f0f0;padding-right:5.4pt;background-color:transparent;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">JT-900</span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">外观特征</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:#f0f0f0;padding-right:5.4pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">直板</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">外观尺寸</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:#f0f0f0;padding-right:5.4pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">172 * 81 * 37 </span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">（</span><span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">长</span><span style="line-height:1.5;">*</span><span style="line-height:1.5;">宽</span><span style="line-height:1.5;">*</span><span style="line-height:1.5;">高</span><span style="line-height:1.5;">mm</span></span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">）</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">产品定位</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:#f0f0f0;padding-right:5.4pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">专用终端设备</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<b><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">硬件规格</span><span></span></span></b> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<b><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">硬件规格</span><span></span></span></b> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">CPU</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">型号</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-top-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;mso-border-alt:solid windowtext .5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">高通</span><span style="line-height:1.5;"> MSM8625Q</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">CPU</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">频率</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-top-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;mso-border-alt:solid windowtext .5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">四核</span><span style="line-height:1.5;">1.2GHz</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">网络类型</span><span style="line-height:1.5;">1</span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">EVDO Rev.A\CDMA 1X</span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">频段</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">800MHz/1900MHz</span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:54pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">无线传输速率</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:54pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">EVDO:</span><br />
+</span><span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">上行最大</span><span><span style="line-height:1.5;">1.8Mbps</span><br />
+</span><span style="line-height:1.5;">下行最大</span><span style="line-height:1.5;">3.1 Mbps</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">网络类型</span><span style="line-height:1.5;">2(</span><span style="line-height:1.5;">不同时支持</span><span style="line-height:1.5;">)</span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">GSM</span><span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">、</span><span style="line-height:1.5;">WCDMA</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:33.75pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">频段</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:33.75pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">WCDMA/HSDPA/HSUPA 850/900/1900/2100MHz</span><span style="line-height:1.5;mso-spacerun:yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><br />
+<span style="line-height:1.5;">GSM/GPRS/EDGE 850/900/1800/1900MHz</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">无线传输速率</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">HSDPA </span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">上行</span><span style="line-height:1.5;">384K </span><span style="line-height:1.5;">下行</span><span style="line-height:1.5;">7.2M </span></span>
+				</p>
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">HSUPA </span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">上行</span><span style="line-height:1.5;">5.76M </span><span style="line-height:1.5;">下行</span><span style="line-height:1.5;">7.2M</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">卡槽</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">WCDMA/CDMA </span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">公用一个卡槽位置</span><span> </span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">手机内存（</span><span style="line-height:1.5;">RAM</span><span style="line-height:1.5;">）</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">8GB</span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">高速闪存（</span><span style="line-height:1.5;">ROM</span><span style="line-height:1.5;">）</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">1GB</span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">扩展存储</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">Micro SD</span><span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">，最大支持</span><span style="line-height:1.5;">32G</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">U</span><span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">盘</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持（</span><span style="line-height:1.5;">MicroSD</span><span style="line-height:1.5;">）</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">主屏幕</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">主板支持</span><span style="line-height:1.5;">4.0</span><span style="line-height:1.5;">寸</span><span><span style="line-height:1.5;"> WVGA</span><span style="line-height:1.5;mso-spacerun:yes;">&nbsp;&nbsp;&nbsp; </span><span style="line-height:1.5;">IPS</span><span style="line-height:1.5;mso-spacerun:yes;">&nbsp; </span><span style="line-height:1.5;">TFT</span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">分辨率</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">800 * 480</span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">触摸屏</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span style="line-height:1.5;"> Touch panel</span><span style="line-height:1.5;">，电阻屏（支持屏幕校准）</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:38.25pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">按键</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:38.25pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">标准数字键盘；按键：</span><span style="line-height:1.5;">HOME</span><span style="line-height:1.5;">、返回、</span><span style="line-height:1.5;">MENU</span><span style="line-height:1.5;">、拨号键、摘挂机键、</span><span style="line-height:1.5;">".",</span><span style="line-height:1.5;">开关机、四个功能键（退格键</span><span style="line-height:1.5;">+2</span><span style="line-height:1.5;">个功能键：</span><span style="line-height:1.5;">F1</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">F2</span><span style="line-height:1.5;">）、复位键</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:38.25pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">侧键</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:38.25pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">RFID</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">、扫描快捷键、上</span><span style="line-height:1.5;">/</span><span style="line-height:1.5;">下音量键、拍照键、手电筒采用轻触按键的形式</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">按键背光</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">扬声器数量</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">单扬声器</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">主摄像头（后置）</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">500</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">万 （</span><span style="line-height:1.5;">AF</span><span style="line-height:1.5;">，支持闪光灯，并支持做手电筒用）</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">蓝牙</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持，</span><span style="line-height:1.5;">2.1+EDR+A2DP </span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">GPS</span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">UHF </span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">超高频段</span><span style="line-height:1.5;"> RFID</span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" valign="top" width="403">
+				<p style="margin:0cm 0cm 0pt 21pt;text-indent:-21pt;mso-pagination:widow-orphan;mso-char-indent-count:0;mso-list:l0 level1 lfo2;">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:宋体;mso-font-kerning:0pt;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">1.</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span style="line-height:1.5;">860 MHz—960 MHz</span><span style="line-height:1.5;">频段的读写操作；</span><span></span></span> 
+				</p>
+				<p style="margin:0cm 0cm 0pt 21pt;text-indent:-21pt;mso-pagination:widow-orphan;mso-char-indent-count:0;mso-list:l0 level1 lfo2;">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:宋体;mso-font-kerning:0pt;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">2.</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">外置</span><span style="line-height:1.5;">180</span><span style="line-height:1.5;">°折叠天线；</span><span></span></span> 
+				</p>
+				<p style="margin:0cm 0cm 0pt 21pt;text-indent:-21pt;mso-pagination:widow-orphan;mso-char-indent-count:0;mso-list:l0 level1 lfo2;">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:宋体;mso-font-kerning:0pt;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">3.</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span style="line-height:1.5;">ISO 18000 6c/EPC Class1 Gen2</span><span style="line-height:1.5;">协议；</span><span></span></span> 
+				</p>
+				<p style="margin:0cm 0cm 0pt 21pt;text-indent:-21pt;mso-pagination:widow-orphan;mso-char-indent-count:0;mso-list:l0 level1 lfo2;">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:宋体;mso-font-kerning:0pt;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">4.</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">可配置各功率天线</span><span style="line-height:1.5;">(3db—7db)</span><span style="line-height:1.5;">；</span><span></span></span> 
+				</p>
+				<p style="margin:0cm 0cm 0pt 21pt;text-indent:-21pt;mso-pagination:widow-orphan;mso-char-indent-count:0;mso-list:l0 level1 lfo2;">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:宋体;mso-font-kerning:0pt;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">5.</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">读取距离：</span><span style="line-height:1.5;">5-8</span><span style="line-height:1.5;">米。</span><span></span></span> 
+				</p>
+				<p style="margin:0cm 0cm 0pt 21pt;text-indent:-21pt;mso-pagination:widow-orphan;mso-char-indent-count:0;mso-list:l0 level1 lfo2;">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:宋体;mso-font-kerning:0pt;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">6.</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持标签：英频杰</span><span style="line-height:1.5;">—Monza 3/4/5</span><span style="line-height:1.5;">、意联科技</span><span style="line-height:1.5;">—Higgs-3/4</span><span style="line-height:1.5;">、飞利浦</span><span style="line-height:1.5;">—UCODE EPC G2/UCODEG2XM/XL</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">加速度传感器</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" valign="top" width="403">
+				<p style="margin:0cm 0cm 0pt;mso-pagination:widow-orphan;">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">振动马达</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:39pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">数据接口</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:39pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-top-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;mso-border-alt:solid windowtext .5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">10 pin Mini USB,</span><span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">可对外供电（</span><span style="line-height:1.5;">5V/500mA</span><span style="line-height:1.5;">）</span><span><span style="line-height:1.5;">Mic roUSB</span><span style="line-height:1.5;mso-spacerun:yes;">&nbsp; </span><span style="line-height:1.5;">OTG</span><span style="line-height:1.5;mso-spacerun:yes;">&nbsp; </span><span style="line-height:1.5;">CPU</span></span><span style="line-height:1.5;">带几个</span><span style="line-height:1.5;">USB</span><span style="line-height:1.5;">口</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">充电接口</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持，单独充电接口</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">耳机插孔</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">3.5</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">寸单独出一个耳机接口</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">挂绳孔</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">客户设计</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">ID</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">和</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">MD</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">设计</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">天线</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">全部内置，</span><span style="line-height:1.5;">EVDO</span><span style="line-height:1.5;">不支持接收分集</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">WIFI/WAPI</span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持（</span><span style="line-height:1.5;">b/g/n</span><span style="line-height:1.5;">）</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:25.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">LED</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">电源指示灯</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:25.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span style="line-height:1.5;">(</span><span style="line-height:1.5;">平时闪烁、来电快速闪烁、未接来电</span><span style="line-height:1.5;">)</span><span style="line-height:1.5;">三种状态带一个</span><span style="line-height:1.5;">CPU I/O</span><span style="line-height:1.5;">口控制的指示灯、带</span><span style="line-height:1.5;">2</span><span style="line-height:1.5;">个指示灯（引到接口上）</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">听筒</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">手写笔</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持 、内置</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">条码扫描</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span style="line-height:1.5;"> 1D</span><span style="line-height:1.5;">红光、</span><span style="line-height:1.5;">1D</span><span style="line-height:1.5;">激光、</span><span style="line-height:1.5;">2D</span><span style="line-height:1.5;">条码模块</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">手电筒</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持，通过闪光灯实现</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">以太网接口</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持，以太网支持静态</span><span style="line-height:1.5;">IP</span><span style="line-height:1.5;">和</span><span style="line-height:1.5;">DHCP</span><span style="line-height:1.5;">，并支持</span><span style="line-height:1.5;">PPPoE</span><span style="line-height:1.5;">拨号和上网</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<a name="_GoBack"></a><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">串行口</span><span></span></span></a> 
+				</p>
+			</td>
+<span style="mso-bookmark:_GoBack;"></span> 
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="line-height:1.5;mso-bookmark:_GoBack;"><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">RS232</span></span><span style="mso-bookmark:_GoBack;"><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">、</span><span style="line-height:1.5;">RS485</span></span></span> 
+				</p>
+			</td>
+<span style="mso-bookmark:_GoBack;"></span>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="line-height:1.5;mso-bookmark:_GoBack;"><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">PSAM</span></span> 
+				</p>
+			</td>
+<span style="mso-bookmark:_GoBack;"></span> 
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="line-height:1.5;mso-bookmark:_GoBack;"><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">2</span></span><span style="mso-bookmark:_GoBack;"><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">个</span><span></span></span></span> 
+				</p>
+			</td>
+<span style="mso-bookmark:_GoBack;"></span>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">入网条件</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">软硬件各项测试指标达到入网级别</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">充电时间</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">不大于</span><span style="line-height:1.5;">9</span><span style="line-height:1.5;">小时充电座更换连接器为直插</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:39.75pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">电池</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:39.75pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">6000mAh</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">聚合物</span><span style="line-height:1.5;">/</span><span style="line-height:1.5;">锂离子</span></span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">，</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">待机电流低于</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">10m A</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">（根据指示灯驱动</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">IC</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">实际功耗来确定增加）电池座采用侧面接触的方式电池容量大约是</span><span style="line-height:1.5;">6000mah</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<b><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">软件规格</span><span></span></span></b> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<b><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">软件规格</span><span></span></span></b> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">基本规格</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">基本规格</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">操作系统</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;background-color:transparent;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">Android 4.1</span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持语言</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">简体中文、英文</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">输入法</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">要求最少支持</span><span style="line-height:1.5;">2</span><span style="line-height:1.5;">种中文输入法，带手写。</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">GPSone</span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持</span><span style="line-height:1.5;">(</span><span style="line-height:1.5;">同时支持手机侧</span><span style="line-height:1.5;">GPSone</span><span style="line-height:1.5;">定位，在室内可以定位</span><span style="line-height:1.5;">)CDMA</span><span style="line-height:1.5;">制式</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">AGPS</span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">支持（支持室内定位）</span><span style="line-height:1.5;">WCDMA</span><span style="line-height:1.5;">制式</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">音乐播放支持</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">mp3</span><span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">、</span><span style="line-height:1.5;">acc</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">amr</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">ogg</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">m4a</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">mid</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">wma</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">flac</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">ape</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">aac</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">wav</span><span style="line-height:1.5;">等格式</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">图片播放支持</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">JPEG</span><span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">、</span><span style="line-height:1.5;">PNG</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">GIF</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">BMP</span><span style="line-height:1.5;">等格式</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">视频播放支持</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">mp4</span><span style="font-size:12pt;font-family:宋体;mso-font-kerning:0pt;"><span style="line-height:1.5;">、</span><span style="line-height:1.5;">h.263</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">h.264</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">rmvb</span><span style="line-height:1.5;">、</span><span style="line-height:1.5;">flv720p</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<b><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">技术参数</span><span></span></span></b> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<b><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">技术参数</span><span></span></span></b> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">待机电流</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" valign="top" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">不大于</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">10mA</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-bidi-font-family:Arial;mso-font-kerning:0pt;">（未加指标灯驱动</span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">IC</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">的电流）</span><span></span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:25.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">通话电流（最大功率下的通话平均电流）</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:25.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" valign="top" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">不大于</span><span style="line-height:1.5;">6</span></span><span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">00mA</span><span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">照相和录像</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" valign="top" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">录像要求达到</span><span style="line-height:1.5;">720P</span></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:24pt;mso-pagination:widow-orphan;mso-char-indent-count:2.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">充电电压</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" valign="bottom" width="403">
+				<p style="margin:0cm 0cm 0pt;mso-pagination:widow-orphan;">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">5.0V</span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:180pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext .5pt;" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:24pt;mso-pagination:widow-orphan;mso-char-indent-count:2.0;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"><span style="line-height:1.5;">充电电流</span><span></span></span> 
+				</p>
+			</td>
+			<td style="border-top:windowtext 1pt solid;height:13.5pt;border-right:windowtext 1pt solid;width:302pt;background:white;border-bottom:windowtext 1pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;" valign="bottom" width="403">
+				<p style="margin:0cm 0cm 0pt;mso-pagination:widow-orphan;">
+					<span style="font-size:12pt;font-family:宋体;line-height:1.5;mso-font-kerning:0pt;">800mAh</span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-top:windowtext 1.5pt solid;height:13.5pt;border-right:windowtext 1.5pt solid;width:180pt;background:white;border-bottom:windowtext 1.5pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1.5pt solid;padding-right:5.4pt;" valign="bottom" width="240">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"></span>
+				</p>
+			</td>
+			<td style="border-top:windowtext 1.5pt solid;height:13.5pt;border-right:windowtext 1.5pt solid;width:302pt;background:white;border-bottom:windowtext 1.5pt solid;padding-bottom:0cm;padding-top:0cm;padding-left:5.4pt;border-left:windowtext 1pt solid;padding-right:5.4pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext 1.5pt;mso-border-right-alt:solid windowtext 1.5pt;" valign="bottom" width="403">
+				<p style="text-align:left;margin:0cm 0cm 0pt;mso-pagination:widow-orphan;" align="left">
+					<span style="font-size:12pt;font-family:宋体;mso-bidi-font-family:Arial;mso-font-kerning:0pt;"></span>
+				</p>
+			</td>
+		</tr>
+		<tbody>
+		</tbody>
+			</table>
+			<h2 style="margin:13pt 0cm;">
+				<span style="font-family:宋体;color:red;line-height:1.5;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;">应用：</span><span style="color:red;"></span> 
+			</h2>
+			<p style="background:white;margin:0cm 0cm 0pt;line-height:200%;">
+				<span style="font-size:14pt;color:black;line-height:200%;"><span><span style="line-height:1.5;">该产品形态适用于远距离读取电子标签的场合，这些应用场景分析如下：</span><span></span></span></span> 
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">1)</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:14pt;color:black;line-height:200%;"><span><span style="line-height:1.5;">巡检类应用系统。适用于特种设备、电梯、物业、固定资产、交通标识、工商注册商标广告派、路政设施、公共设施等物资的巡检巡查报修系统；</span><span></span></span></span> 
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">2)</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:14pt;color:black;line-height:200%;"><span><span style="line-height:1.5;">港口集装箱管理。集装箱电子铅封的操作管理；</span><span></span></span></span> 
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">3)</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:14pt;color:black;line-height:200%;"><span><span style="line-height:1.5;">仓储管理。用于对货物、货架等的管理；</span><span></span></span></span> 
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"><span style="mso-list:Ignore;"><span style="line-height:1.5;">4)</span><SPAN style="FONT-SIZE: 7pt; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 1.5" Roman?;? New Times>&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:14pt;color:black;line-height:1.5;"><span style="line-height:1.5;">盘点类应用。可用于贵重金属、古董字画、纺织品等的产品出入库与盘点管理。</span></span> 
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"><span></span></span>&nbsp;
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"><img style="height:330px;width:491px;" alt="" src="/up/image/201608/20160801181291639163.png" width="473" height="344" /></span> 
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"></span>&nbsp;
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"><img style="height:447px;width:476px;" alt="" src="/up/image/201608/20160801181281088108.png" width="577" height="542" /></span> 
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"></span>&nbsp;
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"></span>&nbsp;
+			</p>
+			<p style="background:white;margin:0cm 0cm 0pt 21pt;line-height:200%;text-indent:-21pt;mso-list:l1 level1 lfo1;">
+				<span style="font-size:14pt;color:black;line-height:200%;"><span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 18px/1.5 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" times="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 随着社会的发展，</span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 18px/1.5 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?="" calibri?,?sans-serif?;mso-fareast-font-family:宋体;mso-ascii-theme-font:minor-latin;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-size:11.0pt;mso-bidi-font-family:?times="">RFID</span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 18px/1.5 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" times="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?="">会被越来越广泛地应用在人们的生活当中，</span></span></span><span style="font-size:14pt;color:;line-height:200%;"><span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 18px/1.5 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" times="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?=""></span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 18px/1.5 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?="" calibri?,?sans-serif?;mso-fareast-font-family:宋体;mso-ascii-theme-font:minor-latin;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-size:11.0pt;mso-bidi-font-family:?times=""></span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 18px/1.5 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" times="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?=""><span style="color:;"><a href="http://www.jt-rfid.com/?Product1182/1056.html" target="_blank"><strong><span style="color:#003399;">RFID</span></strong></a></span></span><SPAN style="FONT-SIZE: 18px; FONT-FAMILY: 宋体; FONT-VARIANT: normal; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" times="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?=""><span style="color:;"><a href="http://www.jt-rfid.com/?Product1182/1056.html" target="_blank"><strong><span style="color:#003399;">车辆管理</span></strong></a></span></span></span></span><span style="font-size:14pt;color:black;line-height:200%;"><span><SPAN style="FONT-SIZE: 18px; FONT-FAMILY: 宋体; FONT-VARIANT: normal; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" times="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?="">只是其中的一种应用模式。作为专注于<a href="http://www.jt-rfid.com/?Product1162/Index.html" target="_blank" title="超高频读写器">超高频读写器</a>生产、研发、销售的深圳市捷通科技，将致力于拓展更多与</span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 18px/1.5 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?="" calibri?,?sans-serif?;mso-fareast-font-family:宋体;mso-ascii-theme-font:minor-latin;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-size:11.0pt;mso-bidi-font-family:?times="">RFID</span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 18px/1.5 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" times="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?="">相关的应用市场，开发更多能解决人们生活问题的</span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 18px/1.5 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?="" calibri?,?sans-serif?;mso-fareast-font-family:宋体;mso-ascii-theme-font:minor-latin;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-size:11.0pt;mso-bidi-font-family:?times="">RFID</span><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 10.5pt/26px 宋体; PADDING-LEFT: 0px; WIDOWS: 1; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" new="" times="" roman?;mso-bidi-theme-font:minor-bidi;mso-ansi-language:en-us;mso-fareast-language:zh-cn;mso-bidi-language:ar-sa;?=""><span style="font-size:18px;line-height:1.5;">设备。</span><span style="white-space:normal;word-spacing:0px;text-transform:none;float:none;color:#333333;font:18px/1.5 宋体;widows:1;display:inline !important;letter-spacing:normal;text-indent:0px;-webkit-text-stroke-width:0px;">深圳市捷通科技将继续研发更多RFID相关的设备，来满足更多不同领域的场景。</span></span></span><span></span></span> 
+			</p></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/943.html">RFID无人值守智能称重管理系统</a><br />下一篇：<a href="/html/Article1169/941.html">RFID超高频（通道门）读写器说明</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=942"></script>
+
+</body>
+</html>

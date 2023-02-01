@@ -1,0 +1,8 @@
+﻿<ul style="border-left:1px solid #eee; border-right:1px solid #eee;">
+                    <li><a href="javascript:void(0);" class="active" onclick="SetRContent('MainRight','weixin_Set.asp?Type=1');$(this).parent().parent().find('li>a').removeClass('active');$(this).addClass('active');return false;">微信接口配置</a></li>
+                    <li><a href="javascript:void(0);" onclick="SetRContent('MainRight','weixin_subscribelist.asp?Type=1');$(this).parent().parent().find('li>a').removeClass('active');$(this).addClass('active');return false;">关注用户管理</a></li>
+                    <li><a href="javascript:void(0);" onclick="SetRContent('MainRight','weixin_sucai.asp?Type=1');$(this).parent().parent().find('li>a').removeClass('active');$(this).addClass('active');return false;">素材库管理</a></li>
+                    <li><a href="javascript:void(0);" onclick="SetRContent('MainRight','weixin_imgtext.asp?Type=1');$(this).parent().parent().find('li>a').removeClass('active');$(this).addClass('active');return false;">图文管理</a></li>
+                    <li><a href="javascript:void(0);" onclick="SetRContent('MainRight','weixin_custreply.asp?Type=1');$(this).parent().parent().find('li>a').removeClass('active');$(this).addClass('active');return false;">自定义回复</a></li>
+                    <li><a href="javascript:void(0);" onclick="SetRContent('MainRight','weixin_menu.asp?Type=1');$(this).parent().parent().find('li>a').removeClass('active');$(this).addClass('active');return false;">自定义菜单</a></li>
+                </ul>

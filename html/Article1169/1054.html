@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>RFID芯片制造工艺解析-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="RFID芯片，RFID封装技术，RFID芯片制造">
+<meta name="description" content="RFID芯片，RFID封装技术，RFID芯片制造">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> RFID芯片，RFID封装技术，RFID芯片制造</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">RFID芯片制造工艺解析</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2017-5-5 17:24:54</p>
+        <div class="neiye-detail-text"><p>
+	&nbsp;
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 近日，在</span><span style="font-size:16px;">2016</span><span style="font-size:16px;">第四届上海军民两用技术促进大会上，我国首款自主标准自主协议的</span><span style="font-size:16px;">RFID</span><span style="font-size:16px;">芯片亮相。它有望进一步降低</span><span style="font-size:16px;"><a href="http://www.jt-rfid.com/?Product1166/Index.html" target="_blank"><span style="color:#003399;">RFID</span></a></span><span style="font-size:16px;"><a href="http://www.jt-rfid.com/?Product1166/Index.html" target="_blank"><span style="color:#003399;">电子标签</span></a>的价格，提高物流包裹的分拣效率，使得快递再快上好几倍。我们有了自己的“金刚钻”，国产的</span><span style="font-size:16px;"><a href="http://www.jt-rfid.com/" target="_blank"><span style="color:#003399;">RFID</span></a></span><span style="font-size:16px;"><a href="http://www.jt-rfid.com/" target="_blank"><span style="color:#003399;">技术</span></a>和解决方案，无论在技术还是价格上就有了响当当的话语权。那么，我们今天就来具体的了解下</span><span style="font-size:16px;">RFID</span><span style="font-size:16px;">芯片的制造工艺吧！</span> 
+</p>
+<p class="MsoNormal" align="center">
+	<img alt="" src="/up/image/201705/20170505171998799879.jpg" /> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 大家都说，芯片制造的过程就如同用乐高盖房子一样，先有晶圆作为地基，再层层往上叠的芯片制造流程后，就可产出必要的</span><span style="font-size:16px;"> IC </span><span style="font-size:16px;">芯片。却总是忽略了最重要的部分，如果没有设计师，有再高超的技能也没用。就像一件服装需要的是服装的裁缝，但如果没有服装的设计师设计出好看的服装，裁缝怎么能做得出好看的服装。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 那么芯片设计的流程是怎样的呢？为了让大家能更好地理解芯片的设计流程，小编特地找了一张详细的图为大家解析。</span> 
+</p>
+<p class="MsoNormal" align="center">
+	<img alt="" src="/up/image/201705/20170505171872877287.png" /><span style="font-size:16px;"></span>&nbsp;
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 了解完芯片的设计流程，下面我们来看看地基</span><span style="font-size:16px;">“晶圆”。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 晶圆（</span><span style="font-size:16px;">wafer</span><span style="font-size:16px;">），是制造各式电脑芯片的基础。我们可以将芯片制造比拟成用乐高积木盖房子，藉由一层又一层的堆叠，完成自己期望的造型（也就是各式芯片）。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p class="MsoNormal" align="center">
+	<img alt="" src="/up/image/201705/2017050517180760760.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 在固体材料中，有一种特殊的晶体结构</span><span style="font-size:16px;">──单晶（</span><span style="font-size:16px;">Monocrystalline</span><span style="font-size:16px;">）。它具有原子一个接着一个紧密排列在一起的特性，可以形成一个平整的原子表层。因此，采用单晶做成晶圆，便可以满足以上的需求。然而，该如何产生这样的材料呢，主要有二个步骤，分别为纯化以及拉晶，之后便能完成这样的材料。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 接下来我们就进去重点，来看看</span><span style="font-size:16px;">IC</span><span style="font-size:16px;">芯片是如何制造的。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 首先，我们先来了解下什么是</span><span style="font-size:16px;">IC</span><span style="font-size:16px;">芯片？</span><span style="font-size:16px;">IC</span><span style="font-size:16px;">，全名积体电路（</span><span style="font-size:16px;">Integrated Circuit</span><span style="font-size:16px;">），由它的命名可知它是将设计好的电路，以堆叠的方式组合起来。藉由这个方法，我们可以减少连接电路时所需耗费的面积。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 具体是如何制造的呢？试想一下，如果要以油漆喷罐做精细作图时，我们需先割出图形的遮盖板，盖在纸上。接着再将油漆均匀地喷在纸上，待油漆乾后，再将遮板拿开。不断的重复这个步骤后，便可完成整齐且复杂的图形。制造</span><span style="font-size:16px;"> IC </span><span style="font-size:16px;">就是以类似的方式，藉由遮盖的方式一层一层的堆叠起来。</span><span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 制作</span><span style="font-size:16px;"> IC </span><span style="font-size:16px;">时，可以简单分成以上 </span><span style="font-size:16px;">4 </span><span style="font-size:16px;">种步骤。虽然实际制造时，制造的步骤会有差异，使用的材料也有所不同，但是大体上皆采用类似的原理。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p style="mso-list:l0 level1 lfo1;" class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 1、</span><span style="font-size:16px;">涂布光阻</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 先将光阻材料放在晶圆片上，透过光罩将光束打在不要的部分上，破坏光阻材料结构。接着，再以化学药剂将被破坏的材料洗去。</span><span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p style="mso-list:l0 level1 lfo1;" class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 2、</span><span style="font-size:16px;">蚀刻技术</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 将没有受光阻保护的硅晶圆，以离子束蚀刻。</span><span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p style="mso-list:l0 level1 lfo1;" class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 3、</span><span style="font-size:16px;">光阻去除</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 使用去光阻液皆剩下的光阻溶解掉，如此便完成一次流程。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 最后便会在一整片晶圆上完成很多</span><span style="font-size:16px;"> IC </span><span style="font-size:16px;">芯片，接下来只要将完成的方形 </span><span style="font-size:16px;">IC </span><span style="font-size:16px;">芯片剪下，便可送到封装厂做封装。</span> 
+</p>
+<p class="MsoNormal">
+	<br />
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 看完上面的制造方法，你肯定会问封装是什么？那么，我就好人做到底咯！</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 经过漫长的流程，从设计到制造，终于获得一颗</span><span style="font-size:16px;"> IC </span><span style="font-size:16px;">芯片了。然而一颗芯片相当小且薄，如果不在外施加保护，会被轻易的刮伤损坏。此外，因为芯片的尺寸微小，如果不用一个较大尺寸的外壳，将不易以人工安置在电路板上。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 目前常见的封装有两种，一种是电动玩具内常见的，黑色长得像蜈蚣的</span><span style="font-size:16px;"> DIP </span><span style="font-size:16px;">封装，另一为购买盒装 </span><span style="font-size:16px;">CPU </span><span style="font-size:16px;">时常见的 </span><span style="font-size:16px;">BGA </span><span style="font-size:16px;">封装。</span> 
+</p>
+<p class="MsoNormal" align="left">
+	<span style="font-size:16px;">&nbsp; DIP</span><span style="font-size:16px;">封装全称是双排直立式封装（</span><span style="font-size:16px;">Dual Inline Package</span><span style="font-size:16px;">）。这种封装方式看起来会像条黑色蜈蚣，让人印象深刻，是最早采用的 </span><span style="font-size:16px;">IC </span><span style="font-size:16px;">封装技术，具有成本低廉的优势，适合小型且不需接太多线的芯片。缺点是此封装大部分采用的是塑料，散热效果较差，无法满足现行高速芯片的要求。</span> 
+</p>
+<p class="MsoNormal" align="center">
+	<span style="font-size:16px;"></span>&nbsp;<img alt="" src="/up/image/201705/20170505172061916191.jpg" /> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; BGA</span><span style="font-size:16px;">封装全称为球格阵列（</span><span style="font-size:16px;">Ball Grid Array</span><span style="font-size:16px;">）。它体积较小，可轻易的放入体积较小的装置中。用这种封装法成本较高且连接的方法较复杂，因此大多用在高单价的产品上。</span> 
+</p>
+<p class="MsoNormal" align="center">
+	<span style="font-size:16px;"><img alt="" src="/up/image/201705/20170505172024282428.jpg" />　</span> 
+</p>
+<p class="MsoNormal">
+	<br />
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 好了，到这里</span><span style="font-size:16px;">RFID</span><span style="font-size:16px;">芯片制造工艺的大致过程小编已经解析完了。但一定要注意哦，这只是</span><span style="font-size:16px;">RFID</span><span style="font-size:16px;">芯片制造的一小部分内容。芯片设计、制造是一门非常复杂的专业，需要了解更多信息，就请等下回分解。</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:16px;">&nbsp; 深圳市捷通科技有限公司是一家专注于无线射频识别<a href="http://www.jt-rfid.com/?Product1162/Index.html" target="_blank"><span style="color:#003399;">（</span></a></span><span style="font-size:16px;"><a href="http://www.jt-rfid.com/?Product1162/Index.html" target="_blank"><span style="color:#003399;">RFID</span></a></span><span style="font-size:16px;"><a href="http://www.jt-rfid.com/?Product1162/Index.html" target="_blank"><span style="color:#003399;">）读写器</span></a>的研发、生产及销售为一体的高新技术企业。我们始终致力于为广大用户提供稳定、性能卓越的产品，为用户提供完整的项目解决方案及完善的售后服务和技术支持。</span> 
+</p>
+<p>
+	&nbsp;
+</p><div class='article_copyright_class' style='margin-top:10px;padding-top:5px;word-wrap:break-word;word-break:break-all;border-top:dashed 1px #ccc;font-size:12px;font-weight:normal;color:'>本文由RFID超高频读写器专业厂商-深圳市捷通科技有限公司发表。转载此文章须经作者同意，并请附上出处(RFID超高频读写器专业厂商-深圳市捷通科技有限公司)及本页链接。原文链接:http://www.jt-rfid.com/html/Article1169/1054.html</div></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/1055.html">RFID相关行业资讯</a><br />下一篇：<a href="/html/Article1169/1053.html">RFID快讯：超市使用电子标签不只是为了省钱</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=1054"></script>
+
+</body>
+</html>

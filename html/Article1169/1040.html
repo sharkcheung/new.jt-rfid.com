@@ -1,0 +1,1438 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>捷通科技：RFID电子标签详解-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="捷通科技，RFID电子标签，电子标签">
+<meta name="description" content="捷通科技，RFID电子标签，电子标签">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> 捷通科技，RFID电子标签，电子标签</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">捷通科技：RFID电子标签详解</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2017-4-21 10:12:20</p>
+        <div class="neiye-detail-text"><p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">RFID</span><span style="font-size:16px;">电子标签</span><span style="font-size:16px;">是由标签天线(或线圈)及标签芯片组成，芯片是具有无线收发和存贮功能的单片系统，它存有一定格式的电子数据，可根据需要标识信息。</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;" align="center">
+	<span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;" align="center">
+	<img style="border-bottom:#000000 1px solid;border-left:#000000 1px solid;text-indent:0px;margin:10px auto;display:block;max-width:90%;border-top:#000000 1px solid;border-right:#000000 1px solid;" alt="" src="http://szjtkj.gz005.qebang.cn/up/image/201704/20170420193823312331.jpg" /> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;" align="center">
+	<span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong><span style="font-size:16px;">分类</span></strong> 
+</p>
+<span style="widows:1;text-transform:none;text-indent:0px;font:16px 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;-webkit-text-stroke-width:0px;">1、有源电子标签：通过标签内部的电池来供电，不需要阅读器提供能量来启动，标签可主动发射电磁信号，识别距离较长，通常可达几十米甚至上百米，缺点是成本高寿命有限，而且不易做成薄卡。</span><span style="widows:1;text-transform:none;text-indent:0px;display:inline !important;font:medium 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;float:none;letter-spacing:normal;color:#000000;word-spacing:0px;-webkit-text-stroke-width:0px;"></span> 
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<br />
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">2、无源电子标签：标签内部没有电池，其工作能量均需阅读器发射的电磁场来提供，重量轻、体积小、寿命长、成本低，可制成各种卡片，是目前最流行的电子标签形式。其识别距离比有源系统要小，一般为几米到十几米，而且需要较大的阅读器发射功率。</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">3、半有源电子标签：内有电池，但电池只对标签内部电路供电，并不主动发射信号，其能量传递方式与无源系统类似，因此其工作寿命比一般有源系统标签要长许多。</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<br />
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">深圳市捷通科技有限公司是一家专注于</span><span style="font-size:16px;">无线射频识别（</span><span style="font-size:16px;">RFID）读写器</span><span style="font-size:16px;">和（RFID）电子标签的研发、生产及销售为一体的高新技术企业。捷通科技始终致力于为广大用户提供稳定、性能卓越的产品。公司拥有自主的RFID技术其核心研发人员中在RFID行业均有10年以上的工作经验。随着技术发展，公司将不断发展创新、完善系列产品，为用户提供完整的项目解决方案及完善的售后服务和技术支持。</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<br />
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong><span style="font-size:16px;">RFID</span></strong><strong><span style="font-size:16px;">无源电子标签的种类</span></strong> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">1、白卡，是最常用到的<a href="http://www.jt-rfid.com/?Product1166/Index.html" target="_blank" title="RFID电子标签">RFID电子标签</a>了，主要适用于车辆管理、称重管理、人员管理等领域。</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong><span style="font-size:16px;">白卡</span></strong><strong><span style="font-size:16px;">JT-301</span></strong><strong><span style="font-size:16px;">的产品参数：</span></strong> 
+</p>
+<table style="widows:1;text-transform:none;text-indent:0px;font:medium 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;-webkit-text-stroke-width:0px;" align="center">
+	<tbody>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;background:#c0c0c0;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<b><span style="font-family:宋体;font-size:16px;">名称</span></b><b><span style="font-family:宋体;font-size:16px;">&nbsp;</span></b><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;background:#c0c0c0;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<b><span style="font-family:宋体;font-size:16px;">远距离大白卡</span></b><b><span style="font-family:宋体;font-size:16px;">&nbsp;</span></b><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">型号</span><b><span style="font-family:宋体;font-size:16px;">&nbsp;</span></b><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">JT-301</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用领域</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用于车辆管理、物流管理、人员管理等领域</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">频率</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">860~960MHz</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">协议</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">EPC Gen 2(ISO18000-6C)</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">芯片</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">Alien H3</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">芯片容量</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">EPC 96bit ; User memory 512bit</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">材质</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">PVC/PET</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">尺寸</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">85.5x54x1.0mm</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">读取距离</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">固定型：25m(输出30dBm基准)</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">使用寿命</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">写10W 次</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">数据保存</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">10年</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用温度</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">-25℃~180℃</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">二次加工</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">表面可彩印</span><span style="font-family:宋体;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">2、Inlay，主要材质为PVC，一般适用于资产管理、封装到非金属物品内部、替代条码标签等领域。</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong><span style="font-size:16px;">Inlay JT-307</span></strong><strong><span style="font-size:16px;">（</span></strong><strong><span style="font-size:16px;">9662</span></strong><strong><span style="font-size:16px;">）的产品参数：</span></strong> 
+</p>
+<table style="widows:1;text-transform:none;text-indent:0px;font:medium 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;-webkit-text-stroke-width:0px;" align="center">
+	<tbody>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;background:#c0c0c0;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<b><span style="font-family:宋体;font-size:16px;">名称</span></b><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;background:#c0c0c0;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<b><span style="font-family:宋体;font-size:16px;">INLAY 9662</span></b><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">型号</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">JT-307</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用领域</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用于物流管理、产线管理、服装管理等领域</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">频率</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">860~960MHz</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">协议</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">EPC Gen 2(</span><span style="font-family:Calibri;font-size:16px;">ISO18000-6C</span><span style="font-family:宋体;font-size:16px;">)</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">芯片</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">Alien H3</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">芯片容量</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">EPC 96bit ; &nbsp;User memory 512bit</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">材质</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">PVC(背胶/不背胶)</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">尺寸</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">74x19x0.2mm</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">读取距离</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">固定型：25m(输出30dBm基准)</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">使用寿命</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">写10W 次</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">数据保存</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">10年</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用温度</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#404040 1pt solid;border-left:#404040 1pt solid;border-top:#404040 1pt solid;border-right:#404040 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">-25℃~180℃</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">3、防拆标签，防拆标签有纸质和陶瓷卡的材质，其中陶瓷卡的性能最优，主要适用于车辆管理、物品管理和非金属物品管理等领域。</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong><span style="font-size:16px;">防拆标签</span></strong><strong><span style="font-size:16px;"><span>&nbsp;</span>JT-306<span>&nbsp;</span></span></strong><strong><span style="font-size:16px;">的产品参数：</span></strong> 
+</p>
+<table style="widows:1;text-transform:none;text-indent:0px;font:medium 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;-webkit-text-stroke-width:0px;" align="center">
+	<tbody>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#c0c0c0;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<b><span style="font-family:宋体;font-size:16px;">名称</span></b><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#c0c0c0;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<b><span style="font-family:宋体;font-size:16px;">防拆标签</span></b><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">型号</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">JT-306</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用领域</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用于车辆管理、物流管理等领域</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">频率</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">860~960MHz</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">协议</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">EPC Gen 2(</span><span style="font-family:Calibri;font-size:16px;">ISO18000-6C</span><span style="font-family:宋体;font-size:16px;">)</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">芯片</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">Alien H3</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">芯片容量</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">EPC 96bit ; &nbsp;User memory 512bit</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">材质</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">PVC/PET</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">尺寸</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">110X45X0.5mm</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">读取距离</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">固定型：15m(输出30dBm基准)</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">使用寿命</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">写10W 次</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">数据保存</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">10年</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用温度</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">-25℃~180℃</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="92">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">二次加工</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="475">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">表面可彩印</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">4、抗金属标签，主要适用于资产管理、物流管理、汽车部件工序管理等领域。</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong><span style="font-size:16px;">抗金属标签</span></strong><strong><span style="font-size:16px;"><span>&nbsp;</span>JT-9525<span>&nbsp;</span></span></strong><strong><span style="font-size:16px;">的产品参数：</span></strong> 
+</p>
+<table style="widows:1;text-transform:none;text-indent:0px;width:416pt;font:medium 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;-webkit-text-stroke-width:0px;" align="center">
+	<tbody>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">产品类别</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">PCB抗金属标签</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">尺寸(mm)</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">95*25*3.5</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">材质</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">FR4</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">IC型号</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">Impinj Monza 4QT/Alien H3</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">工作频率</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">860-960MHz</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">存储容量</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">96bit EPC + 512bit USER</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">读写距离</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">固定读写器：&gt;8.0m；手持读写器：&gt;4.0m</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">适用温度</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">-40 ~ +180摄氏度</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">安装方式</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">带背胶+铆钉孔</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">IP等级</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">IP68</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="117">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">应用领域</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="437">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;vertical-align:middle;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">该标签是一款高强度多功能的超高频抗金属标签，适用于智能仓库管理、汽车部件、托盘管理、资产管理等应用。</span><span style="font-family:'sans serif';font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">5、耐高温抗金属标签，主要适用于资产管理、钢铁业生产管理、机电及设备制造业管理等领域。</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong><span style="font-size:16px;">耐高温抗金属标签</span></strong><strong><span style="font-size:16px;"><span>&nbsp;</span>JT-2117<span>&nbsp;</span></span></strong><strong><span style="font-size:16px;">的产品参数：</span></strong><span style="font-size:16px;">&nbsp;&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;" align="center">
+	<br />
+</p>
+<table style="widows:1;text-transform:none;text-indent:0px;width:424pt;font:medium 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;-webkit-text-stroke-width:0px;" class="MsoTableGrid">
+	<tbody>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">通信协议</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:'Times New Roman';font-size:16px;">ISO18000-6C</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">标签尺寸</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">21</span><span style="font-family:'Times New Roman';font-size:16px;">*17*</span><span style="font-family:宋体;font-size:16px;">3</span><span style="font-family:'Times New Roman';font-size:16px;">MM</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">芯 片</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:'Times New Roman';font-size:16px;">Impinj&nbsp;</span><span style="font-family:宋体;font-size:16px;">M</span><span style="font-family:'Times New Roman';font-size:16px;">4QT</span><span style="font-family:宋体;font-size:16px;">/ Alien H3</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">芯片容量</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:'Times New Roman';font-size:16px;">EPC 96bit, User memory 512bit</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">頻 率</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:'Times New Roman';font-size:16px;">840-960MHZ</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">材 料</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">陶瓷封装</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">重 量</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">11克</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">适用溫度</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:'Times New Roman';font-size:16px;">-30-</span><span style="font-family:宋体;font-size:16px;">230度</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">防护等級</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:'Times New Roman';font-size:16px;">IP68</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">安装方法</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">3M背胶</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="163">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">应用场合</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:windowtext 1pt solid;border-left:windowtext 1pt solid;border-top:windowtext 1pt solid;border-right:windowtext 1pt solid;" width="401">
+				<p style="text-align:justify;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px 0pt;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="justify">
+					<span style="font-family:宋体;font-size:16px;">固定资产、钢材管理、金属物品管理等</span><span style="font-family:宋体;font-size:15pt;"></span> 
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">6、动物标签，顾名思义就是适用于猪、牛、羊等畜牧管理，原产地追溯等领域。</span> 
+</p>
+<strong></strong><span style="widows:1;text-transform:none;text-indent:0px;display:inline !important;font:medium 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;float:none;letter-spacing:normal;color:#000000;word-spacing:0px;-webkit-text-stroke-width:0px;"></span> 
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong><span style="font-size:16px;">动物标签</span></strong><span>&nbsp;</span><strong><span style="font-size:16px;">JT-7080</span></strong><strong><span style="font-size:16px;">的产品参数：</span></strong> 
+</p>
+<table style="widows:1;text-transform:none;text-indent:0px;font:medium 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;-webkit-text-stroke-width:0px;" align="center">
+	<tbody>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">产品类别</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">动物耳标</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">尺寸</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">70*80mm</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">支持协议</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">ISO 18000-6B,ISO 18000-6C(EPC GEN2)</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">工作频率</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">902～928MHz 或 860～870MHz</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">IC型号</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">Alien H3[其他型号可选]</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">内存容量</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">512bits用户区，96bitsEPC码 全球唯一64bits ID号</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">标签材质</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">TPU材质</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">封装工艺</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">高周波</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">读取距离</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">1~5m(取决于工作环境和读写器型号)</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;background:#ffffff;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="132">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">应用领域</span><span style="font-family:Calibri;font-size:16px;">&nbsp;</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+			<td style="border-bottom:#000000 1pt solid;border-left:#000000 1pt solid;border-top:#000000 1pt solid;border-right:#000000 1pt solid;" width="423">
+				<p style="text-align:center;padding-bottom:0px;line-height:1.5;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;color:#000000;font-size:14px;padding-top:0px;" align="center">
+					<span style="font-family:宋体;font-size:16px;">通过RFID耳标，农场管理者可以进行自动识别的操作，包括喂食、称重、疾病管理和饲养试验等工作流程。</span><span style="font-family:Calibri;font-size:12pt;"></span> 
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong></strong><span style="font-size:16px;">&nbsp;</span> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<strong><span style="font-size:16px;">RFID</span></strong><strong><span style="font-size:16px;">电子标签和条形码对比，有哪些优势？</span></strong> 
+</p>
+<p style="text-align:justify;padding-bottom:0px;widows:1;text-transform:none;list-style-type:none;text-indent:2em;margin:0px 0px 10px;padding-left:0px;padding-right:0px;font:14px/1.5 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px;padding-top:0px;-webkit-text-stroke-width:0px;">
+	<span style="font-size:16px;">RFID电子标签</span><span style="font-size:16px;">能实现快速扫描，同时扫描多个标签，而条形码一次只能被扫描到一次。而且RFID电子标签抗污染性和耐用性强，可重复使用。</span> 
+</p><div class='article_copyright_class' style='margin-top:10px;padding-top:5px;word-wrap:break-word;word-break:break-all;border-top:dashed 1px #ccc;font-size:12px;font-weight:normal;color:'>本文由RFID超高频读写器专业厂商-深圳市捷通科技有限公司发表。转载此文章须经作者同意，并请附上出处(RFID超高频读写器专业厂商-深圳市捷通科技有限公司)及本页链接。原文链接:http://www.jt-rfid.com/html/Article1169/1040.html</div></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/1041.html">捷通科技解析：RFID天线的主要参数</a><br />下一篇：<a href="/html/Article1169/1037.html">RFID行业应用于追溯的案例解析</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=1040"></script>
+
+</body>
+</html>

@@ -1,0 +1,791 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>物联网定位技术超全解析（下）-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="物联网定位技术，定位技术，物联网技术">
+<meta name="description" content="物联网定位技术，定位技术，物联网技术">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> 物联网定位技术，定位技术，物联网技术</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">物联网定位技术超全解析（下）</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2018-1-19 16:21:52</p>
+        <div class="neiye-detail-text"><p>
+	<span style="font-size:16px;">近年来，位置服务的相关技术和产业正由室外向室内发展，以提供无所不在的基于位置的服务，其主要推动力是室内位置服务所能带来的巨大的应用和商业潜能。许多公司包括OS提供商、服务提供商，设备和芯片提供商都在竞争这个市场。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">上文我们介绍了室外的两个主流定位技术，现在我们就来了解下物联网的室内定位技术有哪些吧！</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">目前室内定位常用的定位方法，从原理上主要分为七种：邻近探测法、质心定位法、多边定位法、三角定位法、极点法、指纹定位法和航位推算法。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">室内定位的技术分支多样，下图是各种室内定位方案的对比图：</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119160276247624.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">不同的室内定位方法选择不同的观测量，通过不同的观测量提取算法所需要的信息。下表对主要的观测量进行简要的介绍。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119161310611061.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">根据定位原理和观测量，衍生出了多种室内定位技术，下面将对主流的室内定位技术进行简要介绍。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119161462156215.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>1、WiFi定位技术</strong></span><br />
+<span style="font-size:16px;">目前WiFi是相对成熟且应用较多的技术，这几年有不少公司投入到了这个领域。WiFi定位一般采用“近邻法”判断，即最靠近哪个热点或基站，即认为处在什么位置，如附近有多个信源，则可以通过交叉定位（三角定位），提高定位精度。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119161484538453.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">由于WiFi已普及，因此不需要再铺设专门的设备用于定位。用户在使用智能手机时开启过Wi-Fi、移动蜂窝网络，就可能成为数据源。该技术具有便于扩展、可自动更新数据、成本低的优势，因此最先实现了规模化。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">不过，WiFi热点受到周围环境的影响会比较大，精度较低。为了做得准一点有公司就做了WiFi指纹采集，事先记录巨量的确定位置点的信号强度，通过用新加入的设备的信号强度对比拥有巨量数据的数据库，来确定位置。但由于采集工作需要大量的人员来进行，并且要定期进行维护，所有技术难以扩展。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119161554575457.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">WiFi定位可以实现复杂的大范围定位，但精度只能达到2米左右，无法做到精准定位。因此适用于对人或者车的定位导航，可以用于医疗机构、主题公园、工厂、商场等各种需要定位导航的场合。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>2、RFID定位</strong></span><br />
+<span style="font-size:16px;">RFID定位的基本原理是，通过一组固定的阅读器读取RFID标签的特征信息（如身份ID、接收信号强度等），同样可以采用近邻法、多边定位法、接收信号强度等方法确定标签所在位置。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119161589858985.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">这种技术作用距离短，一般最长为几十米。但它可以在几毫秒内得到厘米级定位精度的信息，且传输范围很大，成本较低。同时由于其非接触和非视距等优点，可望成为优选的室内定位技术。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">目前，RFID研究的热点和难点在于理论传播模型的建立、用户的安全隐私和国际标准化等问题。优点是标签的体积比较小，造价比较低，但是作用距离近，不具有通信能力，而且不便于整合到其他系统之中，无法做到精准定位，布设读卡器和天线需要有大量的工程实践经验，难度较大。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>3、超声波技术</strong></span><br />
+<span style="font-size:16px;">目前，大多数超声波定位技术是采用反射式测距法。系统由一个主测距器和若干个电子标签组成，主测距器可放置于移动机器人本体上，各个电子标签放置于室内空间的固定位置。</span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p>
+	<br />
+<span style="font-size:16px;">实现定位过程如下：先由上位机发送同频率的信号给各个电子标签，电子标签接收到后又反射传输给主测距器，从而可以确定各个电子标签到主测距器之间的距离，并得到定位坐标。</span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p align="center">
+	&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119161718251825.png" /> 
+</p>
+<p align="left">
+	<br />
+<span style="font-size:16px;">目前，基于超声波室内定位的主流技术还有两种：一种是将超声波与射频技术结合进行定位。由于射频信号传输速率接近光速，所以可以利用射频信号先激活电子标签而后使其接收超声波信号，利用时间差的方法测距。这种技术成本低，功耗小，精度高。另一种是多超声波定位技术，采用全局定位，可在移动机器人身上4个朝向安装4个超声波传感器，将待定位空间分区，由超声波传感器测距形成坐标，总体把握数据，抗干扰性强，精度高，而且可以解决机器人迷路问题。<span style="display:none;"></span></span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p>
+	<br />
+<span style="font-size:16px;">超声波的定位精度可达厘米级，精度比较高。缺点是超声波在传输过程中衰减明显从而影响其定位有效范围。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>4、红外技术</strong></span><br />
+<span style="font-size:16px;">红外线是一种波长在无线电波和可见光波之间的电磁波。红外定位主要有两种具体实现方法，一种是将定位对象附上一个会发射红外线的电子标签，通过室内安放的多个红外传感器测量信号源的距离或角度，从而计算出对象所在的位置。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/2018011916160711711.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">这种方法在空旷的室内容易实现，精度较高，可实现对红外辐射源的被动定位，但红外很容易被障碍物遮挡，传输距离也不长，因此需要大量密集部署传感器，造成较高的硬件和施工成本。此外，红外易受热源、灯光等干扰，造成定位精度和准确度的下降。</span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p>
+	<br />
+<span style="font-size:16px;">所以，该技术目前主要用于军事上对飞行器、坦克、导弹等红外辐射源的被动定位，此外也用于室内自走机器人的位置定位。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">另一种红外定位的方法是红外织网，即通过多对发射器和接收器织成的红外线网覆盖待测空间，直接对运动目标进行定位。</span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p>
+	<br />
+<span style="font-size:16px;">这种方式的优势在于不需要定位对象携带任何终端或标签，隐蔽性强，常用于安防领域。劣势在于要实现精度较高的定位需要部署大量红外接收和发射器，成本非常高，因此只有高等级的安防才会采用此技术。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>5、蓝牙技术</strong></span><br />
+<span style="font-size:16px;">蓝牙定位是基于RSSI（Received Signal Strength Indication，信号场强指示）定位原理，根据定位端的不同，蓝牙定位方式可分为网络侧定位和终端侧定位。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">网络侧定位系统由终端（手机等带低功耗蓝牙的终端）、蓝牙beacon节点，蓝牙网关，无线局域网及后端数据服务器构成。</span><span style="font-size:16px;">其具体定位过程是：</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119161847024702.png" /> 
+</p>
+<span style="font-size:16px;"></span><span style="font-size:16px;"><strong></strong></span> 
+<p>
+	<br />
+<span style="font-size:16px;">1）首先在区域内铺设beacon和蓝牙网关。</span><br />
+<span style="font-size:16px;">2）当终端进入beacon信号覆盖范围，终端就能感应到beacon的广播信号，然后测算出在某beacon下的RSSI值通过蓝牙网关经过wifi网络传送到后端数据服务器，通过服务器内置的定位算法测算出终端的具体位置。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">终端侧定位系统由终端设备（如嵌入SDK软件包的手机）和beacon组成。其具体定位原理是：</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119161836413641.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<br />
+<span style="font-size:16px;">1）首先在区域内铺设蓝牙信标</span><br />
+<span style="font-size:16px;">2）beacon不断的向周围广播信号和数据包</span><br />
+<span style="font-size:16px;">3）当终端设备进入beacon信号覆盖的范围，测出其在不同基站下的RSSI值，然后再通过手机内置的定位算法测算出具体位置。</span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p>
+	<br />
+<span style="font-size:16px;">终端侧定位一般用于室内定位导航，精准位置营销等用户终端；而网络侧定位主要用于人员跟踪定位，资产定位及客流分析等情境之中。蓝牙定位的优势在于实现简单，定位精度和蓝牙信标的铺设密度及发射功率有密切关系，并且非常省电，可通过深度睡眠、免连接、协议简单等方式达到省电目的。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>6、超宽带(UWB)定位技术</strong></span><br />
+<span style="font-size:16px;">近年来，超宽带技术是一项全新的、与传统通信技术有极大差异的通信无线新技术。它不需要使用传统通信体制中的载波，而是通过发送和接收具有纳秒或微秒级以下的极窄脉冲来传输数据，从而具有3.1～10.6GHz量级的带宽。目前，包括美国，日本，加拿大等在内的国家都在研究这项技术，在无线室内定位领域具有良好的前景。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">UWB技术是一种传输速率高，发射功率较低，穿透能力较强并且是基于极窄脉冲的无线技术，无载波。正是这些优点，使它在室内定位领域得到了较为精确的结果。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">超宽带（UWB）定位技术利用事先布置好的已知位置的锚节点和桥节点，与新加入的盲节点进行通讯，并利用三角定位或者“指纹”定位方式来确定位置。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119162065126512.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">超宽带可用于室内精确定位，与传统的窄带系统相比，具有穿透力强、功耗低、抗干扰效果好、安全性高、系统复杂度低、能提供精确定位精度等优点。因此，超宽带技术可以应用于室内静止或者移动物体以及人的定位跟踪与导航，且能提供十分精确的定位精度。根据不同公司使用的技术手段或算法不同，精度可保持在0.1 m～0.5 m。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>7、惯性导航技术</strong></span><br />
+<span style="font-size:16px;">这是一种纯客户端的技术，主要利用终端惯性传感器采集的运动数据，如加速度传感器、陀螺仪等测量物体的速度、方向、加速度等信息，基于航位推测法，经过各种运算得到物体的位置信息。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119161931273127.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">随着行走时间增加，惯性导航定位的误差也在不断累积。需要外界更高精度的数据源对其进行校准。所以现在惯性导航一般和WiFi指纹结合在一起， 每过一段时间通过WiFi请求室内位置，以此来对MEMS产生的误差进行修正。该技术目前的商用得也比较成熟，在扫地机器人中得到广泛应用。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>8、地磁定位技术</strong></span><br />
+<span style="font-size:16px;">地球可视为一个磁偶极，其中一极位在地理北极附近，另一极位在地理南极附近。地磁场包括基本磁场和变化磁场两个部分。基本磁场是地磁场的主要部分，起源于地球内部，比较稳定，属于静磁场部分。变化磁场包括地磁场的各种短期变化，主要起源于地球内部，相对比较微弱。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">现代建筑的钢筋混凝土结构会在局部范围内对地磁产生扰乱，指南针可能也会因此受到影响。原则上来说，非均匀的磁场环境会因其路径不同产生不同的磁场观测结果。而这种被称为 IndoorAtlas的定位技术，正是利用地磁在室内的这种变化进行室内导航，并且导航精度已经可以达到 0.1 米到 2 米。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">不过使用这种技术进行导航的过程还是稍显麻烦。你需要先将室内楼层平面图上传到地图云中，然后你需要使用其移动客户端实地记录目标地点不同方位的地磁场。记录的地磁数据都会被客户端上传至云端，这样其它人才能利用已记录过的地磁进行精确室内导航。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">百度于2015年6月宣布在自己的地图应用中使用其地磁定位技术，将该技术与Wi-Fi热点地图、惯性导航技术联合使用。精度高, 宣传商业应用中，可以达到米级定位标准，但磁信号容易受到环境中不断变化的电、磁信号源干扰，定位结果不稳定，精度会受影响。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>9、视觉定位</strong></span><br />
+<span style="font-size:16px;">视觉定位系统可以分为两类，一类是通过移动的传感器（如摄像头）采集图像确定该传感器的位置，另一类是固定位置的传感器确定图像中待测目标的位置。根据参考点选择的不同又可以分为参考三维建筑模型、图像、预部署目标、投影目标、参考其他传感器和无参考。</span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p align="center">
+	&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119162137953795.png" /> 
+</p>
+<p align="center">
+	&nbsp;
+</p>
+<p>
+	<br />
+<span style="font-size:16px;">参考3D建筑模型和图像分别是以已有建筑结构数据库和预先标定图像进行比对。参考预部署目标使用布置好的特定图像标志（如二维码）作为参考点；投影目标则是在参考预部署目标的基础上在室内环境投影参考点。参考其他传感器则可以融合其他传感器数据以提高精度、覆盖范围或鲁棒性。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>10、LED可见光技术</strong></span><br />
+<span style="font-size:16px;">可见光是通过对每个LED灯进行编码，将ID调制在灯光上，灯会不断发射自己的ID，通过利用手机的前置摄像头来识别这些编码，将所获取的识别信息在地图数据库中确定对应的位置信息，来完成定位。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180119162093719371.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">根据灯光到达的角度来进一步细化定位的结果，高通公司做到了厘米级定位精度。由于不需要额外部署基础设施，终端数量的扩大对性能没有任何的影响，并且可以达到一个非常高的精度，该技术被高通公司所看好。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">目前，可见光技术在北美有很多商场已经在部署。用户下载应用后，到达商场里的某一个货架，通过检测货架周围的灯光即可知晓具体位置，商家在通过这样的方法向消费者推动商品的折扣等信息。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">目前，定位技术的种类有几十甚至上百种，而每种定位技术都有自己的优缺点和适合的应用场景，没有绝对的胜负之分。以上为部分主流定位技术，部署定位解决方案应因地制宜，方为上策。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">（来源：图文来源于网络，侵删）</span> 
+</p><div class='article_copyright_class' style='margin-top:10px;padding-top:5px;word-wrap:break-word;word-break:break-all;border-top:dashed 1px #ccc;font-size:12px;font-weight:normal;color:'>本文由RFID超高频读写器专业厂商-深圳市捷通科技有限公司发表。转载此文章须经作者同意，并请附上出处(RFID超高频读写器专业厂商-深圳市捷通科技有限公司)及本页链接。原文链接:http://www.jt-rfid.com/html/Article1169/1328.html</div></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/1329.html">无需现金自动结账的亚马逊Amazon Go今日正式开张</a><br />下一篇：<a href="/html/Article1169/1327.html">物联网定位技术超全解析（上）</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=1328"></script>
+
+</body>
+</html>

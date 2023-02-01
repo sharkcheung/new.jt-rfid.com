@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$DownSeoTitle$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$DownKeyword$}">
+<meta name="description" content="{$DownDescription$}">
+<link rel="stylesheet" href="{$SiteSkin$}css/owl.carousel.min.css">
+{$File(head_public_js)$}
+</head>
+<body>
+{$File(head)$}
+
+<!-- banner -->
+<section class="ny_banner">				
+	{$Info(118)$}				
+</section>
+
+<section class="info_subNav">
+	<div class="qebang-container">		
+		<ul class="sub_navList clearfix service_subIcon">
+			{$For(Nav,1/1156/1/0)$}
+			<li class="no{$ListNo$}"><a href="{$NavUrl$}">{$NavName$}</a></li>
+			{$Next$}
+		</ul>
+	</div>
+</section>
+
+<section class="content">
+	<div class="qebang-container">
+		<div class="qebang-row qebang-col-space30 List">
+			<div class="qebang-col-md12 AriticleList">
+				<div class="qebang-row qebang-col-space20">
+					<div class="qebang-col-xs12">
+						<div class="download_title"><h3>{$DownTitle$}</h3><span>发布时间：{$DownTime$}</span></div>
+						<p style="border-bottom:1px dashed #CCC;">点击：<a href="{$DownFile$}"><b style="color:#2F70D8;">本地下载</b></a>&nbsp;&nbsp;下载：{$DownCount$}次&nbsp;&nbsp;适用系统：{$DownSystem$}&nbsp;&nbsp;语言：{$DownLanguage$}</p>
+        		<p style="padding:10px 10px 0 10px;">说明：{$DownContent$}</p>
+					</div>
+      </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{$File(foot)$}
+
+<script type="text/javascript" src="{$SiteDir$}Click.asp?Type=3&Id={$DownId$}"></script>
+
+</body>
+</html>

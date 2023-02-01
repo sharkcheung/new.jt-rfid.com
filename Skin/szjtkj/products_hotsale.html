@@ -1,0 +1,18 @@
+﻿<div class="nyhotprolist">
+	<h3>【推荐产品】</h3>
+	<div class="nyhotprolistmain">
+		<ul>
+			{$For(ProductList,1/{$ModuleId$}/1/12/0/2/0/12)$}
+			<li>
+				<a href="{$ProductListUrl$}" title="{$ProductListTitleAll$}">
+					<div class="nrproimg"><img src="{$ImgCdnUrl$}{$ProductListPic$}" title="{$ProductListTitleAll$}" width="198" height="198" /></div><p>{$ProductListTitle$}</p>
+				</a>
+			</li>
+			{$Next$}
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src="{$JsCdnUrl$}{$SiteSkin$}js/jquery.SuperSlide.js"></script>
+<script type="text/javascript">
+	jQuery(".nyhotprolist").slide({mainCell:".nyhotprolistmain ul",autoPlay:true,effect:"leftMarquee",vis:4,interTime:20,trigger:"click"});
+</script>

@@ -1,0 +1,793 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>RFID电子标签的测试影响因素有哪些？-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="RFID电子标签，RFID标签，电子标签">
+<meta name="description" content="RFID电子标签，RFID标签，电子标签">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> RFID电子标签，RFID标签，电子标签</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">RFID电子标签的测试影响因素有哪些？</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2018-1-15 16:16:25</p>
+        <div class="neiye-detail-text"><p>
+	<span style="font-size:16px;">RFID技术是物联网技术中的重要工具和实现手段，凭借着远距离识别、多目标识别独有的特点，构成了物联网以及各种工业自动化领域的基石。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155065346534.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">但是，由于RFID技术同传统的识别技术存在明显的差别，需要在应用过程中根据本身应用的技术特点予以注意。只有识别并注意这些影响因素，RFID技术才能真正的体现出不同于其他识别技术的优势。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">在各种自动识别技术中，二维码识别和语音识别技术目前应用较为广泛，两者都伴随着各种智能终端的发展而快速普及。两种技术在应用之初，使用者就已经对其技术有一定的认识，比如：在使用二维码识别技术时，需要二维码清晰可变，应用环境光照适宜，如常见的支付场景；而在使用语音识别技术时，通常使用者都会选择在比较安静的场所，对准话筒并适当提高音量，如使用微信语音聊天时。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;"><strong>那么在使用RFID技术时，使用者或者测试者应注意哪些问题呢?</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;">射频识别系统在应用过程中由于是通过无线传输实现识别过程，将遇到天线的摆放与标签应用相对方向的情况，在两者相互作用的过程中，由于两者都是天线，都存在极化和方向性问题，都会对系统的作用距离产生极大的影响。与此同时，系统中的天线还受到外界环境的影响，下面将分别进行解读。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>1、天线极化</strong></span><br />
+<span style="font-size:16px;">天线的极化通常指天线辐射电磁波中电场的方向，也就是时变电场矢量端点运动轨迹的形状、取向和旋转方向。常见的有电场矢量端点轨迹呈直线、椭圆和圆形等形状。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155172677267.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">当RFID系统使用线极化天线识读线极化射频标签，因为极化方向的问题。为了达到最好的识读效果和最远的作用距离，要求两者极化方向必须相同。当两者极化方向并不相同时，识读效果和作用距离将随着夹角的增大迅速变差，当两者垂直正交时，理论上标签无法被识读。他们之间的关系可以用来描述，其中，理解为两个矢量：对应线性天线和线性标签的方向性，而则是两个矢量的夹角，夹角越大，两个矢量的点乘就越小。当夹角达到90°时，乘积为0。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">测试所使用的设备为标签性能测试系统，测试时对测试环境要求：周围40cm范围内，不允许有大金属存在，防止引入其他影响。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155111111111.jpg" /> 
+</p>
+<p align="center">
+	&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/2018011515510871871.jpg" /> 
+</p>
+<p align="center">
+	&nbsp;
+</p>
+<span style="font-size:16px;"></span> 
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">该系统使用线极化天线，如图所示，通过设置扫频900MHz~930MHz，获得标签的激活灵敏度，如下图所示：</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155275607560.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">天线与标签夹角为0°时标签的激活灵敏度</span> 
+</p>
+<p>
+	<span style="font-size:16px;">天线与标签夹角为0°时所测得的标签前向激活灵敏度比较优秀，尤其在907MHz~909MHz这一段，表现非常优秀。对应的前线链路识读距离见下图所示：</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155215131513.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">天线与标签夹角为0°时标签对应的前向识读距离</span> 
+</p>
+<p>
+	<span style="font-size:16px;">由上图显示，天线与标签夹角为0°时所测得的标签前向识读距离整体表现很好，在整个测试频段，均超过了10米。尤其在907MHz~909MHz这一段甚至超过了13米，表现非常优秀。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">将标签调整方向，以图所示的方式进行标签测试，分别得到在天线与标签夹角为45°时标签的激活灵敏度和对应的前向识读距离。如下图所示，标签旋转45°后，标签的激活灵敏度和前向链路的识读距离均明显变差，即RFID系统的作用距离变差了。当线极化天线与线极化标签存在45°夹角的时，在读写器发射功率不变的情况下，标签接收到的能量减小了，最终导致作用距离变小。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155312021202.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">天线与标签夹角为45°时标签的激活灵敏度</span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155351495149.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">天线与标签夹角为45°时标签对应的前向识读距离</span> 
+</p>
+<p>
+	<span style="font-size:16px;">同样，将标签调整方向进行标签测试，分别得到在天线与标签夹角为90°时标签的激活灵敏度和对应的前向识读距离。标签旋转90°后，读写器仅能在900MHz~909MHz的范围内识读标签，并且在这段工作频率中，前向链路识读距离仅有1米左右。下图的绿色标记处显示读写器与标签之间的识读功能基本丧失。所以，当线极化天线与线极化标签存在90°夹角的时，在读写器发射功率不变的情况下，测试曲线不连续，一部分频点无返回信号，标签基本很难接收到能量，最终导致系统功能的丧失。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155353495349.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">天线与标签夹角为90°时标签的激活灵敏度</span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155486648664.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">天线与标签夹角为90°时标签对应的前向识读距离</span> 
+</p>
+<p>
+	<span style="font-size:16px;">通过将以上三组数据整合到一起进行对比，如下图。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155438163816.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">天线与标签不同夹角条件下标签激活灵敏度</span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155570737073.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">天线与标签不同夹角条件下标签识读距离</span> 
+</p>
+<p>
+	<span style="font-size:16px;">而对于反向散射链路，由于标签反向散射信号的生成都是基于标签对前向信号获取的能量(有源标签的反向信号不同于无源标签，这里仅仅通过无源标签来说明)。其实，对于无源标签所有功能的实现，都是依靠来自于对于读写器的前向信号。所以对于无源标签而言，理论上，前向信号越好代表标签获取的能量越大，反向信号越好，两者呈正相关。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">通过数据，已经比较直观的反应天线的极化对于采用线极化天线标签的作用距离的影响。对于这种系统，在日常应用过程中必须注意。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">而对于采用圆极化天线的读写器，在同等的发射功率下，圆极化电磁场可以分解为两个正交的线极化电磁场。当圆极化天线配合线极化标签使用时，圆极化电磁场等同正交的两个线极化电磁场，与标签极化方向相同的电磁场用于激活标签，与标签极化方向正交的电磁场则毫无作用，由于圆极化天线所激活的全部电磁场仅有一半用于激活标签，所以其作用效果没有线极化天线效果好，因为在同样的发射功率下，线极化激活的全部电磁场均用于激活标签，而圆极化天线仅仅有一半，从数值上讲，两者相差3dB。当采用圆极化标签时，配合线极化天线使用时作用距离表现尚可，配合圆极化天线性能表现最差。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>2、天线的方向性</strong></span><br />
+<span style="font-size:16px;">在无线通信领域，天线是不可缺少的组成部分。各种信息加载与电磁波时，都需要经由天线才能完成信号的传输。同时，天线不只是传播信号，非信号的能量辐射的发射和接收也都是由天线来完成。作为全部电磁波的收发端口，天线对于RFID系统非常重要，它是决定RFID性能的关键部件。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">作为电磁波在空间传播的收发器件，天线的方向性就显得尤为重要。天线之所以多种多样，往往都是由于天线的方向方面的用途所决定的。按方向性分类，可分为全向天线、定向天线等;按外形分类，可分为线状天线、面状天线等。对于天线，它的辐射场非常重要，任何一种天线都有其对应的方向性并表现出不同的辐射特性。应用在不同领域的天线就是根据在该领域中的天线辐射特性来进行天线的选择和优化的。举例说明，雷达，用于侦测不明飞行器，需要天线阵发射的电磁波尽可能的接近呈一束，具有良好的指向性;而对于通信用基站天线，考虑到覆盖用户面积因素，需要天线尽可能将能量集中在一个区域内，这样才能保证该区域内的用户的通信需求。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"><strong>下面以偶极子天线进行说明：</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;"><strong></strong></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155551265126.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">偶极子天线E-plant面增益示意图</span> 
+</p>
+<p>
+	<span style="font-size:16px;">前面提到，全向天线是不存在的，上图显示球坐标系中偶极子天线在E-plant面的辐射方向图。可以发现在角0°和-180°时这两个方向上，天线在这两个方向上基本不发射能量，随着角度的变化，天线在对应的角度上的增益逐渐变大，并在90°和-90°达到最大，为增益最大方向。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155691609160.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">偶极子天线H-plant面增益示意图</span> 
+</p>
+<p>
+	<span style="font-size:16px;">上图显示偶极子天线H-plant面的增益情况，在这一平面分别有两个圆形增益轨迹，分别对应0°和90°的增益。在H-plant面上，天线是各向同性的——在H-plant面上，增益在各个方向上是相同的。对应不同的H-plant面，增益大小不同，0°的增益圆最小。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115155682028202.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">偶极子天线增益的3D视图</span> 
+</p>
+<p>
+	<span style="font-size:16px;">上图以3D的视角展示了偶极子天线的增益分布情况。天线在Z轴方向(天线平行方向)增益最低，并随着角度增加，增益变大，当角达到90°时，增益达到最大，并且增益不随着角的改变而变化。从图中也可以通过颜色更加直观的辨别出——红颜色代表的增益最好;蓝色代表的增益最差。整体呈现苹果状向周围辐射。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">对于RFID系统，需要结合实际应用需求来选择天线种类。RFID系统工作距离主要与读写器向<a href="http://www.jt-rfid.com/?Product1166/Index.html" target="_blank" title="RFID电子标签">RFID电子标签</a>的激活能量有关系。天线是具有方向性的，天线无法保证在各个方向上的辐射功率是相同的，全向天线是不存在的。这就要求，在RFID系统中，对于天线的使用就必须要考虑天线的方向性。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">在RFID系统实际应用中，读写器天线与标签天线的相对位置关系除了考虑天线和标签的极化方向问题，还应尽量将各自的最大增益方向调整至在它们之间的直线上，这样才能保证RFID系统在应用过程中有更好的性能表现，获得最好的识读距离，最大程度上提高客户的使用体验。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>3、外界环境影响</strong></span><br />
+<span style="font-size:16px;">虽然，RFID产品在设计过程中会考虑各种外界环境对系统的影响，包括：高低温、高湿热、雨雪、盐雾以及灰尘等。但，即使是这样，设备的使用也无法无视环境条件、气候条件。在特殊情况下，特殊的环境条件和气候条件都是对设备的制约，这种制约同样适用于射频识别系统。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">射频识别系统作为无线通信系统的一部分，必须遵循无线电传输的基本要求。除天线和标签外，均可以通过安装等手段进行防护和优化，包括：使用屏蔽手段保护系统数据线、电源线以及射频信号线缆，通过保证线缆弯曲半径等手段来保证信号可以在线缆中，以最好的形式进行传输而最大程度地抑制反射信号；同时，通过各种手段保证系统的IP防护等级、环境适应性以及振动要求。但是对于天线和标签部分，必须将这两部分暴露在空间中，用于实现射频信号的发送与接收。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">恰恰是天线和标签部分，是系统中最容易被影响的部分。从射频识别系统角度看天线，天线就是读写器内部电路向以空间为传输介质的电路形式的延伸。所以如上文讨论，天线本身带有的方向性属性是客观存在的，并不因无法用肉眼观察而不存在。所以，系统尤其是针对天线和标签，在安装和使用过程中必须考虑天线和标签周围环境问题，特别是非金属环境以及不同介质的影响。下面主要讨论不同介质对于天线的影响。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">射频信号作为无线电波，除了遵循麦克斯韦方程外，其传播过程中会受其传输介质的影响。当天线设计完成后，保证其周围应用环境的前提下，其天线的空间特性已经确定。当天线的物理形态没有发生改变的情况下，其空间特性不会发生明显的变化。在实际应用过程中，RFID标签识读率不高、识读距离不远，往往都是破坏了天线对芯片的匹配以及天线本身对于环境的要求。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">目前，绝大部分UHF（超高频）标签采用偶极子天线设计，其特点是：无论是发射天线还是接受天线，它们总是在一定的频率范围内工作；从减低带外干扰信号的角度考虑，选填项的带宽刚好满足条件即可；因为其工作频率与射频信号波长相关。所以通过计算，电子标签物理尺寸与波长关系为：</span> 
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115160311061106.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;">其中：</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/2018011516100536536.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">当电磁波经过偶极天线附近时，电磁波进入该天线的基材，其电磁波波长发生变化，对应上面的公式。电磁波在该介质中的波长与标签天线尺寸可以相比较，通过天线作用，电磁波将由天线转化为电信号(包括电压或者电流)。天线这时完成对该频率电磁波的接收过程。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">但是，当标签粘贴在其他物质表面(非推荐表面)，比如包装箱等材料上，将导致偶极子天线周围介电常数变化，如下图示：</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115161014771477.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">标签叠层方式示意-空气中</span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/2018011516110467467.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">标签叠层方式示意-外加黏贴材料</span> 
+</p>
+<p>
+	<span style="font-size:16px;"><strong>通常可以使用如下公式估算：</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;"><strong></strong></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/2018011516160830830.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<br />
+<span style="font-size:16px;">由于额外介质的存在，甚至的多种介质的复杂条件，介电常数将明显升高。所以，套用上面公式，可以很明显的算出，当标签粘贴在介质上面，会导致电磁波在介质中波长缩短。在天线物理长度没有变化的情况下，显然介质中的电磁波波长与天线的物理尺寸的可比性被破坏。这样，带来两个主要影响：</span> 
+</p>
+<p>
+	<span style="font-size:16px;">一方面导致电磁波的波长与偶极子天线波长的不匹配。由于电磁波长度在介质中的变化，而不适应与原本的天线长度。在这种情况下，天线的物理长度无法随之改变。进而导致标签的频响曲线向低端偏移。实际的结果就是，偶极子天线的工作频率向低端移动，天线在当下介质条件下，对于电磁波的频率选择发生了变化，可以理解为该天线更匹配频率较低、波长较长的天线。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">另一方面，当标签未使用在其推荐的介质或者环境中时，由于标签天线对于周围金属环境的寄生效应，将改变天线端口处的天线阻抗，在这个过程中，天线与芯片间的反射增大，驻波比变差，天线效率变坏，最终导致标签的识读距离降低、识读率下降、乃至于无法使用。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">通过以上可以判定，标签粘贴使用后在不同介质条件下，其工作点必然偏移，其偏移量的大小取决于被黏贴物的相对介电常数。通过对不同标签配合不同粘贴物的研究，其数据将直接指导标签的用途，判断标签的性能。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"><strong>下面以标签为例进行说明不同条件、不同场景对标签性能的影响：</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;">以下测试条件为空气中，没有粘贴标识物。下图显示了该标签从850MHz到970MHz这个频段的灵敏度对于频率的响应。该灵敏度并不能直观体现出该标签的性能。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/2018011516120724724.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">标签ALN-9610在空气中的激活灵敏度</span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/2018011516120308308.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">标签ALN-9610在空气中的前向识读距离</span> 
+</p>
+<p>
+	<span style="font-size:16px;">上图将激活阈值转化为识读距离，这样更加直观的体现出该标签在空气中的性能表现。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115161526102610.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">标签ALN-9610在不同条件下的激活灵敏度</span> 
+</p>
+<p>
+	<span style="font-size:16px;">搭建不同场景，将标签分别放置在书、瓦楞纸箱以及聚氨酯泡棉上，通过该测试系统获取到不同条件下标签ALN-9610激活灵敏度的响应。上图显示，不同条件下，该标签的激活灵敏度差异性很大，尤其是应用在书本的情况下，激活该标签需要比较大的能量——说明该标签在实际应用中，并不适用于该种条件。相比较应用在书本的情况，应用在泡棉上，ALN-9610标签表现尚可，应用在瓦楞纸箱上的情况下，该标签性能表现比较优异，整体的激活灵敏度较低，且在整个频带表现均衡。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201801/20180115161389968996.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p align="center">
+	<span style="font-size:16px;">标签ALN-9610在不同条件下的前向识读距离</span> 
+</p>
+<p>
+	<span style="font-size:16px;">上图以更加直观的方式展示了型号为ALN-9610标签在不同标识物上的性能表现。同上图中所展示的一样，该款标签的应用条件是存在明显的选择性的，这也证明，该款标签在设计的时候就有这明确的应用范围和使用边界，该款标签在实际应用过程中，本着发挥标签最佳性能、最大化提高客户体验的前提下，该类标签的应用范围不应超出其设计边界。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">尽管RFID技术有着其他自动识别技术所无法比拟的优势，但是在实际测试和日常应用过程中，还需要对该技术的应用边界加以注意，通过相应的流程管理来规避该技术在实际应用中的问题，做到物尽其用，充分发挥RFID技术在工作和生活中的巨大潜力和作用。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">（图文来源于RFID世界网，侵删）</span> 
+</p><div class='article_copyright_class' style='margin-top:10px;padding-top:5px;word-wrap:break-word;word-break:break-all;border-top:dashed 1px #ccc;font-size:12px;font-weight:normal;color:'>本文由RFID超高频读写器专业厂商-深圳市捷通科技有限公司发表。转载此文章须经作者同意，并请附上出处(RFID超高频读写器专业厂商-深圳市捷通科技有限公司)及本页链接。原文链接:http://www.jt-rfid.com/html/Article1169/1323.html</div></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/1325.html">Schreiner ProTech推出适用于容器管理的RFID电子标签</a><br />下一篇：<a href="/html/Article1169/1322.html">渗入地下管道的RFID技术是如何应用的呢？</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=1323"></script>
+
+</body>
+</html>

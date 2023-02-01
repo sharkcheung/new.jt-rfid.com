@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$ModuleTitle$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$InfoKeyword$}">
+<meta name="description" content="{$InfoDescription$}">
+{$File(head_public_js)$}
+</head>
+<body>
+	
+{$File(head)$}
+
+<!-- banner -->
+<section class="ny_banner">				
+	{$Info(117)$}				
+</section>
+
+<section class="info_subNav">
+	<div class="qebang-container">		
+		<ul class="sub_navList clearfix info_subIcon">
+			{$For(Nav,1/1151/1/0)$}
+			<li class="no{$ListNo$}"><a href="{$NavUrl$}#content{$ListNo$}">{$NavName$}</a></li>
+			{$Next$}
+		</ul>
+	</div>
+</section>
+
+<section class="content">
+	<div class="qebang-container">
+		<h3 class="info_title">{$ModuleName$}</h3>
+		<div class="info_map">
+			<div id="map"></div>
+			<div class="info_contact">
+				{$InfoContent$}
+			</div>
+		</div>			
+		<div class="mapform">
+			<div class="mapformtit">
+				<h3><i><img src="{$SiteSkin$}images/icon/info_contact.png"/></i></h3>
+				<p>请填写您的信息，我们会及时安排业务专员与您联系！</p>
+			</div>
+			<form name='myform' action='/plus/Form/?A=Save&ModeID=1' method='post'>
+				<div class="qebang-row qebang-col-space20">
+					<div class="qebang-col-sm6 qebang-col-lg3">
+						<p>姓名</p>
+						<input type="text" name="name_Cust" value="" placeholder="请输入您的姓名"/>
+					</div>
+					<div class="qebang-col-sm6 qebang-col-lg3">
+						<p>联系方式</p>
+						<input type="text" name="tel_Cust" value="" placeholder="请输入您的联系方式"/>
+					</div>
+					<div class="qebang-col-sm6 qebang-col-lg3">
+						<p>邮箱</p>
+						<input type="text" name="email_Cust" value="" placeholder="请输入您的邮箱地址"/>
+					</div>
+					<div class="qebang-col-sm6 qebang-col-lg3">
+						<p>公司</p>
+						<input type="text" name="company_Cust" value="" placeholder="请输入您所在公司名字"/>
+					</div>
+					<div class="qebang-col-md12">
+						<p>留言</p>
+						<textarea name="message_Cust" rows="" cols="" placeholder="请耐心等候，我们会有专业人员与您联系！"></textarea>
+					</div>
+					<div class="qebang-col-md12">
+						<input type="submit" name=Submit1 id="" value="提交留言" />					
+					</div>					
+				</div>
+			</form>
+		</div>		
+	</div>
+</section>
+
+{$File(foot)$}
+<script src="{$SiteSkin$}js/jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var header = $("header").height() + 20;
+	$('.sub_navList > li > a').smoothScroll({
+		offset: - header,
+	});
+	
+	var FirstLevelName="{$ModuleName$}";
+	$(".sub_navList > li > a").each(function(){ 
+		var html = $(this).text();		
+		if(FirstLevelName == html){
+			$(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+		};
+		if(html == "新闻资讯"){
+			$(this).attr({"href":"{$HomeUrlMore(1155)$}"});
+		}else if(html == "联系捷通") {
+			$(this).attr({"href":"{$HomeUrlMore(1157)$}"});
+		}
+	});
+</script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pD38Bp9CUjqbM43Go9ej6lTA"></script>
+<script type="text/javascript">
+  //创建和初始化地图函数：
+  function initMap(){
+    createMap();//创建地图
+    setMapEvent();//设置地图事件
+    addMapControl();//向地图添加控件
+    addMapOverlay();//向地图添加覆盖物
+  }
+  function createMap(){ 
+    map = new BMap.Map("map"); 
+    map.centerAndZoom(new BMap.Point(113.93899,22.637774),19);
+  }
+  function setMapEvent(){
+    map.enableScrollWheelZoom();
+    map.enableKeyboard();
+    map.enableDragging();
+    map.enableDoubleClickZoom()
+  }
+  function addClickHandler(target,window){
+    target.addEventListener("click",function(){
+      target.openInfoWindow(window);
+    });
+  }
+  function addMapOverlay(){
+    var markers = [
+      {content:"全国免费热线：{$Tel400$} <br />联系人：17727433903 {$Lianxiren$} <br />Email：{$Email$} <br />地 址：{$Add$}",title:"{$Info(113)$}",imageOffset: {width:-23,height:-21},position:{lat:22.637661,lng:113.938635}},
+    ];
+    for(var index = 0; index < markers.length; index++ ){
+      var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+      var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+        imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+      })});
+      var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+      var opts = {
+        width: 300,
+        title: markers[index].title,
+        enableMessage: false
+      };
+      var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+      marker.setLabel(label);
+      addClickHandler(marker,infoWindow);
+      map.addOverlay(marker);
+      marker.openInfoWindow(infoWindow);     
+    };
+  }
+  //向地图添加控件
+  function addMapControl(){
+    var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(navControl);
+  }
+  var map;
+    initMap();
+</script>
+</body>
+</html>

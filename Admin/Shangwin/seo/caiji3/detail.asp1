@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xn="http://www.xiaonei.com/2009/xnml"  oncontextmenu="return false">
+<head>
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<!--#include file="c_func.asp"-->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body {
+	padding: 15px; 
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family:tahoma, verdana, 宋体;
+}
+#socaiji {
+
+		font-weight:bold; font-size:14px; text-align:center;
+
+}
+#socaiji span,#socaiji a{
+	padding: 4px;
+	cursor: pointer;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-image:url(/admin/Images/BgLine.png);
+	background-position:0 -120px;
+	text-align:center;
+	line-height:20px;
+	border:1px solid #3396C6;
+	color:#1163AC;
+	font-size:12px;
+	padding-left:5px;
+	font-weight:normal;
+}
+#socaiji span{
+	position:absolute;right:150px;
+}
+#socaiji a{
+	position:absolute;right:350px;
+}
+#mdltype {
+	margin: 20px 20px 0px 0px;
+	float: right;
+}
+body, table, td, select, input, button, textarea {
+	font-size: 12px;
+}
+a:link, a:visited, a:hover {
+	color: #03c;
+}
+#main_s_content {
+	color:#004080;
+	padding-top:40px;
+}
+#main_s_content h3 {
+	color: #004080;
+	font-weight: normal;
+	font-size: 15pt;
+	font-family: 黑体;
+	text-align:left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+.answer_con {
+	word-wrap: break-word;
+	padding: 13px 0 9px;
+	overflow: hidden;
+	line-height: 22px;
+}
+.answer_con, .official_con {
+	word-wrap: break-word;
+	padding: 13px 0 9px;
+	overflow: hidden;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#popup_show {
+	display: none;
+	text-align: center;
+	font-size: 12px;
+	z-index: 9999;
+	border:1px #FF3300 solid ;
+	background:#FFFF99;
+	color:#990000;
+	padding:10px;
+	position:absolute;
+	right:300px;
+	top:300px;
+	width:500px;
+	line-height:22px;
+	}
+#popup_show span{
+	float:right; background:#FFFFFF; cursor:pointer;
+}
+.main{
+		border: 1px solid #AAC7E9;
+	background: #F6FDFF;
+
+	height: auto;
+	font-size: 12px;
+	line-height: 26px;
+	text-align: left;
+	margin-bottom: 15px;
+	padding:10px;
+	margin-left:15px;
+
+}
+
+</style>
+<script src="jquery-1.4.4.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(window).resize(function(){
+   $("#popup_show").css({
+      position:'absolute',
+      left: ($(window).width() - $("#popup_show").outerWidth())/2,
+      top: ($(window).height() - $("#popup_show").outerHeight())/2
+   });
+});
+//初始化函数
+$(window).resize();
+$(document).ready(function()
+{
+   $("#socaiji span").hover(
+      function(){
+      $(this).addClass("hover");
+   },function(){
+      $(this).removeClass("hover");
+   }
+   );
+   $("#socaiji span").click(function()
+   {
+      $("#main_s_content span").removeClass("oso_red");
+	  //alert($("#main_s_content .answer_con").html());
+	  $("#main_s_content img").each(function(i){
+	     if($(this).attr("src").indexOf("http://pic.wenwen.soso.com/")>-1){
+	        $(this).remove();
+		 }
+	  });
+      $.ajax(
+	  {
+	  type:"POST",
+	  url:"sosave.asp",
+	  data:"tit="+escape($("#main_s_content h3").html())+"&cont="+escape($("#main_s_content .answer_con").html())+"&Module="+$("select[name=mdltype] option[selected]").val(),
+	  async:false,
+	  success:function(html)
+	  {
+         $("#popup_show").empty();
+         $("#popup_show").hide();
+	     $("#popup_show").append("<span title='点击关闭'>X</span><p>"+html+"</p>");
+		 $("#popup_show").show();
+		 $("body").css("filter","alpha(opacity=50)")
+		 $("body").css("opacity","0.5")
+	  }
+      });
+      $("#popup_show span").click(function(){
+         $("#popup_show").empty();
+         $("#popup_show").hide();
+	     $("body").css("filter","alpha(opacity=100)")
+	     $("body").css("opacity","1")
+      })
+   });
+})
+</script>
+<title></title>
+</head>
+<body>
+<div class="main">
+<%dim py,w,body,spi,sr,w8,qf,rn,qs,ch,act,tit,cont,body1%>
+<div id="socaiji"><span title="点击采集">一键采集到指定网站栏目！</span><%=selectlist%><a target="_self" onclick="javascript:history.go(-1);"> << 返 回</a></div>
+<%
+py = trim(Request.querystring("py"))
+w = trim(Request.querystring("w"))
+spi = trim(Request.querystring("spi"))
+sr = trim(Request.querystring("sr"))
+w8 = trim(Request.querystring("w8"))
+qf = trim(Request.querystring("qf"))
+rn = trim(Request.querystring("rn"))
+qs = trim(Request.querystring("qs"))
+ch = trim(Request.querystring("ch"))
+   url="http://wenwen.soso.com/z/"&py&"?w="&w&"&spi="&spi&"&sr="&sr&"&w8="&w8&"&qf="&qf&"&rn="&rn&"&qs="&qs&"&ch="&ch&""
+
+   wstr=getHTTPPage(url,"utf-8")
+   tit=strCut(wstr,"<div class=""question_main"">","<div class=""question_tag"">",2)
+   body1=strCut(wstr,"<!--------- best answers  --------->","<!--------- right ads in question page  --------->",2)
+   body=strCut(body1,"<div class=""answer_con"">","<div class=""evaluation_wrap"">",1)
+   if body="" then 
+      body=strCut(body1,"<div class=""sloved_answer"">","<div class=""evaluation_wrap"">",1)
+	  body=strCut(body,"<div class=""pump_wrap"">","<div class=""evaluation_wrap"">",1)
+	  body=replace(body,"<div class=""pump_wrap"">","<div class=""answer_con"">")
+   end if
+   body=replace(body,"<div class=""evaluation_wrap"">","")
+   'body=replace(body,w8,"<span>"&w8&"</span>")
+   r = "(<img class=ed_capture src=""http://pic.wenwen.soso.com/p/.*?\..*?"">)"
+   body = py_z_replace(body,r,"")
+
+   response.write "<div id=""main_s_content"">"&tit&body&"</div>"
+act=trim(request("act"))
+%>
+<div id="main_s_content" style="display:none;">
+<form action="?act=cj" method="post" name="frmcj" id="frmcj">
+   <input type="hidden" name="txt_tit" id="txt_tit" value="<%'=tit%>"/><br/><br/>
+   <textarea name="txt_cont" id="txt_cont"><%'=body%></textarea><br/><br/>
+   <input type="submit" value="采 集"/>
+</form>
+</div>
+</div>
+<div id="popup_show"></div>
+</body>
+</html>

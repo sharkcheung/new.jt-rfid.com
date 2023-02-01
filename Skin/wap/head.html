@@ -1,0 +1,51 @@
+﻿<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2add4274b517acc369dddbdae6f1f446";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<div class="nyhead">
+	<div class="back"><a href="javascript:history.back(-1)"><i class="iconfont">&#xe602;</i></a></div>
+  <h3>{$ModuleName$}</h3>
+  <div class="nyhome"><a href="javascript:$.pageslide({ direction: 'left', href: '#modal' })"><i class="iconfont">&#xe603;</i></a></div>
+</div>
+<div id="modal">
+  <ul>
+    <li><div class="yijlb"><a  href="/wap" style="display:block;"><strong style="font-size:1em; color:#483c36">首页</strong></a></div></li>
+    {$For(Nav,1/0/2/0)$}
+    <li><div class="yijlb"><a class="enter" href="/wap{$NavUrl$}">进入列表&gt;&gt;</a>{$NavName$}</div>{$NavSub$}</li>
+    {$Next$}
+  </ul>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#modal>ul>li:eq(1) ul").css("display","block");
+		$("#modal>ul>li .yijlb").click(function(){
+		$("#modal ul ul").slideUp("fast");
+		if(!$(this).next().is(":visible"))
+		{
+		$(this).next().slideDown("fast");
+		}
+		});
+		$("#modal ul ul a").each(function(index, element) {
+			
+		  this.href="/wap"+$(this).attr("href")
+		});
+		
+		$("#modal>ul>li>.yijlb").each(function() {
+			
+		  if($(this).html().indexOf("母婴护理")>0){
+			var nnnr=$(this).children("a").attr("href").replace('/wap',' ');
+		  $(this).children("a").attr("href",nnnr);
+		  
+		  
+		   
+		  }
+		});
+	}); 
+</script>
+<script src="{$SiteSkin$}js/jquery.pageslide.min.js"></script>

@@ -1,0 +1,609 @@
+@media only screen and (max-width: 1600px) {
+	.banner .item { height: 801px;}
+	.center { padding: 0 15px;}
+	.nav { margin-left: 30px; }
+	.nav li { width: 100px; }
+	.menulihover { width: 100px;}
+	
+	.youshi_list li p { line-height: 24px; height: 48px;}
+	.about { padding-bottom: 125px; }
+	.about_content em { margin: 20px 0;}
+	.about_list li a { padding: 40px;}
+	
+	.solution_content.center { padding-bottom: 200px; }
+	.solution_bottom .center { padding: 0; }
+	.solution_list li p { font-size: 20px; }
+	
+	.industry li { height: 400px;}
+	.industry_text { padding-top: 100px; }
+	.industry_text h3 { margin-bottom: 30px; }
+
+}
+
+@media only screen and (max-width: 1440px) {
+	.banner .item { height: 721px;}
+	body { padding-top: 100px;}
+	header { height: 100px;}
+	.head_fl { padding-top: 14px; }
+	.logo { max-width: 200px;}
+	.dwy { margin-top: 10px; margin-left: 10px; }
+	.dwy p { font-size: 18px; }
+	.dwy h3 { font-size: 24px; line-height: 34px; }
+	.nav li { line-height: 100px; }
+	.head_fr { margin-top: 7px; }
+	.head_click { float: none; }
+	.head_click a { font-size: 14px; }	
+	.product_list { padding-bottom: 150px; }
+	.title { font-size: 36px; margin-bottom: 30px; }
+	.product_dl { padding: 20px 20px 90px 20px;}
+	.product_dl dd h3 { padding-bottom: 20px; margin-bottom: 30px; font-size: 28px; line-height: 36px;}
+	.product_text { -webkit-line-clamp: 5; height: 120px; }
+	.product_list.owl-carousel .owl-nav button { bottom: 70px;}
+	a.product_click { bottom: 20px; left: 20px; }	
+	.solution_content.center { padding-bottom: 150px; }
+	.solution_list li p { font-size: 20px; }
+	.solution_box h3 { font-size: 30px; }
+	.solution_box span { margin: 30px 0;}
+	.solution_text { font-size: 20px; -webkit-line-clamp: 5; }	
+	.youshi_box dd { padding-left: 30px; }
+	.youshi_box dl.no2 dd { padding-right: 30px; }
+	.youshi_list li { padding: 10px 20px;}
+	.youshi_title { padding-left: 50px; margin-bottom: 10px;}
+	.youshi_title span { font-size: 60px; line-height: 50px; }
+	.youshi_title h3 { font-size: 14px; height: 33px; line-height: 33px;  background-size: contain;}
+	.youshi_list li p { font-size: 14px; }
+	.youshi_box dl.no2 dd { margin-top: 10px; }
+	.guangg { margin-top: 80px; padding: 30px;}	
+	.about { padding-bottom: 105px; }
+	.about_content h3 { font-size: 30px; line-height: 40px; }
+	.about_content h3 span { font-size: 20px; line-height: 30px; }
+	.about_text { -webkit-line-clamp: 7; }
+	.about_list { bottom: 20px; }
+	.about_list li a { padding: 30px 40px; }	
+	.foot_left dt { width: 52%; }
+	.foot_tel { padding-left: 10px; font-size: 28px; }
+	.foot_QRcode { width: 25%; }
+	
+	.content { padding: 70px 0;}
+	.info_title { font-size: 36px;}
+	.info_aboutDate li { padding: 30px 0;}
+	.info_aboutDate li span { font-size: 36px; }
+	.info_about .about_text { -webkit-line-clamp: 10;}	
+	.info_aboutBoxImg li { height: 275px; }
+	.info_aboutBoxImg li.no1 a { left: 0; }
+	.info_aboutBoxImg li.no3 a { left: 130px; }
+	.info_aboutBoxImg li.no6 , .info_aboutBoxImg li.no7 , .info_aboutBoxImg li.no8 { height: 295px; }
+	.info_aboutBoxImg li.no6 a { left: 175px;}
+	.info_aboutBoxImg li.no7 a { max-width: 285px;}
+	.info_cultureList dd p { font-size: 30px; }
+	.info_cultureList dd span { font-size: 20px; }	
+	.info_honorText { height: 350px; }
+	.info_honorText li { padding: 5px; }
+	.info_certifList .owl-nav button.owl-next { right: 0;} 
+	.info_certifList .owl-nav button.owl-prev { left: 0; }
+	
+	#map { height: 560px; }
+	.product_youshi li h3 { font-size: 20px; margin-bottom: 15px;}
+	.product_youshi li h5 { font-size: 16px;}
+	.product_youshi li span { margin-top: 25px;}
+	
+	.List aside { padding: 40px 30px 20px; }
+	.List .products .products_li { padding: 10px; }
+	.ny_bannerProBox dd { width: 40%;}
+	.ny_bannerProBox dt div { font-size: 14px; }
+	.ny_bannerProBox dt em { margin: 22px 0 32px; }
+	.ny_bannerProBox dt h3 { font-size: 32px; }
+	.ny_bannerProBox dt h3 span { font-size: 16px; line-height: 24px; }
+	
+	.Multi .Multi_fr h1 { font-size: 36px; line-height: 60px; padding-bottom: 30px; margin-bottom: 30px;}
+	.detail_h3 { font-size: 28px; }
+	.detail_h3_p { margin-bottom: 60px; }
+	.Multi_fr_chara table tr { padding: 25px 0; }
+	.Details_title a { font-size: 28px; }
+	
+	.industry li { height: 350px; }
+	.industry_text { padding-top: 75px; }
+	.industry_text h3 { margin-bottom: 20px; }
+	
+	.ny_bannerInducBox h3 { font-size: 48px; }
+	.ny_bannerInducBox span { font-size: 24px; }
+	.ny_bannerInducBox span:before { left: -30%;}
+	.ny_bannerInducBox span:after { right: -30%;}
+	
+	.induc_highLight li { padding: 0 10px;}
+	.induc_highLight li div { max-width: 110px; }
+	.induc_jiagou { padding-top: 50px; padding-bottom: 130px; margin: 50px 0; }
+	.induc_jiagou_p { margin-bottom: 40px;}
+	.induc_jiagouBox .induc_jiagouBox_dt { width: 40%;}
+	.induc_jiagouLeft li {  width: 150px; height: 150px; margin-right: 30px; margin-bottom: 30px; padding-top: 30px; }
+	.induc_jiagouLeft li.no1 { width: 180px; height: 180px; }
+	.induc_jiagouLeft li i { max-width: 60px; margin-bottom: 5px; }
+	
+	.induc_fangAnPic img { max-width: 300px;}
+	.induc_fangAnList li span, .induc_fangAnPic span, .induc_infoList li h3, .induc_checkBox .induc_checkBox_dt p { font-size: 20px; }
+	.induc_infoPic img { max-width: 185px; }
+	.induc_infoList li { padding: 0 15px; }
+	.induc_infoList li div { padding: 80px 20px 20px; }
+}
+
+@media only screen and (max-width: 1200px) {	
+
+	
+	/* 内页样式 */
+	.ny_search .fl { height: 80px; padding: 20px 0;}
+	.sub_nav li a { line-height: 80px; font-size: 20px;}
+	
+	.qebang-col-space30.products { margin: 0; }
+  .products .qebang-col-lg9, .products aside { padding: 0; }
+  .List .products, .List .AriticleList { padding-left: 0; }
+  
+ }
+ 
+@media only screen and (max-width: 1199px) {
+	.banner .item { height: 601px;}
+	body { padding-top: 90px;}
+	header { height: 90px; }
+	.head_fl { padding-top: 6px; }
+	.head_fr { float: left; margin-top: 30px; margin-left: 30px; }
+	.head_click { float: right; }
+	.menulihover { display: none !important; }	
+	.product_list { padding-bottom: 120px; }
+	.title { margin-bottom: 20px; font-size: 30px; }	
+	.product_list li { padding: 10px; }
+	.product_dl { padding-bottom: 70px;}
+	.product_dl dd h3 { padding-bottom: 10px; margin-bottom: 15px; font-size: 20px; line-height: 36px;}
+	.product_dl dd h3 span { font-size: 16px; line-height: 24px; }
+	.product_text { -webkit-line-clamp: 4; height: 96px; }
+	.product_list.owl-carousel .owl-nav button { bottom: 70px; width: 40px; height: 40px; right: 60px; font-size: 24px; }
+	.customer_list { padding-left: 55px; }
+	.customer_list.owl-carousel .owl-nav  button { width: 40px; height: 40px; font-size: 24px; bottom: 40px; }	
+	.solution_box h3 { font-size: 24px; }
+	.solution_text { font-size: 16px; line-height: 28px; }
+	.solution_content.center { padding-bottom: 100px; }
+	.solution_box span { margin: 20px 0;}
+	.solution_list li i { margin-bottom: 10px; }
+	.solution_list li p { font-size: 16px; line-height: 28px; }	
+	.guangg dt h3 { font-size: 28px; }
+	.guangg dt a { width: 100px; height: 35px; line-height: 35px; }
+	.guangg dd h3 { font-size: 42px; }	
+	.about { padding-bottom: 85px; }
+	.about_content h3 { font-size: 24px; line-height: 30px; }
+	.about_content h3 span { font-size: 14px; line-height: 24px; }
+	.about_content em { margin: 10px 0;}
+	.about_text { -webkit-line-clamp: 5;}
+	.about_more { width: 100px; height: 32px; line-height: 32px; }
+	.about_list li a { padding: 20px; }
+	.about_list li a i { max-width: 30px; }
+	.about_list li a p { font-size: 14px; }	
+	.news dd { width: 29%;}
+	.foot_left dt , .foot_left dd { width: 100%; float: none; }
+	.foot_left dt a img { max-width: 136px; }
+	.foot_tel { margin-top: 15px; border-left: none; padding-left: 0; }
+	
+	.content { padding: 60px 0;}
+	.info_title { font-size: 30px; line-height: 50px; margin-bottom: 20px; }
+	.info_aboutDate li { padding: 20px 0;}
+	.info_aboutDate li span { font-size: 30px; line-height: 50px; }
+	.info_aboutImg { margin-top: 30px;}	
+	.info_aboutBox { margin-top: 50px; padding: 50px 0 45px;}
+	.info_aboutBoxImg { margin-top: 30px;}
+	.info_aboutBoxImg li { height: 205px; }
+	.info_aboutBoxImg li.no1 a { max-width: 180px; }
+	.info_aboutBoxImg li.no2 a { top: 25px; }
+	.info_aboutBoxImg li.no3 a { top: 70px; left: 100px; }
+	.info_aboutBoxImg li.no6 , .info_aboutBoxImg li.no7 , .info_aboutBoxImg li.no8 { height: 235px; }
+	.info_aboutBoxImg li.no7 a { max-width: 205px;}
+	.info_aboutBoxImg li.no5 { bottom: 175px; }
+	.info_aboutBoxImg li.no5 a { right: auto; left: 18px; max-width: 135px;}	
+	.info_culture { padding-top: 40; padding-bottom: 60px;}
+	.info_cultureList {width: 870px;height: 828px;}
+	.info_cultureList dt {max-width: 200px; }
+	.info_cultureList dd {width: 308px;height: 345px;}
+	.info_cultureList dd i { width: 34px; }
+	.info_cultureList dd p { font-size: 24px; line-height: 36px; }
+	.info_cultureList dd span { font-size: 16px; line-height: 24px;  }
+	.info_cultureList dd.no1 { left: 140px;}
+	.info_cultureList dd.no2 { right: 140px;}
+	.info_cultureList dd.no3 { top: 241px;}
+	.info_cultureList dd.no4 { right: 140px;}
+	.info_cultureList dd.no5 { left: 140px;}
+	.info_cultureList dd.no6 { top: 241px; }	
+	.info_honorImg { width: 40%; }
+	.info_honorText { width: 60%; padding-left: 15px;}
+	
+	#map { height: 460px; }
+	.info_contact { left: 50px;}
+	.info_contact div { padding-bottom: 20px; margin-bottom: 20px; }
+	.info_contact h3 { margin-bottom: 10px;}
+	.info_contact p { line-height: 24px; }
+	
+	.service_video li { padding: 5px;}
+	.service_video div i { width: 44px;}
+	.service_video div h3 { font-size: 14px; }
+	.product_youshi li { padding: 35px 20px;}
+	.product_youshi li h3 { font-size: 18px; margin-bottom: 10px;}
+	.product_youshi li h5 { font-size: 14px;}
+	.product_youshi li span { margin-top: 20px; }
+	
+	.Multi .Multi_fr h1 { font-size: 32px; line-height: 50px; padding-bottom: 20px; margin-bottom: 20px;}
+	.detail_h3 { font-size: 24px; line-height: 30px; margin-bottom: 10px; }
+	.Details_text .detail_h3:before { height: 20px; top: 5px;}
+	.detail_h3_p { margin-bottom: 50px; font-size: 16px; }
+	.Multi_fr_chara table tr { padding: 20px 0;}
+	.Multi_fr_chara table tr td { font-size: 16px; }
+	.Multi_fr_chara table tr td img { width: 60px; height: 60px;}
+	.Details_title a { font-size: 24px; }
+	.Details_textList_div { font-size: 16px; line-height: 50px; }
+	
+	.industry li { height: 300px; }
+	.industry_text { padding-left: 50px; padding-top: 60px; width: 70%; }
+	.industry_text h3 { font-size: 24px; }
+	.industry_text a { line-height: 24px; padding: 8px 15px; font-size: 14px; margin-right: 10px; }
+	
+	.ny_bannerInducBox h3 { font-size: 36px; }
+	.ny_bannerInducBox span:before, .ny_bannerInducBox span:after { width: 50px; }
+	.induc_highLight li div { max-width: 100px; }
+	.induc_jiagou { padding-top: 40px; padding-bottom: 110px; margin: 40px 0; }
+	.induc_jiagouLeft li {  width: 130px; height: 130px; margin-right: 30px; margin-bottom: 30px; padding-top: 30px; }
+	.induc_jiagouLeft li.no1 { width: 150px; height: 150px; }
+	.induc_jiagouLeft li.no2 { margin-top: 20px; }
+	.induc_jiagouLeft li.no3 { margin-left: 20px; }
+	.induc_jiagouLeft li i { max-width: 45px; }
+	.induc_jiagouLeft li p, .induc_jiagouBox .induc_jiagouBox_dd span { font-size: 14px; }
+	.induc_fangAnPic { padding-bottom: 60px; }
+	.induc_fangAnPic:before { bottom: 50px; }
+	.induc_fangAnPic:after { height: 55px; }
+	.induc_fangAnPic img { max-width: 275px;}
+	.induc_fangAnList { padding-top: 70px; } 
+	.induc_fangAnList li { box-sizing: border-box; padding-left: 10px; padding-right: 10px; }
+	.induc_fangAnList li:before { top: -75px;}
+	.induc_fangAnList li:after { height: 70px; top: -70px;}
+	.induc_fangAnList li span, .induc_fangAnPic span, .induc_infoList li h3,.induc_checkBox .induc_checkBox_dt p { font-size: 18px; }
+	.induc_fangAnList li p { margin-bottom: 15px; }
+	.induc_infoList li h3 { margin-bottom: 15px; }
+	.induc_infoList li div { padding-top: 70px; }
+	.induc_infoList li div { padding-top: 60px; }
+	.induc_infoList li h3 { margin-bottom: 10px; }
+	.induc_infoList li em { font-size: 14px; }
+	.induc_infoList li p { max-width: 115px; }
+	
+}
+ 
+@media only screen and (max-width: 992px) {	
+	.banner .item { height: 497px;}
+	.logo { max-width: 180px; }
+	.head_fl { padding-top: 12px;}
+	.dwy p { font-size: 14px; }
+	.dwy h3 { font-size: 18px; line-height: 24px; }
+	.head_fr { margin-left: 15px; }
+	.head_click { margin-left: 10px; }	
+	.solution { padding-top: 30px; }
+	.product , .pt50 { padding-top: 30px; }
+	.product_list { padding-bottom: 70px; }
+	.title { font-size: 24px; }	
+	.product_dl dd h3 { padding-bottom: 5px; margin-bottom: 10px; font-size: 18px; line-height: 30px;}
+	.product_dl dd h3 span { font-size: 14px; }
+	.product_text { -webkit-line-clamp: 3; height: 72px; }
+	.product_list.owl-carousel .owl-nav button { bottom: 25px; }
+	a.product_click { width: 90px; height: 30px; line-height: 30px; }
+	a.product_click:after { height: 30px; }
+	a.product_click:hover:after { width: 90px; }	
+	.solution_box h3 { font-size: 20px; }
+	.solution_text { font-size: 14px; line-height: 24px; -webkit-line-clamp: 3; width: 90%; }
+	.solution_content.center { padding-bottom: 80px; }
+	.solution_box span { margin: 15px 0;}
+	.solution_list li i { max-width: 36px; }
+	.solution_list li p { font-size: 14px; line-height: 20px; padding: 0 5px; }	
+	.youshi_box dt { width: 100%; }
+	.youshi_box dd { width: 100%; padding: 20px 0;}
+	.youshi_box dl.no2 dd { padding-right: 0; }
+	.youshi_title h3 { height: 43px; line-height: 43px; background-size: auto; }
+	.customer { padding-top: 30px; padding-bottom: 50px; }
+	.customer_list dl { padding: 20px;}
+	.customer_name { padding-bottom: 20px; padding-left: 80px; }
+	.customer_name h3 { font-size: 20px; }
+	.customer_name i img { max-width: 60px;}
+	.guangg { margin-top: 60px; padding: 20px;}
+	.guangg dt h3 { font-size: 22px; line-height: 36px; }
+	.guangg dt p { margin-top: 10px; margin-bottom: 25px; }
+	.guangg dd { margin-top: 22px; padding-left: 60px; }
+	.guangg dd i { max-width: 50px;}
+	.guangg dd h3 { font-size: 42px; line-height: 42px; }	
+	.about { padding-bottom: 65px; margin-bottom: 30px; }
+	.about_content h3 { font-size: 24px; line-height: 30px; }
+	.about_content h3 span { font-size: 14px; line-height: 24px; }
+	.about_content em { margin: 10px 0;}
+	.about_text { -webkit-line-clamp: 3;}
+	.about_more { margin-top: 10px; }
+	.about_list li a p { font-size: 12px; }	
+	.news li a h3 { font-size: 16px; }
+	.news dd { width: 30%;}
+	.news_rightList li { margin-bottom: 10px; }	
+	.foot_QRcode li { padding: 5px; }
+	.foot_QRcode li span { font-size: 14px; }
+	.copyright , .copyright a { font-size: 14px; }
+	.copyright { padding: 10px 0;}	
+	.info_subNav { padding: 20px 0;}
+	.sub_navList li { margin: 0 15px;}
+	.sub_navList li a { font-size: 14px; }
+	.sub_navList li a:after { bottom: -21px; }
+	.content { padding: 50px 0;}
+	.info_title { font-size: 24px; line-height: 36px; }
+	.info_aboutDate li { padding: 20px 0;}
+	.info_aboutDate li span { font-size: 24px; line-height: 36px; }
+	.info_about .about_text { -webkit-line-clamp: 6; }
+	
+	/* 内页样式 */
+	/*.ny_search .fl { height: 60px; padding: 10px 0;}
+	.sub_nav li a { line-height: 60px; font-size: 18px;}*/
+	
+	.info_aboutBox { margin-top: 40px; padding: 40px 0 35px;}
+	.info_aboutBox h3 { font-size: 20px; margin-bottom: 10px; }
+	.info_aboutBox p { font-size: 14px; }
+	.info_aboutBoxImg li { height: 175px; }
+	.info_aboutBoxImg li.no1 a { max-width: 130px; }
+  .info_aboutBoxImg li.no3 a { top: 45px; left: 55px; }
+  .info_aboutBoxImg li.no6, .info_aboutBoxImg li.no7, .info_aboutBoxImg li.no8 { height: 205px; }
+  .info_aboutBoxImg li.no5 { bottom: 110px; }  
+  .info_culture { padding-top: 30; padding-bottom: 50px;}
+  .info_cultureList {width: 720px;height: 714px;}
+	.info_cultureList dt {max-width: 200px; }
+	.info_cultureList dd {width: 258px;height: 289px; padding: 75px 30px 0;}
+	.info_cultureList dd i { margin-bottom: 5px; }
+	.info_cultureList dd p { font-size: 20px; line-height: 30px; }
+	.info_cultureList dd span { font-size: 14px;  }
+	.info_cultureList dd.no1 { left: 110px;}
+	.info_cultureList dd.no2 { right: 110px;}
+	.info_cultureList dd.no3 { top: 212px;}
+	.info_cultureList dd.no4 { right: 110px;}
+	.info_cultureList dd.no5 { left: 110px;}
+	.info_cultureList dd.no6 { top: 212px; }	
+	.info_customer { padding-top: 40px; }
+	.info_customerYoushi li { width: 50%; margin-bottom: 20px;}
+	.info_customerYoushi li p { margin-bottom: 8px; }
+	.info_honorImg { width: 100%; }
+	.info_honorText { width: 100%; padding-left: 0; margin-top: 20px; }
+	
+	#map { height: 360px; }
+	.info_contact { position: relative; left: 0; top: auto; transform: translateY(0);}
+	.download li a { padding: 20px 20px 20px 60px; }
+	.download li a h3, .service_faq dt h3 { font-size: 20px; margin-bottom: 5px; }
+	.download li a i { top: 18px; }
+	
+	.service_faq dt { padding: 20px; }
+	.service_faq dt:after { font-size: 30px; }
+	.service_faq dd { padding: 15px 20px;}
+	
+	.product_youshi li { width: 50%; padding: 20px; }
+	.product_youshi li i { max-width: 167px; }
+	.ny_bannerProBox dd { width: 30%;}
+	.ny_bannerProBox dt { width: 60%;}
+	.ny_bannerProBox dt em { margin: 12px 0 22px;}
+	.ny_bannerProBox dt div { font-size: 12px; }
+	.ny_bannerProBox dt h3 { font-size: 28px; line-height: 40px; }
+	.ny_bannerProBox dt h3 span { font-size: 14px; line-height: 24px; }
+	
+	.Multi .Multi_fr h1 { font-size: 28px; line-height: 40px; padding-bottom: 10px; margin-bottom: 10px;}
+	.Multi_fr_chara table tr { padding: 15px 0;}
+	.detail_h3 { font-size: 20px; line-height: 30px; margin-bottom: 10px; }
+	.detail_h3_p { margin-bottom: 40px; font-size: 14px; }
+	.Details_title { padding-bottom: 10px; margin-bottom: 30px; }
+	.Details_title a:after { bottom: -10px; }
+	.Details_title a { font-size: 20px; margin-right: 20px; }
+	.Details_textList_div { font-size: 16px; line-height: 50px; }
+	
+	.ny_bannerInducBox h3 { font-size: 28px; margin-bottom: 10px; }
+	.ny_bannerInducBox span { font-size: 20px; }
+	.ny_bannerInducBox span:before, .ny_bannerInducBox span:after { width: 40px; }
+	.induc_highLight li { padding-bottom: 20px;}
+	.induc_highLight li h3 { margin: 10px 0; font-size: 18px; }
+	.induc_jiagou { padding-top: 30px; padding-bottom: 90px; margin: 30px 0; }
+	.induc_jiagou_p { font-size: 14px;}
+	.induc_jiagouLeft li {  width: 115px; height: 115px; margin-right: 15px; margin-bottom: 15px; padding-top: 20px; }
+	.induc_jiagouLeft li.no1 { width: 135px; height: 135px; }
+	.induc_fangAnPic img { max-width: 235px; }
+	.induc_fangAnList li span, .induc_fangAnPic span, .induc_infoList li h3, .induc_checkBox .induc_checkBox_dt p { font-size: 16px; }
+	.induc_fangAnList li p { margin-bottom: 10px; }
+	.induc_infoList li div { padding: 50px 10px 20px;}
+	.induc_infoList li p { margin-bottom: 0; margin-top: 20px;}
+	.induc_info_div { padding: 20px; margin-bottom: 40px; }
+	.induc_info_div p { font-size: 14px; }
+	.induc_bottom { margin-top: 30px; }
+	.induc_bottom a { margin: 0 30px; padding: 10px 30px; font-size: 16px; }
+}
+
+@media only screen and (max-width: 768px) {
+	.banner .item { height: 384px;}
+	.product_list li { padding: 0; }
+	.product_dl { padding: 10px 10px 60px 10px; }
+	.guangg { margin-top: 40px; }
+	.guangg dt , .guangg dd { float: none; }
+	.guangg dt h3 { font-size: 18px;padding: 0; }
+	.guangg dt p { font-size: 14px; margin-top: 10px; margin-bottom: 25px; }
+	.guangg dd h3 { font-size: 36px; line-height: 36px; }	
+	.solution { padding-bottom: 150px; }
+	.solution_content.center { padding-bottom: 60px; }
+	.solution_bottom { padding: 20px 0;}
+	.solution_list li i { max-width: 30px; }
+	.solution_list li p { padding: 0 3px; }	
+	.about_img { float: none; width: 100%; }
+	.about_content { float: none; width: 100%; padding-left: 0; margin-top: 20px; }
+	.about_content h3 { font-size: 18px; }
+	.about_list { position: relative; bottom: auto; width: 100%; margin-top: 20px; }
+	.about_text { -webkit-line-clamp: 5;}
+	.about_list li a { padding: 20px 10px; }	
+	.news dd , .news dt { float: none; width: 100%; }
+	.news dd { margin-top: 30px; }
+	.news li a span { font-size: 12px; }	
+	.foot_left dt a img { max-width: 86px; }
+	.foot_left { width: 45%;}
+	.foot_center { width: 55%;}
+	.foot_QRcode { float: left; width: 100%; }	
+	.List .qebang-col-md10 { float: none !important; }
+	.Details_text img { display: block; width: 100%; height: auto; }
+	
+	/* 内页样式 */
+	/*.ny_search { border-bottom: none; }
+	.ny_search .fl { width: 100%; float: none;}
+	.sub_nav { float: none; text-align: center; }
+	.sub_nav li { display: inline-block; float: none; margin: 10px; }
+	.sub_nav li a { padding: 0 10px; line-height: 40px; }	
+	.site { padding: 10px 0; }
+	.content { padding: 40px 0; }
+	.products, .AriticleList { float: none !important; }*/
+	
+	.content { padding: 40px 0; }
+	.sub_navList li { margin: 0 8px;}
+	.info_aboutDate { position: relative; width: 100%; padding: 20px 0; align-items: baseline; }
+	
+	.info_aboutBoxImg { display: flex; flex-wrap: wrap; }
+	.info_aboutBoxImg li.no1, .info_aboutBoxImg li.no2, .info_aboutBoxImg li.no3, .info_aboutBoxImg li.no4, .info_aboutBoxImg li.no5, .info_aboutBoxImg li.no6, .info_aboutBoxImg li.no7, .info_aboutBoxImg li.no8 { width: 25%; padding: 5px; height: auto; }
+	.info_aboutBoxImg li.no5 { position: relative; left: auto; bottom: auto; }
+	.info_aboutBoxImg li.no1 a, .info_aboutBoxImg li.no2 a, .info_aboutBoxImg li.no3 a, .info_aboutBoxImg li.no4 a, .info_aboutBoxImg li.no5 a, .info_aboutBoxImg li.no6 a, .info_aboutBoxImg li.no7 a, .info_aboutBoxImg li.no8 a { position: relative; max-width: 100%; left: auto; top: auto; right: auto; bottom: auto; }	
+	.info_cultureList {width: 470px;height: 432px;}
+	.info_cultureList dt {max-width: 138px; }
+	.info_cultureList dd {width: 158px;height: 177px; padding: 35px 20px 0;}
+	.info_cultureList dd i { margin-bottom: 0px; width: 24px; }
+	.info_cultureList dd p { font-size: 16px; line-height: 24px; margin-bottom: 0; }
+	.info_cultureList dd span { font-size: 12px; line-height: 20px; }
+	.info_cultureList dd.no1 { left: 80px;}
+	.info_cultureList dd.no2 { right: 80px;}
+	.info_cultureList dd.no3 { top: 128px;}
+	.info_cultureList dd.no4 { right: 80px;}
+	.info_cultureList dd.no5 { left: 80px;}
+	.info_cultureList dd.no6 { top: 128px; }	
+	.info_customerYoushi li p { font-size: 16px; }
+	.info_customerYoushi li div { font-size: 12px; }
+	.info_customerYoushi li i { width: 34px; }
+	
+	.download li a { padding: 10px 10px 10px 40px; margin-bottom: 10px; }
+	.download li a h3, .service_faq dt h3 { font-size: 16px; margin-bottom: 0px; }
+	.download li a i { top: 14px; left: 5px; width: 30px; height: 30px; }
+	.service_faq { margin-bottom: 10px; }
+	.service_faq dt { padding: 10px; }
+	.service_faq dd { padding: 5px 10px;}
+	.service_faq dd div { max-height: 250px; }
+	
+	.product_youshi { padding: 0; }
+	.product_youshi li { padding: 10px; }
+	.product_youshi li h3 { margin-bottom: 5px;}
+	.product_youshi li span { margin: 15px auto;}
+	.product_youshi li i { max-width: 137px; }
+	.ny_bannerProBox dt div { -webkit-line-clamp: 3; }
+	.ny_bannerProBox dt em { margin-bottom: 10px; }
+	
+	.Details_textList li { width: 100%; }
+	.Details_title a { font-size: 18px; line-height: 30px; margin-right: 10px; }
+	
+	.industry li { height: 250px; }
+	.industry_text { padding-left: 30px; padding-top: 40px; }
+	.industry_text h3 { font-size: 20px; margin-bottom: 10px; line-height: 30px; }
+	.industry_text a { padding: 5px 10px; font-size: 14px; }
+	
+	.ny_bannerInducBox h3 { font-size: 24px; margin-bottom: 5px; }
+	.ny_bannerInducBox span { font-size: 16px; }
+	.ny_bannerInducBox span:before, .ny_bannerInducBox span:after { width: 30px; }
+	.induc_jiagou { padding-bottom: 70px; }
+	.induc_jiagouBox .induc_jiagouBox_dt { width: 100%; max-width: 100%; margin-bottom: 30px; }
+	.induc_jiagouBox .induc_jiagouBox_dd { width: 100%; }
+	.induc_jiagouLeft li { margin-bottom: 0; }
+	.induc_jiagouLeft li.no1 { width: 115px; height: 115px; }
+	.induc_jiagouLeft li.no2 { margin-top: 0; }
+	.induc_jiagouLeft li.no3 { margin-left: 0; }
+	.induc_jiagouLeft { display: flex; justify-content: space-between; }
+	.induc_fangAnPic img { max-width: 195px; }
+	.induc_fangAnList li span, .induc_fangAnPic span, .induc_checkBox .induc_checkBox_dt p { font-size: 14px; }
+	
+	.induc_fangAnPic { padding-bottom: 50px; }
+	.induc_fangAnPic:before { bottom: 40px; }
+	.induc_fangAnPic:after { height: 45px; }
+	.induc_fangAnList { padding-top: 50px; } 
+	.induc_fangAnList li:before { top: -55px;}
+	.induc_fangAnList li:after { height: 50px; top: -50px;}
+	.induc_fangAnList li p { margin-bottom: 5px; }
+	.induc_fangAnList li { padding-left: 5px; padding-right: 5px; }
+	.induc_infoList li p { max-width: 85px;}
+	.induc_checkBox .induc_checkBox_dd { width: 50%;}
+	.induc_checkBox .induc_checkBox_dt { width: 100%; padding-right: 0; margin-bottom: 30px; }
+	.induc_checkBox .induc_checkBox_dd { width: 100%; padding-left: 0; }
+	.induc_checkBox:after { display: none; }	
+	.induc_bottom a { margin: 0 20px; padding: 5px 20px; font-size: 14px; }
+}
+
+
+@media only screen and (max-width: 600px) {
+	.head_fr { display: none; }
+	.ny_bannerProBox dt h3 { font-size: 24px; line-height: 30px; }
+	.ny_bannerProBox dt div { -webkit-line-clamp: 2; }
+	
+	.Multi_fr_chara table tr { padding: 10px 0; width: 100%; }
+	.Details_title a { padding: 0 5px; margin-right: 10px; }
+	.industry li { height: 200px; }
+	.industry_text { padding-left: 10px; padding-top: 20px; }
+	.industry_text h3 { font-size: 18px; margin-bottom: 10px; line-height: 30px; }
+	.industry_text a { padding: 5px; font-size: 12px; }
+	
+	.induc_highLight li h3 { margin: 5px 0; font-size: 16px;  }
+	.induc_highLight li div { max-width: 80px; }
+	.induc_fangAnPic img { max-width: 155px; }
+	.induc_infoList li div { padding-top: 35px; }
+	.induc_bottom a { margin: 0 20px; padding: 5px 20px; line-height: 20px; font-size: 12px; }
+}
+
+
+@media only screen and (max-width: 520px) {
+  .banner .item { height: 260px;}
+  .about_list li a { padding: 10px; }
+  
+  .foot_left { width: 100%;}
+	.foot_center { width: 100%; margin-top: 20px; }
+	.foot_center dl { width: 50%; margin-bottom: 20px; }
+	.copyright p { float: left; }
+  
+	/* 内页样式 */
+  .site h3 { font-size: 20px; } 
+  
+  .sub_navList { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+	.sub_navList li { margin: 0; flex-grow: 1; width: 20%; box-sizing: border-box; text-align: left; }
+	.sub_navList li a { font-size: 12px; box-sizing: border-box; }
+
+	.info_title { font-size: 24px; line-height: 36px; }
+	.info_aboutDate li { padding: 20px 0;}
+	.info_aboutDate li span { font-size: 24px; line-height: 36px; }
+	.info_about .about_text { -webkit-line-clamp: 6; }
+	
+	.info_aboutBoxImg li.no1, .info_aboutBoxImg li.no2, .info_aboutBoxImg li.no3, .info_aboutBoxImg li.no4, .info_aboutBoxImg li.no5, .info_aboutBoxImg li.no6, .info_aboutBoxImg li.no7, .info_aboutBoxImg li.no8 { width: 33.3%; }
+	.info_aboutBoxImg li.no5 { position: relative; left: auto; bottom: auto; }
+	.info_aboutBoxImg li.no1 a, .info_aboutBoxImg li.no2 a, .info_aboutBoxImg li.no3 a, .info_aboutBoxImg li.no4 a, .info_aboutBoxImg li.no5 a, .info_aboutBoxImg li.no6 a, .info_aboutBoxImg li.no7 a, .info_aboutBoxImg li.no8 a { position: relative; max-width: 100%; left: auto; top: auto; right: auto; bottom: auto; }
+	.info_cultureList {width: 270px;height: 235px;}
+	.info_cultureList dt {max-width: 75px; }
+	.info_cultureList dd {width: 85px;height: 95px; padding: 20px 10px 0;}
+	.info_cultureList dd i { margin-bottom: 0px; width: 24px; }
+	.info_cultureList dd p { font-size: 14px; line-height: 20px; }
+	.info_cultureList dd span { display: none; }
+	.info_cultureList dd.no1 { left: 50px;}
+	.info_cultureList dd.no2 { right: 50px;}
+	.info_cultureList dd.no3 { top: 70px;}
+	.info_cultureList dd.no4 { right: 50px;}
+	.info_cultureList dd.no5 { left: 50px;}
+	.info_cultureList dd.no6 { top: 70px; }
+	
+	.info_customerYoushi li div { word-break: break-all; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; overflow: hidden;}
+	.ny_bannerProBox dt h3 { font-size: 18px; }
+	.ny_bannerProBox dt h3 span { font-size: 12px; line-height: 20px; }
+	.Details_title a { padding: 0; margin-right: 10px; }
+	
+	.industry_text { width: 100%; padding-right: 10px; }
+	.ny_bannerInducBox h3 { font-size: 20px; }
+	.ny_bannerInducBox span { font-size: 14px; }
+	.induc_highLight li div { max-width: 70px; }
+	.induc_fangAnPic img { max-width: 105px; }
+	
+}
+
+@media only screen and (max-width: 320px) {
+	.banner .item { height: 160px;}
+	.info_aboutBoxImg li.no1, .info_aboutBoxImg li.no2, .info_aboutBoxImg li.no3, .info_aboutBoxImg li.no4, .info_aboutBoxImg li.no5, .info_aboutBoxImg li.no6, .info_aboutBoxImg li.no7, .info_aboutBoxImg li.no8 { width: 50%; }
+	.induc_highLight li { padding: 0 5px 15px; }
+	.induc_highLight li div { max-width: 60px; }
+}

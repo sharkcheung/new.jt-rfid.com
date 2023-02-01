@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$ArticleSeoTitle$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$ArticleKeyword$}">
+<meta name="description" content="{$ArticleDescription$}">
+<link rel="stylesheet" href="{$SiteSkin$}css/owl.carousel.min.css">
+{$File(head_public_js)$}
+</head>
+<body>
+{$File(head)$}
+
+<!-- banner -->
+<section class="ny_banner">				
+	{$Info(117)$}					
+</section>
+
+<section class="site">
+	<div class="qebang-container">
+		<h3 class="fl">{$ModuleName$}</h3>
+		<div class="fr path">{$PageNows$}</div>
+	</div>
+</section>
+
+<section class="content">
+	<div class="qebang-container">
+		<div class="qebang-row qebang-col-space30 List">
+			<div class="qebang-col-md12 Details" style="float: right;">
+				<h1>{$ArticleTitle$}</h1>
+				<div class="detail_h1_p">
+					创建时间：{$ArticleTime$} <span>|</span>浏览量：{$ArticleClick$}
+				</div>
+				<div class="Details_text">
+					{$ArticleContent$}					
+				</div>
+				<div class="Details_Relevant">
+					<h3>相关新闻</h3>
+					<div class="owl-carousel">
+						{$For(ArticleList,1/{$ModuleId$}/1/0/1/0/0/40)$}
+							<article class="item newslist">
+								<a href="{$ArticleListUrl$}" title="{$ArticleListTitleAll$}">
+									<div class="newtime"><b>{$ArticleListMonth$}-{$ArticleListDay$}</b>{$ArticleListYear$}</div>
+									<div class="newtext">
+										<b>{$ArticleListTitle$}</b>
+										<p>{$ArticleListContent$}</p>
+									</div>
+								</a>
+							</article>
+						{$Next$}
+					</div>
+				</div>
+				<div class="page">上一条：<a href="{$ArticlePrevUrl$}">{$ArticlePrevTitle$}</a> | 下一条：<a href="{$ArticleNextUrl$}">{$ArticleNextTitle$}</a></div>
+				<div class="tip_back"><a href="javascript:history.go(-1);">返回</a></div> 
+			</div>
+		</div>
+	</div>
+</section>
+
+{$File(foot)$}
+
+<script type="text/javascript" src="{$SiteDir$}Click.asp?Type=1&Id={$ArticleId$}"></script>
+<script type="text/javascript">
+			$('.Details_Relevant .owl-carousel').owlCarousel({
+				loop: true,
+				margin: 20,
+				autoplay: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 2
+					},
+					950: {
+						items: 3
+					}
+				}
+			})
+		</script>
+</body>
+</html>

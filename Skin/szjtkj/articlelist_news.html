@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$ModuleTitle$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$ArticleCategoryKeyword$}">
+<meta name="description" content="{$ArticleCategoryDescription$}">
+<link rel="stylesheet" href="{$SiteSkin$}css/owl.carousel.min.css">
+{$File(head_public_js)$}
+</head>
+<body>
+{$File(head)$}
+
+<!-- banner -->
+<section class="ny_banner">				
+	{$Info(117)$}				
+</section>
+
+<section class="info_subNav">
+	<div class="qebang-container">		
+		<ul class="sub_navList clearfix info_subIcon">
+			{$For(Nav,1/1151/1/0)$}
+			<li class="no{$ListNo$}"><a href="{$NavUrl$}#content{$ListNo$}">{$NavName$}</a></li>
+			{$Next$}
+		</ul>
+	</div>
+</section>
+
+<section class="content">
+	<div class="qebang-container">
+		<h3 class="info_title">{$ModuleName$}</h3>	
+		<div class="sub_proNav"><a href="javascript:;" class="hover">RFID资讯  </a><a href="javascript:;">捷通新闻</a></div>
+		{$For(Nav,1/1155/1/0)$}
+		<ul class="news info_news qebang-col-space30 clearfix">
+			{$For(ArticleList,1/{$NavId$}/0/12/0/2/0/0)$}
+			<li class="qebang-col-xs12 qebang-col-sm6 qebang-col-md4 qebang-col-lg3">
+				<a href="{$ArticleListUrl$}" title="{$ArticleListTitleAll$}">
+					<p><img src="{$ArticleListPic$}" alt="{$ArticleListTitleAll$}" /></p>
+					<h3>{$ArticleListTitle$}</h3>
+					<div>{$ArticleListContent$}</div>
+					<span>{$ArticleListDate$}</span>
+				</a>
+			</li>
+			{$Next$}			
+		</ul>
+		{$Next$}
+    <div class="page">{$ArticleCategoryPage$}</div>	
+	</div>
+</section>
+
+{$File(foot)$}
+<script src="{$SiteSkin$}js/jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var header = $("header").height() + 20;
+	$('.sub_navList > li > a').smoothScroll({
+		offset: - header,
+	});
+	
+	var FirstLevelName="{$ModuleName$}";
+	$(".sub_navList > li > a").each(function(){ 
+		var html = $(this).text();		
+		if(FirstLevelName == html){
+			$(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+		};
+		if(html == "新闻资讯"){
+			$(this).attr({"href":"{$HomeUrlMore(1155)$}"});
+		}else if(html == "联系捷通") {
+			$(this).attr({"href":"{$HomeUrlMore(1157)$}"});
+		}
+	});
+	
+	$(".info_news").eq(0).css("display","flex");
+	$(".sub_proNav a").click(function(){
+		$(this).addClass("hover").siblings("a").removeClass("hover");
+		var index = $(this).index();
+		$(".info_news").eq(index).css("display","flex").siblings(".info_news").css("display","none");		
+	})
+</script>
+</body>
+</html>

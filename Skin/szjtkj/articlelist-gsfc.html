@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$ModuleTitle$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$ArticleCategoryKeyword$}">
+<meta name="description" content="{$ArticleCategoryDescription$}">
+<link rel="stylesheet" href="{$SiteSkin$}css/owl.carousel.min.css">
+{$File(head_public_js)$}
+</head>
+<body>
+{$File(head)$}
+
+<!-- banner -->
+<section class="ny_banner">				
+	{$Info(117)$}			
+</section>
+
+<section class="site">
+	<div class="qebang-container">
+		<h3 class="fl">{$ModuleName$}</h3>
+		<div class="fr path">{$PageNows$}</div>
+	</div>
+</section>
+
+<section class="content">	
+	<div class="qebang-container">
+		<div class="qebang-row qebang-col-space30 List">
+			<div class="qebang-col-md12 products" style="float: right;">
+				<div class="qebang-row  qebang-col-space20">
+					{$For(ArticleList,1/{$ModuleId$}/1/0/1/0/0/12)$}
+					<div class="qebang-col-xs12 qebang-col-sm6 qebang-col-md4 products_li">
+						<a href="{$ArticleListUrl$}" title="{$ArticleListTitleAll$}">
+							<div style="overflow: hidden; max-width: 100%;"><img src="{$ArticleListPic$}" title="{$ArticleListTitleAll$}"/></div>
+							<p>{$ArticleListTitle$}</p>
+						</a>
+					</div>
+	      	{$Next$}
+      	</div>
+      	<div class="clear"></div>
+    		<div class="page">{$ArticleCategoryPage$}</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{$File(foot)$}
+</body>
+</html>

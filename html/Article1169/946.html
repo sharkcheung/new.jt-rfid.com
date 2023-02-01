@@ -1,0 +1,653 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>北京某学校RFID固定资产管理解决方案-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="RFID固定资产管理方案 RFID资产管理 RFID四通道读写器 RFID天线 电子标签">
+<meta name="description" content="1.概述在企业固定资产管理业务中，固定资产从物资采购部门直接领用，或经工程竣工后转入生产投运，形成固定资产。在用固定资产，经技术更新改造进行了更换，由一个生产现场更换到另外一个生产现场，">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> RFID固定资产管理方案 RFID资产管理 RFID四通道读写器 RFID天线 电子标签</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">北京某学校RFID固定资产管理解决方案</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2016-8-23 15:48:13</p>
+        <div class="neiye-detail-text"><p style="text-align:center;margin:0cm 0cm 0pt;" align="center">
+	<b><span style="font-size:18pt;"><span></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">1.</span></span></b><b><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">概述</span></b><b><span style="font-size:14pt;"></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">在企业固定资产管理业务中，固定资产从物资采购部门直接领用，或经工程竣工后转入生产投运，形成固定资产。在用固定资产，经技术更新</span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;"><strong></strong>改造进行了更换，由一个生产现场更换到另外一个生产现场，有些固定资产则因事故或自然损耗要进行报废处理。企业的固定资产业务细分种类<strong></strong>繁多，技术更新快导致固定资产变化更换快。企业的固定资产实物管理模式如下图所示：</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><img style="height:224px;width:487px;" alt="" src="http://jt-rfid.com/up/image/201608/20160823153346984698.png" width="614" height="343" /></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;"></span></span>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="mso-no-proof:yes;"><span></span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp; </span></span></span></span><span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;"></span><span style="font-size:16px;color:;line-height:2;"><strong><a href="http://www.jt-rfid.com/?Info1195.html" target="_blank"><span style="color:#003399;">RFID</span></a></strong></span></span></span></span><span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;"></span><span style="font-size:16px;color:;line-height:2;"><strong><a href="http://www.jt-rfid.com/?Info1195.html" target="_blank"></a></strong></span></span></span><span style="font-size:16px;font-family:宋体;color:;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;"><strong><a href="http://www.jt-rfid.com/?Info1195.html" target="_blank"><span style="color:#003399;">固定资产管理</span></a></strong></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;"><span style="font-size:16px;line-height:2;">而在以往资产管理业务中，普遍存在的以下问题：</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;"></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">登记和盘点工作</span></b><b><span style="font-size:12pt;"></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">固定资产购买审批单购入固定资产，对于每一件固定资产都要登记卡片帐，写明固定资产的编号、价值、领用部门等相当详细的内容，然后根据卡片帐登记保管帐，并在每一件固定资产上贴上统一的编号，以方便核查，每个月末要对固定资产进行折旧工作，需要对帐本进行折旧登记。这种工作重复性大，帐本卡片数量巨大，在具体工作中往往会发生差错，并且耗费时间长，要占用工作人员大量的时间。况且，手工对实物信息的抄录和状态变化的信息修改是保证“账、物、卡”一致的薄弱环节。因这个薄弱环节，依然会导致“账实不符”，也由此制约了管理信息系统的最大发挥管理效应。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;"></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">固定资产折旧</span></b><b><span style="font-size:12pt;"></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">固定资产的价值是每月计提，作为当期费用支出，因此每月未对固定资产要进行折旧计算，从工作难度上来看并不是很难，问题存在于固定资产数量庞大，每一件资产都有相应的卡片，并且不同资产使用年限不同，折旧的方式也各不相同。在折旧工作的处理中，往往要登记厚厚几叠帐本和卡片，工作量可想而知。特别是这种重复而繁琐的工作更会产生不可避免的差错，导致相关报表反映的信息失真，甚至丢失。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">因此，由于种种原因，业务管理系统得出的仅是精确而不准确的数据（如资产折旧、账面价值、库存数量等），不但会导致资产流失，还不能准确反映企业的经营成果和业绩。而由于信息反映不及时，影响了企业的运营效率，导致资产重复购置。依此进行分析和决策也就毫无意义了。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;"></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">2.</span></span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;"><span style="color:;"><a href="http://www.jt-rfid.com/?Product1181/994.html" target="_blank"><span style="color:#003399;">RFID</span></a></span></span></span></b><b><span style="font-size:16px;font-family:宋体;color:;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;"><a href="http://www.jt-rfid.com/?Product1181/994.html" target="_blank"><span style="color:#003399;">技术的应用</span></a></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">为解决手工抄录现场固定资产信息这一薄弱环节所带来的问题，必须做到以下几点：</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;</span><span style="font-size:16px;line-height:2;">1. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">自动远距离批量采集实物信息；</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;</span><span style="font-size:16px;line-height:2;">2. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">将管理数据信息（或巡检记录）与实物信息一同写入电子标签，电子标签安装（粘贴）在实物本体；</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;</span><span style="font-size:16px;line-height:2;">3. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">所采集的信息不仅仅只是设备（资产）固定资产的编号，而应该具有与设备（固定资产）台账一样的信息；</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;</span><span style="font-size:16px;line-height:2;">4. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">当管理数据信息发生变化时（或进行巡检时），将在现场进行修改（或记录）相关信息；（将实物信息反应到管理系统）</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;</span><span style="font-size:16px;line-height:2;">5. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">根据实物变动信息，启动相关业务流程进行实时更新设备（资产）、固定资产台账以保证管理数据信息与现场保持一致；</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">RFID</span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">是一种非接触式的自动识别技术，它通过射频信号自动识别目标对象并获取相关数据，识别工作无须人工干预，可远距离、自动批量进行实物的信息采集，是保证实物信息准确性、完整性的基础。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;"></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">3.</span></span></b><b><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">系统方案</span></b><b><span style="font-size:14pt;"></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">固定资产管理是企业管理中的一个重要组成部分，固定资产具有价值高，使用周期长、管理难度大等特点。针对这些问题，运用计算机及射频数据采集技术，从而实现固定资产的信息化管理。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">3.1</span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">系统硬件架构</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:16px;line-height:2;">RFID</span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">实物管理系统，主要是针对固定资产实物进行实时在线可视化管理。对固定资产的增加、变更、报废进行动态跟踪定位管理，能快速、准确的对固定资产进行盘点。其基本的硬件架构如下图：</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp; <img style="height:368px;width:524px;" alt="" src="http://jt-rfid.com/up/image/201608/20160823153457245724.png" width="588" height="428" /></span><span style="mso-no-proof:yes;"></span></span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;"></span></span></span>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;"><strong>3.2</strong></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;"><strong>系统功能</strong></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">分析用户需求，</span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">RFID</span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">固定资产管理系统具备以下功能：</span><span><span> </span></span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp; </span><span style="font-size:16px;line-height:2;">1. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">资产日常管理功能</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">主要包括固定资产的新增、修改、退出、转移、删除、拆分计算折旧率及残值率等日常工作。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp; </span><span style="font-size:16px;line-height:2;">2. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">资产折旧</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">包括计提固定资产月折旧、打印月折旧报表。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp; </span><span style="font-size:16px;line-height:2;">3. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">固定资产月报</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">根据单位、部门、时间等条件查询分类统计月（年）报、本月增加固定资产月报、本月减少固定资产月报、固定资产折旧月报（年报）、并提供打印功能。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp; </span><span style="font-size:16px;line-height:2;">4. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">固定资产综合查询</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">可以对单条或一批固定资产的情况进行查询，查询条件包括资产卡片、保管情况、有效资产信息、部门资产统计、退出资产、转移资产、历史资产、名称规格、起始及结束日期、单位或部门。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp; </span><span style="font-size:16px;line-height:2;">5. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">盘点功能</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">按照射频盘点机中的数据与数据库中的数据进行核对，并对正常或异常的数据做出处理，得出固定资产的实际情况，并可按单位、部门生成盘盈明细表、盘亏明细表、盘点汇总表。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp; </span><span style="font-size:16px;line-height:2;">6. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">系统维护功能</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">由系统管理员对资产分类代码表、退出方式代码表、购置方式代码表、存放地代码表、部门代码表、保管人员表、单位名称表。进行新增、修改、删除等操作。提供操作员对自己密码修改的功能。系统管理员可以自由地设置下属各个操作员对功能的操作权限。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp; </span><span style="font-size:16px;line-height:2;">7. </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">安全管理功能</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">供各种安全管理手段。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">口令管理功能：维护帐号和口令。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">权限控制功能：将用户划分为不同等级确定用户对系统使用权限，根据不同权限确定不同的操作。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">3.3</span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">应用收益</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">引入采用</span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">RFID</span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">技术的实物信息采集工具，有效解决固定资产数据分析采集输入、固定资产实际消耗信息实时记录的瓶颈难题。达到真实反映固定资产的实际情况，实际分配情况，真正做到在线、可视化管理，达到实物与管理台账相统一、彻底实现账、卡、物统一，实现实物与管理系统一体可视化管理。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;"></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">4.</span></span></b><b><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">硬件选型</span></b><b><span style="font-size:14pt;"></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:16px;line-height:2;">RFID</span></span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">技术在固定资产管理中的应用具有巨大的优势</span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">,</span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">对提高实物资产的管理效率，对实物资产全生命周期的追踪管理，加强监管监控，都具有非常重要的影响。而</span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">RFID</span></span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">技术的关键是在于在数据采集的速度和准确性，其核心的设备在于四通道读写器、固定式读写器和手持设备。</span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">详细资料可看：附件</span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">1</span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;">5.</span></span></b><b><span style="font-size:16px;font-family:宋体;line-height:2;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;">现场安装图</span></b><b><span style="font-size:14pt;"></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt 36pt;text-indent:-36pt;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt;">
+	<b><span style="font-size:16pt;mso-bidi-font-family:宋体;"><span style="mso-list:Ignore;"><span style="font-size:16px;line-height:2;">一、</span><SPAN style="FONT-SIZE: 16px; FONT-VARIANT: normal; FONT-WEIGHT: normal; FONT-STYLE: normal; LINE-HEIGHT: 2" Roman?;? New Times>&nbsp; </span></span></span></b><b><span style="font-size:16pt;"></span></b>
+</p>
+<p style="text-align:center;margin:0cm 0cm 0pt 36pt;" align="center">
+	<span><b><span style="font-size:16pt;mso-no-proof:yes;"></span></b><b><span style="font-size:16pt;"></span></b></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16pt;mso-no-proof:yes;"></span></b><b><span style="font-size:16pt;"><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;<img style="height:314px;width:537px;" alt="" src="http://jt-rfid.com/up/image/201608/2016082315370668668.jpg" width="872" height="655" /><img style="height:281px;width:345px;" alt="" src="http://jt-rfid.com/up/image/201608/20160823153791669166.jpg" width="615" height="460" /><img style="height:279px;width:350px;" alt="" src="http://jt-rfid.com/up/image/201608/20160823153791159115.jpg" width="625" height="605" /></span></span></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16pt;"><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;"></span></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16pt;"><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><img style="height:326px;width:360px;" alt="" src="http://jt-rfid.com/up/image/201608/20160823153766606660.jpg" width="100" height="121" /><img style="height:332px;width:388px;" alt="" src="http://jt-rfid.com/up/image/201608/2016082315370604604.jpg" width="200" height="150" /></span></span></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16pt;"><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;"></span></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16pt;"><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;"></span></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:16pt;"><span><span style="font-size:16px;line-height:2;mso-spacerun:yes;"><span style="font-size:12pt;font-family:宋体;line-height:150%;">&nbsp;&nbsp;&nbsp;&nbsp; 本公司将本着用户至上的原则，力求以高、精、尖为自己的发展方向，着眼于业内领先的技术攻关项目，致力为全球用户提供物联网核心设备及<span style="display:none;"></span><a href="http://www.jt-rfid.com/?Info1195.html" target="_blank"><span style="font-size:18px;color:#003399;">RFID</span><span style="font-size:18px;color:#003399;">整体应用解决方案<span style="display:none;"></span></span></a>，并以市场为导向、技术为根本、质量为生命、服务为天职的经营理念，以最新的技术，最好的产品，最优的价格，最佳的服务奉献给广大用户。</span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	</span><span style="mso-no-proof:yes;"></span></span></span></b>&nbsp;
+</p></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/948.html">大学生让人心痛的时期</a><br />下一篇：<a href="/html/Article1169/944.html">RFID军事库房枪支盘点及报警防盗系统方案</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=946"></script>
+
+</body>
+</html>

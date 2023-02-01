@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'PangMenZhengDao';
+	src: url(../fonts/PangMenZhengDaoBiaoTiTi-1.ttf);
+}
+
+
+@font-face {
+	font-family: 'PingFang';
+	src: url(../fonts/PingFang Regular.otf);
+}
+
+
+@font-face {
+	font-family: 'slickerest';
+	src: url(../fonts/slickerest-regular.ttf);
+}
+
+@font-face {
+	font-family: 'RuiHei';
+	src: url(../fonts/RuiHeiBauhausKr.ttf);
+}
+
+@font-face {
+	font-family: 'huxiaobo-meixin';
+	src: url(../fonts/胡晓波美心常规体.ttf);
+}

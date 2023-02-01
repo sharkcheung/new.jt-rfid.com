@@ -1,0 +1,723 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>大陆长三角之RFID焦点应用近况-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> </div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">大陆长三角之RFID焦点应用近况</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2015-9-7 16:28:46</p>
+        <div class="neiye-detail-text"><p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">&nbsp;&nbsp;&nbsp; </span><span style="font-size:14px;line-height:2;">大陆对长三角的定义已从传统“</span><span style="font-size:14px;line-height:2;">16</span><span style="font-size:14px;line-height:2;">市”随『长三角区域规划发展纲要』、『进一步推动长三角改革开放和经济社会协调发展的指导意见』两份国家级文件，拓展为沪浙苏一市两省，该区以上海为核心，长江为轴线、江浙为依托成『</span><span style="font-size:14px;line-height:2;">T</span><span style="font-size:14px;line-height:2;">』字形的开发空间。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　上海拥有国家级</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">产业基地，在</span><span style="font-size:14px;line-height:2;">2007-2008</span><span style="font-size:14px;line-height:2;">年，该市在承担中央与地方政府支持的</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">专案近</span><span style="font-size:14px;line-height:2;">20</span><span style="font-size:14px;line-height:2;">多项，资金就达人民币</span><span style="font-size:14px;line-height:2;">5</span><span style="font-size:14px;line-height:2;">千多万元</span><span style="font-size:14px;line-height:2;">(</span><span style="font-size:14px;line-height:2;">约</span><span style="font-size:14px;line-height:2;">NT$25,000,000)</span><span style="font-size:14px;line-height:2;">，其邮政、货车等物流管理、世博会、危化品工业气瓶、图书馆与电子不停车收费等城市建设自是业界关注焦点。搭配即将始贩售的</span><span style="font-size:14px;line-height:2;">2010</span><span style="font-size:14px;line-height:2;">年世界博览会门票与「长三角地区道路货运（物流）一体化」的出台，该地区</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">应用得持续加温。&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:14px;line-height:2;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">超过</span><span style="font-size:14px;line-height:2;">3000</span><span style="font-size:14px;line-height:2;">万张的上海地铁单程票&nbsp;&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span></span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　上海地铁磁悬浮票务系统的</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">单程票，自</span><span style="font-size:14px;line-height:2;">2005</span><span style="font-size:14px;line-height:2;">年发行迄今已逾</span><span style="font-size:14px;line-height:2;">3000</span><span style="font-size:14px;line-height:2;">万张，单程票已经在上海的全部</span><span style="font-size:14px;line-height:2;">8</span><span style="font-size:14px;line-height:2;">条线路上应用。&nbsp;</span><span style="font-size:14px;line-height:2;">2009</span><span style="font-size:14px;line-height:2;">年，为迎接</span><span style="font-size:14px;line-height:2;">2010</span><span style="font-size:14px;line-height:2;">世博会，上海地铁公司还会发售更多形式的旅游单程票。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　另外，大陆境内电信业者的整合也促其在</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">的创新应用脚步加快，上海联通、上海公共交通卡公司与上海复旦微电子所合作的</span><span style="font-size:14px;line-height:2;">NFC</span><span style="font-size:14px;line-height:2;">手机公交刷卡功能也已开始运行，使用者还可透过手机即时查询余额，据规划近期还会增加银行卡储值功能，由银行卡帐户直接对公交卡等帐户进行加值。&nbsp;&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span></span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:14px;line-height:2;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">邮递物处理&nbsp;&nbsp;</span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　上海邮政独立运营后，其浦东邮件处理中心参与“</span><span style="font-size:14px;line-height:2;">863</span><span style="font-size:14px;line-height:2;">”科研项目子课题射频识别</span><span style="font-size:14px;line-height:2;">(RFID)</span><span style="font-size:14px;line-height:2;">技术应用项目研究，自行开发设计制造包裹自动分拣设备与导入营运平台。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　上海邮政在邮包上贴附邮政专用</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">标签，而浦东邮件处理中心则架有</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">读取设备，当装有邮包的车辆停靠，邮包进行卸货或装货时，邮包经过</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">读取区时透过无线射频识别加速邮包的分捡作业，经过分拣的货物进入不同的邮包收集区，加速的邮包的后续处理，应用绩效显著。&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p align="center">
+	&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201509/20150907162374397439.jpg" /> 
+</p>
+<p align="center">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">RFID<span>在上海邮政应用</span></span> 
+</p>
+<p align="center">
+	&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:14px;line-height:2;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">长三角地区道路货运一体化&nbsp;&nbsp;</span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　</span><span style="font-size:14px;line-height:2;">6</span><span style="font-size:14px;line-height:2;">月份的『关于推进长三角地区道路货运（物流）一体化发展的若干意见』中指出，凡经沪、苏、浙三省（市）道路运输管理机构批准、合法营运之的集装箱车辆</span><span style="font-size:14px;line-height:2;">(</span><span style="font-size:14px;line-height:2;">即本地用语「货车」，下文以货车代之</span><span style="font-size:14px;line-height:2;">)</span><span style="font-size:14px;line-height:2;">在长三角地区经营者，沪、苏、浙三省（市）各级道路运输管理部门应视同本地企业，实行道路集装箱运输车辆的经营资质互认，享受同城待遇，不对该企业和营运车辆实施异地经营备案登记等相关管理内容和收费。在该办法下，内地当局将建立长三角物流重点企业协调平台，且于下一阶段，沪、苏、浙三省（市）要共同推动货车应用</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">卡的统一技术标准，资料互联互通。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　在七月份的长三角地区道路货运（物流）一体化联席会议所结，三地将进一步研究落实长三角</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">（电子标签）卡“一卡通”工程，今后还将建立长三角地区道路货运（物流）重点企业协调平台，加强联系交流，推动长三角地区道路货物“网路化”运输发展。&nbsp;&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span></span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">2010</span><span style="font-size:14px;line-height:2;">年的上海世博会&nbsp;&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span></span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　</span><span style="font-size:14px;line-height:2;">2010</span><span style="font-size:14px;line-height:2;">年的上海世博会门票自</span><span style="font-size:14px;line-height:2;">7</span><span style="font-size:14px;line-height:2;">月</span><span style="font-size:14px;line-height:2;">1</span><span style="font-size:14px;line-height:2;">日起开始向个人售票。在大陆境内，中国移动、中国电信、交通银行和中国邮政为四大销售代理商，旗下近</span><span style="font-size:14px;line-height:2;">2800</span><span style="font-size:14px;line-height:2;">个网点皆有销售。与奥运会所不同的是上海世博会门票不采实名制，公众在购买时无须携带相关证件，也没有购票数量的限制。但为防范假票，世博局也采用</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">门票及其系统为规避之。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　另外，上海市也在世博食品安全管理中引入</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">技术，以确保世博期间食品的安全性和可追溯性。这套“世博食品物流</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">监控溯源系统”将包括世博单位提供的蔬菜、水产品、畜禽、奶、蛋、面包糕点、餐饮半成品等对温控有要求的食品，并在专供世博食品的物流货车上也配备相应的</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">设备，对装载冷藏、冷冻食品的车辆配备</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">等温度连续监控设备。在食品进入园区时，工作人员透过手持式</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">读取器，就能在现场快速追溯食品和原料的来源。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　同时也将选择在蔬菜、水果、水产品、蛋等初级农产品及配送的餐饮半成品等包装袋上要求贴付</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">标签，同步保证食品和原料的安全性。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span style="font-size:14px;line-height:2;">　　为迎接世博，上海也正导入结合</span><span style="font-size:14px;line-height:2;">RFID</span><span style="font-size:14px;line-height:2;">的「未来商店」，透过顾客</span><span style="font-size:14px;line-height:2;">ID</span><span style="font-size:14px;line-height:2;">卡进行客群划分，并结合</span><span style="font-size:14px;line-height:2;">CRM</span><span><span style="font-size:14px;line-height:2;">系统，提供个性化购物模式。使用电子货架，顾客只要一拿走货架上的商品，后台马上就能得到被拿走商品的数量、类别等一系列资讯，并通知营业员及时补上缺少的商品。</span>&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201509/20150907162428962896.jpg" /> 
+</p>
+<p align="center">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">上海「未来商店」模拟情境</span> 
+</p>
+<p align="center">
+	&nbsp;
+</p>
+<p align="center">
+	&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">危险品钢瓶装上<span>RFID</span><span>标签&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201509/20150907162456025602.jpg" /> 
+</p>
+<p align="center">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">钢瓶装上<span>RFID</span><span>标签&nbsp;</span></span> 
+</p>
+<p align="center">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span></span></span>&nbsp;
+</p>
+<p align="center">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span></span></span>&nbsp;
+</p>
+<p align="left">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">&nbsp;&nbsp;&nbsp;&nbsp;上海市在<span>2006</span><span>年就全市上百万罐装危险品钢瓶装上</span><span>RFID</span><span>标签，以便对它们进行有效监控和管理。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">&nbsp;&nbsp;&nbsp;&nbsp;钢瓶在每次检测、充装及相关操作人员的资讯由掌上型阅读器检测并写入电子标签，借以让上海市当局了解这些钢瓶的所在位置、状态、年度检查等情况，从而有力加强了对人民群众的生命财产的安全保障；同时实现钢瓶防伪，避免假冒产品给企业和人民群众所带来的潜在巨大损失，提高相关企业的生产、物流管理水准和工作效率；提高钢瓶的可追溯性，降低钢瓶的召回成本，并进一步扩大了<span>RFID</span><span>的应用范围。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　另外，内地逢春节期间常有爆竹仿冒的问题，上海市自<span>2006</span><span>年起将爆竹纳入「基于电子标签的危险化学品安全管理系统」，就爆竹外包装箱上贴附</span><span>RFID</span><span>标签并承载爆竹编号、品名、产地、数量、生产日期等资讯，厂家所生产爆竹在入沪</span><span>(</span><span>上海</span><span>)</span><span>道口处必须通过读写器检验方得进市。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">超过<span>150</span><span>万标签使用的杭州图书馆&nbsp;&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span></span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　大陆的国家图书馆、杭州市图书馆、深圳市图书馆、厦门集美大学图书馆等皆导入和应用<span>RFID</span><span>系统，杭州图书馆虽然不是第一家导入</span><span>RFID</span><span>系统的图书馆，但其</span><span>RFID</span><span>标签使用量达</span><span>150</span><span>万枚左右。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　另外，温州市已有<span>10</span><span>个分馆实现图书借阅“一卡通”，数位资源服务则让读者在家可使用数位图书馆。后者得让“馆藏”突破围墙，让图书服务突破纸质文献和馆舍的局限。目前，读者通过图书馆外购资源帐号，在家便可以查阅维普、万方资料库期刊和方正、超星的电子图书，并可使用北大、智联等考试学习系统资讯；而在同一介面上，温州人著作资料库、温州地方文献目录、中文电子报库、决策参考专题资料库、温图线上讲座等等资讯也通过自建资源整理上网，读者轻点滑鼠便可获知所需资讯。&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span>&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">电子口岸政策下鼓励<span>RFID</span><span>应用&nbsp;&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span></span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　大陆国务院在构想上海国际航运中心下，要以上海为主体，浙江、江苏为两翼，成一个地域和区域港口集合<span>(</span><span>参</span><span>19)</span><span>。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　在《物流业调整和振兴规划》就提出要积极推进企业物流管理资讯化，促进资讯技术的广泛应用，并要求物流产业尽快制订物流资讯技术标准和资讯资源标准，建立物流资讯采集、处理和服务的交换共用机制，加快行业物流公共资讯平台建设，建立全国性公路运输资讯网路和航空货运公共资讯系统以及其他运输与服务方式的资讯网路等，由此进一步扶持物流企业发展。&nbsp;&nbsp;</span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　为鼓励物流行业采用<span>RFID</span><span>技术，建设行业物流公共资讯平台，建立全国性公路运输资讯网路和航空货运公共资讯系统，以及其他运输与服务方式的资讯网路，成为当局扶持物流资讯服务企业成长的重点方向</span><span>(</span><span>参</span><span>21)</span><span>。大陆交通部在“搭建一个</span><span>(</span><span>共用电子资料交换服务</span><span>)</span><span>平台、建设一个</span><span>(</span><span>水运行业资讯</span><span>)</span><span>中心、实现三方</span><span>(</span><span>国家电子口岸及相关部委、部内各司局之间、与各地方交通管理部门和港航企业</span><span>)</span><span>共用、打通四个通道</span><span>(</span><span>海公联运、海铁联运、沿海内河联运和沿海各港航企业</span><span>)</span><span>”目标下，正加速建设交通电子口岸网。&nbsp;&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span></span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">药品示范专案启动中&nbsp;&nbsp;</span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　大陆的国家食品药品监督管理局于<span>2009</span><span>年</span><span>6</span><span>月</span><span>16</span><span>日发出《关于实施国家药品编码管理的通知》，对批准上市的药品实行编码管理。监管码用于药品监控追溯系统，要求厂商需于药品包装上标识可供读取器自动识别的产品资讯编码。日后药品未使用监管理码统一标识者，一律不得上市、销售。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　而事实上，今<span>(2009)</span><span>年初时，一国家级现代药品物流和品质追踪溯源系统示范专案即在南京展开，由南京医药股份有限公司与欧洲第一大医药物流公司——奥地利</span><span>KNAPP</span><span>公司合作，导入</span><span>RFID</span><span>的药品品质追踪溯源系统于南京地区医药物流的集散中心，在货物储存上再以</span><span>RFID</span><span>标签搭配辅助分拣系统（</span><span>DPS</span><span>）、自动分拣系统和无线射频（</span><span>RF</span><span>）等现代化物流技术</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">。</span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">宠物管理&nbsp;&nbsp;</span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　上海、南京等城市也已开始在宠物管理中应用电子标签。&nbsp;<span>2000</span><span>年迄今，上海已对</span><span>33,000</span><span>条准养犬注射了电子晶片。&nbsp;</span></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"><span>&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">结语&nbsp;&nbsp;</span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>&nbsp;
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　<span>RFID</span><span>在大陆的应用范围不断拓展，从先前的以身份识别、电子票证，已逐渐向安全监管、图书馆、物流等物品识别发展；在频段的利用也从低、高频，逐渐向超高频和微波成长。下一步值得关注的是国家级的平台建置，其将促进重点产业的应用从封闭型向行业内的开方型发展，如电子口岸等。&nbsp;&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span>
+</p>
+<p style="text-justify:inter-ideograph;margin-right:0pt;text-autospace:ideograph-numeric;text-align:justify;mso-para-margin-right:0.0000gd;mso-pagination:none;">
+	<span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;">　　根据中国<span>RFID</span><span>产业联盟于今年</span><span>3</span><span>月发表数据显示，</span><span>2008</span><span>年中国市场规模已达</span><span>65.8</span><span>亿元人民币，这其中上海即有</span><span>RFID</span><span>企业</span><span>80</span><span>多家，从业人员即有</span><span>2</span><span>万多人，该市于</span><span>2007</span><span>年的</span><span>RFID</span><span>销售额即有</span><span>13.5</span><span>亿元，长三角的</span><span>RFID</span><span>产业规模正逐渐茁壮中。&nbsp;</span></span><span style="font-size:10.5pt;font-family:宋体;mso-spacerun:'yes';mso-font-kerning:1.0000pt;"></span> 
+</p>
+</span></span> 
+<p align="center">
+	&nbsp;
+</p>
+<p align="center">
+	&nbsp;
+</p>
+<p>
+	&nbsp;
+</p></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/843.html">RFID识别手持机助力冷库仓储管理</a><br />下一篇：<a href="/html/Article1169/829.html">RFID是物联网的“心脏”</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=842"></script>
+
+</body>
+</html>

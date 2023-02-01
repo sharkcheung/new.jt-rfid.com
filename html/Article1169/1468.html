@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>RFID仓库存储技术让仓储更全面更透明化-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="RFID仓库存储技术">
+<meta name="description" content="RFID仓库存储技术让仓储更全面更透明化">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> RFID仓库存储技术</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">RFID仓库存储技术让仓储更全面更透明化</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2018-8-28 14:14:45</p>
+        <div class="neiye-detail-text"><p>
+	<span style="font-size:13px;font-family:宋体;white-space:normal;word-spacing:0px;text-transform:none;float:none;font-weight:normal;color:#333333;font-style:normal;orphans:2;widows:2;display:inline !important;letter-spacing:normal;text-indent:0px;-webkit-text-stroke-width:0px;font-variant-ligatures:normal;font-variant-caps:normal;">RFID技术越来越成熟，各种应用领域都有RFID的身影，其中仓储就是很好的例子。随着经济高速发展，物品流动性越来越频繁，仓库存储的要求越来越高，产品周期越来越短，多样化的产品使其仓储条件更加严谨。<a href="http://www.jt-rfid.com/?Info1191.html" target="_blank">RFID仓库存储技术</a>让仓储更全面更透明化。
+</p>
+<p>
+	RFID是物联网概念下相当重要的技术，这几年在仓储领域的应用颇为成功，RFID透过无线辨识功能，可以快速辨识并记录物品的数量、位置，让品项众多的仓储作业化繁为简、效率倍增。<br />
+&nbsp;<br />
+物联网这几年成为IT产业当红炸子鸡，不过物联网其实是一种应用概念而非技术，落实此概念的IT技术有很多，RFID便是其一，RFID具备无线与自动化辨识特色，再加上RFID卷标内建内存，可储存信息容量大。<br />
+&nbsp;<br />
+RFID智慧仓储建置效益<br />
+&nbsp;<br />
+由此来看，将<a href="http://www.jt-rfid.com/?Article1153/Index.html" target="_blank" title="RFID应用">RFID应用</a>于仓库端的进货与库存管理，的确能为企业带来帮助，企业导入RFID智慧仓储的效益在于以下四点：<br />
+&nbsp;<br />
+1. 更有效地进行货物识别、库存资料搜集、分类和追踪等作业。<br />
+&nbsp;<br />
+2. 确时记录栈板、物流箱、堆高机、卡车、设备和工时的数据。<br />
+&nbsp;<br />
+3. 在条形码无法工作的恶劣环境下进行资料搜集。<br />
+&nbsp;<br />
+4. 可以整合智慧货架、自动分流机 、捡货设备等，提高出货效率。<br />
+&nbsp;<br />
+一般来说库存管理的重点工作包括4点：1.盘点库存2.储位管理3.进出货管理4.先进先出(即先进货入库的商品先出货)，无论哪一种都必须建构在正确识别商品身份的前提下，如此才能达到提高进货验收的效率及正确性，及库存商品可视化的目标。<br />
+&nbsp;<br />
+除了置放在仓库里的商品，流通在外的商品管理也很重要，结合手持式设备的应用，可以发挥移动业务巡补货的功效。透过手持式终端设备读取商品的条形码或RFID标签，经由移动通讯网络将信息实时上传至后台系统，达到库存最小化、商品周转率最大化的目标，倘若库存数据没有实时更新的必要性，企业可以要求物流人员在结束外勤工作后，返回公司藉由有线网络上传至系统中，节省数据传输的成本。<br />
+&nbsp;
+</p>
+<p align="center">
+	<img alt="RFID仓库存储技术" src="/up/image/201808/20180828141280868086.jpg" /> 
+</p>
+<p align="center">
+	&nbsp;
+</p>
+<p>
+	<br />
+目前用来进行商品身份识别的工具有一维条形码、二维条形码(Quick Response Code)及RFID等3种，一维条形码因为价格低廉、技术发展成熟，使用比率最高，但是一维条形码可承载的信息容量大约只有15个数字或文字，导致应用受到限制。<br />
+&nbsp;<br />
+二维条形码的应用则以日本最为成功，包括电影海报、商品、书籍杂志、传单等，几乎随处可见二维条形码，其特色在于数据存量大且形式多元，包含中英文、数字、图片、网址、符号等，均可转译其中，由于日本手机几乎都具备读取二维条形码的功能，因此消费者接受度高，间接加快相关应用的发展速度。<br />
+&nbsp;<br />
+近年来也积极推动二维条形码的应用，在智能手机普及下，二维条形码虽已逐渐为消费者接受，不过因应用仍局限于网址缩写，目前还看不出其他领域有何显著成效。<br />
+&nbsp;<br />
+无论是一维条形码或二维条形码，其过于成功的商业模式，均或多或少影响了RFID在库存管理上的发展，NEC日本品川RFID中心便指出，日本RFID商品管理的发展速度不如预期，部分原因在于二维条形码太过普及，弱化企业导入意愿。<br />
+&nbsp;<br />
+尤其是RFID卷标价格远高于一维及二维条形码，这也让原本要在产品上贴附RFID卷标的应用模式变得更加不可行因此，现阶段RFID在库存管理上的应用以高单价商品为主，如：蝴蝶兰、高级茶叶等，至于低单价商品，钟鸿慈认为应采用整批管理的模式，也就是将RFID标签贴附在栈板或是外箱上，以箱∕盒为管理单位，而不是进行单品管理。<br />
+&nbsp;
+</p>
+<p>
+	从商品类型来看，库存商品可分成以下四种：零组件、半成品、成品与售后维修品，目前谈到的RFID应用多以成品仓库存管理为主，不过除了成品管理外，制造过程中的储位管理，亦即原料仓与半成品仓的库存管理也相当重要。<br />
+&nbsp;<br />
+成品仓的库存管理着重在数量盘点，但原料仓或半成品仓的库存管理则以定位、状态为主，也就是该原料或半成品目前摆放的位置，或是处于第几道制程，这对晶圆等单价昂贵的原料来说尤为重要。<br />
+&nbsp;<br />
+对制造业者而言，制程中的储位管理可以精确掌握每一个原料或半成品的现况，从而降低制造成本，不过，并非每一个制造业者都适用，它有其应用限制，如果零件太小或是高温制程，便不适合使用RFID进行管理，因此导入前的环境评估作业相当重要。<br />
+&nbsp;<br />
+RFID硬件选择重点<br />
+&nbsp;<br />
+当企业决定导入RFID进行仓储管理时，除了要确立管理模式外，更重要的是选择硬设备。<br />
+&nbsp;<br />
+RFID主要的硬设备分成两大类：读取器和RFID卷标，RFID卷标形式相当多元化，通常随着所贴附对象而改变，像是卡片型、方型、圆型、箱型、棒型等，如果以功能来区分，则可分做只读型、一次写入型及可重复读写型三种，又若以RFID标签内部设计形式来区分，又可分为主动、半主动(也可称为半被动)及被动式三种。<br />
+&nbsp;<br />
+至于读取器的形态则单纯许多，目前常见的就是手持式、固定式、及阐门式三种，读取器内部安装的天线数量通常在一到四条不等，如果要扩大读取范围，则可选择在读取器四周加装天线的方式，强化RF讯号的发射或读取功率，从而拉长标签与读取器间的感应距离。<br />
+&nbsp;<br />
+面对林林总总的RFID设备，企业究竟该如何挑选？最好的方法就是以应用模式为基础，配合现场环境来挑选设备。<br />
+&nbsp;<br />
+在评比硬件厂商的产品时，企业最容易陷入比价的盲点中，但在导入RFID系统时，却绝对不能只看价格，应该将质量列为优先考虑，切莫一味在意价格，如此才能做出最适合自身的选择。<br />
+&nbsp;<br />
+不过，质量这个名词很抽象，单凭外观实难掌握设备是否具备稳定质量，最好的方法就是不断进行测试，尤其在读取快速、数据量大的情境下，最能看出读取器的性能差异，举例来说，一台性能不好的读取器，只能读到栈板左右两侧的数据，但是性能佳的设备，却可同时读到前后左右四个方向的数据。<br />
+&nbsp;<br />
+最后则是RFID标签的选择问题，由于RFID标签单价仍然偏高，企业如果要降低导入成本，最好选择可重复读写的标签，使其变成一种企业资产，而不是像条形码一样的消费品，才能提高RFID的导入效益。
+</p>
+</span> 
+<p>
+	<span style="font-size:13px;font-family:宋体;white-space:normal;word-spacing:0px;text-transform:none;float:none;font-weight:normal;color:#333333;font-style:normal;orphans:2;widows:2;display:inline !important;letter-spacing:normal;text-indent:0px;-webkit-text-stroke-width:0px;font-variant-ligatures:normal;font-variant-caps:normal;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:13px;font-family:宋体;white-space:normal;word-spacing:0px;text-transform:none;float:none;font-weight:normal;color:#333333;font-style:normal;orphans:2;widows:2;display:inline !important;letter-spacing:normal;text-indent:0px;-webkit-text-stroke-width:0px;font-variant-ligatures:normal;font-variant-caps:normal;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:13px;font-family:宋体;white-space:normal;word-spacing:0px;text-transform:none;float:none;font-weight:normal;color:#333333;font-style:normal;orphans:2;widows:2;display:inline !important;letter-spacing:normal;text-indent:0px;-webkit-text-stroke-width:0px;font-variant-ligatures:normal;font-variant-caps:normal;">（图文来源于网络，侵删）</span> 
+</p><div class='article_copyright_class' style='margin-top:10px;padding-top:5px;word-wrap:break-word;word-break:break-all;border-top:dashed 1px #ccc;font-size:12px;font-weight:normal;color:'>本文由RFID超高频读写器专业厂商-深圳市捷通科技有限公司发表。转载此文章须经作者同意，并请附上出处(RFID超高频读写器专业厂商-深圳市捷通科技有限公司)及本页链接。原文链接:http://www.jt-rfid.com/html/Article1169/1468.html</div></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/1469.html">RFID电力设备巡检技术照亮千万家庭！</a><br />下一篇：<a href="/html/Article1169/1467.html">智能试衣间增强新零售实体店体验感</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=1468"></script>
+
+</body>
+</html>

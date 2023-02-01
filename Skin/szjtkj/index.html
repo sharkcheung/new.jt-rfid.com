@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$SiteSeoTitle$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$SiteKeyword$}">
+<meta name="description" content="{$SiteDescription$}">
+<link rel="stylesheet" href="{$SiteSkin$}css/owl.carousel.min.css">
+<link rel="stylesheet" href="{$SiteSkin$}css/swiper.min.css">
+{$File(head_public_js)$}
+
+</head>
+<body>
+
+{$File(head)$}
+
+{$File(banner)$}
+
+<div class="product">
+	<h3 class="title">产品中心</h3>
+	<div class="center product_box">
+		<ul class="product_list owl-carousel">
+			{$For(ProductList,1/1152/0/8/0/2/0/14)$}
+			<li class="item">
+				<dl class="product_dl clearfix">
+					<dt><img src="{$ProductListPic$}" alt="{$ProductListTitleAll$}" /></dt>
+					<dd>
+						<h3><span>{$ModuleListName$}</span>{$ProductListTitle$}</h3>
+						<div class="product_text">{$ProductListContent$}</div>
+						<a href="{$ProductListUrl$}" title="{$ProductListTitleAll$}" class="product_click"><span>了解详情&gt;</span></a>
+					</dd>
+				</dl>
+			</li>
+			{$Next$}
+		</ul>
+	</div>
+</div>
+
+<div class="solution">
+	<h3 class="title">行业应用</h3>
+	<div class="solution_content center swiper-container">
+		<div class="swiper-wrapper">
+			{$For(ArticleList,1/1245/0/9/0/1/0/0)$}
+			<div class="solution_box swiper-slide">
+				<h3>{$ArticleListTitle$}</h3><span></span>
+				<div class="solution_text">{$ArticleListContent$}</div>
+			</div>
+			{$Next$}
+		</div>
+	</div>		
+	<div class="solution_bottom">
+		<div class="center swiper-container">
+			<ul class="solution_list swiper-wrapper">
+				{$For(ArticleList,1/1245/0/9/0/1/0/0)$}
+				<li class="swiper-slide"><i><img src="{$SiteSkin$}images/solution_img0{$ListNo$}.png"/></i><p>{$ArticleListTitle$}</p></li>
+				{$Next$}
+			</ul>
+		</div>		
+	</div>
+</div>
+
+<div class="youshi">
+	<div class="youshi_box center">
+		<dl class="no1 clearfix">
+			<dt><img src="{$SiteSkin$}images/youshi_img01.png"/></dt>
+			<dd class="youshi_text">
+				<div class="youshi_title"><span>5</span><p>大选择捷通的理由</p><h3>选择捷通，满足您的一切需求</h3></div>
+				<ul class="youshi_list">
+					<li class="no1"><i><img src="{$SiteSkin$}images/youshi_icon01.png"/></i><p>2016年捷通科技荣获“国家高新企业”称号</p></li>
+					<li class="no2"><i><img src="{$SiteSkin$}images/youshi_icon02.png"/></i><p>捷通科技荣获2014中国RFID行业年度最佳进步企业</p></li>
+					<li class="no3"><i><img src="{$SiteSkin$}images/youshi_icon03.png"/></i><p>研发技术团队拥有10年以上的研发经验</p></li>
+					<li class="no4"><i><img src="{$SiteSkin$}images/youshi_icon04.png"/></i><p>提供软件、硬件免费售后服务及技术支持</p></li>
+					<li class="no5"><i><img src="{$SiteSkin$}images/youshi_icon05.png"/></i><p>捷通可以根据客户各种需求定制开发产品 </p></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl class="no2 clearfix">
+			<dt><img src="{$SiteSkin$}images/youshi_img02.png"/></dt>
+			<dd class="youshi_text">
+				<div class="youshi_title"><span>5</span><p>大选择捷通的理由</p><h3>选择捷通，满足您的一切需求</h3></div>
+				<ul class="youshi_list">
+					<li class="no1"><i><img src="{$SiteSkin$}images/youshi_icon06.png"/></i><p>提供高、中、低端系列产品一站式采购</p></li>
+					<li class="no2"><i><img src="{$SiteSkin$}images/youshi_icon07.png"/></i><p>产品种类丰富，满足各种距离要求</p></li>
+					<li class="no3"><i><img src="{$SiteSkin$}images/youshi_icon08.png"/></i><p>产品自主研发，免费售后服务和支持</p></li>
+					<li class="no4"><i><img src="{$SiteSkin$}images/youshi_icon09.png"/></i><p>厂家直销，性价比更高</p></li>
+					<li class="no5"><i><img src="{$SiteSkin$}images/youshi_icon10.png"/></i><p>产品已通过欧盟CE、美国FCC、澳洲C-TICK多项认证 </p></li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+</div>
+
+<div class="customer">
+	<h3 class="title">合作应用</h3>
+	<div class="customer_box center">
+		<ul class="customer_list owl-carousel">
+			{$For(ArticleList,1/1168/0/9/0/2/0/14)$}
+			<li class="item">
+				<dl>
+					<dt class="customer_name">
+						<i><img src="{$ArticleListPic$}"/></i>
+						<h3>{$ArticleListTitle$} <span>{$ArticleList_enName$}</span></h3>
+					</dt>
+					<dd class="customer_text">{$ArticleListContent$}</dd>
+					<dd class="customer_more"><a href="{$ArticleListUrl$}">了解详情</a></dd>
+				</dl>
+			</li>
+			{$Next$}
+		</ul>
+	</div>
+	<div class="center">
+		<dl class="guangg clearfix">
+			<dt>
+				<h3><span>以质量为生命，以服务为天职！</span></h3>
+				<p>我们以用户至上为原则，以技术为根本</p>
+				<div><a href="">在线咨询</a><a href="{$HomeUrlMore(1158)$}" class="guangg_more">了解更多</a></div>
+			</dt>
+			<dd>
+				<i><img src="{$SiteSkin$}images/tel_icon.png"/></i>
+				<p>免费服务热线</p>
+				<h3>{$Tel400$}</h3>
+			</dd>
+		</dl>
+	</div>
+</div>
+
+<div class="about pt50">
+		<div class="center">
+		<div class="title">关于捷通</div>
+		<dl class="about_box clearfix">
+			<dt class="about_img"><a href="{$HomeUrlMore(1158)$}">{$Info(104)$}</a></dt>
+			<dd class="about_content">
+				<h3>{$Info(113)$}<span>{$Info(116)$}</span></h3>
+				<em></em>
+				<div class="about_text">{$Info(86)$}</div>
+				<a href="{$HomeUrlMore(1158)$}" class="about_more">更多简介 &gt;</a>			
+			</dd>
+			<dd>
+				<ul class="about_list clearfix">
+					<li><a href="{$HomeUrlMore(1158)$}"><i><img src="{$SiteSkin$}images/about_icon01.png"/></i><p>走进捷通</p></a></li>
+					<li><a href="{$HomeUrlMore(1159)$}"><i><img src="{$SiteSkin$}images/about_icon02.png"/></i><p>企业文化</p></a></li>
+					<li><a href="{$HomeUrlMore(1161)$}"><i><img src="{$SiteSkin$}images/about_icon03.png"/></i><p>荣誉证书</p></a></li>
+					<li><a href="{$HomeUrlMore(1160)$}"><i><img src="{$SiteSkin$}images/about_icon04.png"/></i><p>团队证书</p></a></li>
+					<li><a href="{$HomeUrlMore(1157)$}"><i><img src="{$SiteSkin$}images/about_icon05.png"/></i><p>联系我们</p></a></li>
+				</ul>
+			</dd>
+		</dl>			
+	</div>
+</div>
+
+<div class="news">
+	<div class="title">资讯动态</div>
+	<dl class="center clearfix">
+		<dt>
+			<ul class="news_list news_leftList owl-carousel">
+				{$For(ArticleList,1/1169/0/9/0/2/0/14)$}
+				<li class="item">
+					<a href="{$ArticleListUrl$}" title="{$ArticleListTitleAll$}">
+						<p><img src="{$ArticleListPic$}" alt="{$ArticleListTitleAll$}"/></p>
+						<h3>{$ArticleListTitle$}</h3>
+						<div>{$ArticleListContent$}</div>
+						<span>{$ArticleListYear$}-{$ArticleListMonth$}-{$ArticleListDay$}</span>
+					</a>
+				</li>
+				{$Next$}				
+			</ul>
+		</dt>
+		<dd>
+			<ul class="news_rightList">
+				{$For(ArticleList,1/1170/0/9/0/2/0/16)$}
+				<li>
+					<a href="{$ArticleListUrl$}" title="{$ArticleListTitleAll$}">
+						<h3>{$ArticleListTitle$}</h3>
+						<div>{$ArticleListContent$}</div>
+						<span>{$ArticleListYear$}-{$ArticleListMonth$}-{$ArticleListDay$}</span>
+					</a>
+				</li>
+				{$Next$}
+			</ul>
+		</dd>
+	</dl>
+</div>
+
+{$File(foot)$}
+<script src="{$SiteSkin$}js/jquery.SuperSlide.js" type="text/javascript" charset="utf-8"></script>
+<script src="{$SiteSkin$}js/test-clear.js" type="text/javascript" charset="utf-8"></script>
+<script src="{$JsCdnUrl$}{$SiteSkin$}js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+

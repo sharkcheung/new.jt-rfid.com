@@ -1,0 +1,1 @@
+﻿<div class="whd"><a class="no1 active" href="http://bztest.qebang.cn/admin-new/weixin/Weixin_subscribeList.asp?Type=1">公众平台管理</a><a href="http://admin.qbt.qebang.com/index.php/home/operationManage/weChat">公众号运营</a></div>

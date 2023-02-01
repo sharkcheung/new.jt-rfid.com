@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>什么是物联网架构体系，你知道吗？-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="物联网架构体系，超高频读写设备">
+<meta name="description" content="物联网架构体系，超高频读写设备">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> 物联网架构体系，超高频读写设备</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">什么是物联网架构体系，你知道吗？</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2017-7-28 11:34:36</p>
+        <div class="neiye-detail-text"><p>
+	<span style="font-size:16px;">近年来，我国越来越重视物联网产业的发展，陆续实施了“物联网专项”、“强基工程”、“智能制造专项”等一系列产业政策。同时，培育了不同体制的研发机构和公共服务等配套体系，促进了产业生态体系建设与完善，推进了我国新型工业化发展战略的实施，为产业结构调整和转型升级发挥了积极作用。</span> 
+</p>
+<p align="center">
+	<img alt="" src="http://szjtkj.gz005.qebang.cn/up/image/201707/20170728112919121912.jpg" /><span style="display:none;"></span><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">物联网作为一种形式多样的复杂系统，涉及了信息技术自上而下的每个层面，具有产业链条长、涉及领域广泛、应用场景复杂等特征。</span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p>
+	<br />
+<span style="font-size:16px;">从整体上来看，物联网可分为软件、硬件两大部分。软件体现了其思想理念、系统规模、功能定位、模式创新、方案内容等技术应用的灵魂，犹如人体血液一样，贯穿了整个物联网各个物理层。</span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>物联网架构体系有哪些？</strong></span><br />
+<span style="font-size:16px;">业界普遍认为，物联网的构成包括系统应用设备、敏感元件与传感器、微处理芯片、网络服务、软件及应用开发、系统集成、应用设备供应、运营及服务、用户等7个环节。下面我们来一一了解下吧!</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;"><strong>1、系统应用设备及产品生产提供商</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">主要集中在数据采集智能终端装置与设备、移动终端设备、专业化服务器、网络设施与配套设备，包括电子标签、读写器模块、读写设备、读写器天线、智能卡、交换器、路由器、中间件等系统集成提供商。目前，国内企业数量较多，但以中小企业为主。</span> 
+</p>
+<p align="center">
+	<img alt="" src="http://szjtkj.gz005.qebang.cn/up/image/201707/20170728113196789678.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;"><strong>2、敏感元件与传感器、微处理芯片提供商</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">主要有力敏、磁敏、光敏、气敏、声敏、温湿度、生物敏、RFID等各种类型的敏感元件与传感器和传感设备;微处理芯片提供商可分为各种类型的通信、微处理、存储、导航、模拟放大等芯片和模块的设计、封装、销售等，以及提供各种相关产品生产的设备制造厂商。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;"><strong>3、网络服务提供商</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">以固网和移动通信网为主，其他诸如互联网、电信网、广电网、专用网以及其他网络等，都属于物联网数据传输的支撑和服务提供商。目前，国内主要是移动、联通、电信三大电信运营商。随着新一代移动通信技术的创新与发展，结合集成电路水平的提升，相信未来会有更多的局域网络运营与服务商，为物联网数据信息传输提供更多的支持与选择。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;"><strong>4、软件设计与应用开发商</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">主要是针对特定行业应用的通用软件和专用软件开发企业，包括中间件接口软件，提供专业性软件产品及解决方案。主要包括平台结构控制系统、网络操作系统、嵌入式操作系统、实时数据库、运行集成环境、信息安全软件、中间件接口软件、组网通信软件等产品开发商。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;"><strong></strong></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;"><strong>5、系统集成商</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">根据行业特征需求，为客户提供完整解决方案、商业模式创新和管理流程再造的硬件和软件系统集成厂商。系统集成商的水平与能力，一方面反应了物联网的专业化技术发展水平，另一方面也是影响行业应用和市场推广的重要因素。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;"><strong>6、运营及服务提供商</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">主要是为客户提供统一的终端设备鉴权、计费等服务，实现终端接人控制、终端管理、行业应用管理、业务运营管理、平台管理等服务。目前，我国运营及服务市场开放性和资源持有各方的协同性不够，相互信任度不高。未来，随着物联网市场应用范围的不断扩大和成熟，运行状态、升级维护、故障定位、维护成本、运营成本、决策分析、数据保密等运营管理的需求将越来越多，对运营及服务提供商的要求也将逐渐提高。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;"><strong></strong></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;"><strong>7、用户方</strong></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">主要是政府职能部门和公共资源持有者。其对物联网的认知、认可和迫切程度，特别是投资规模、系统功能、技术标准、商业模式、运行维护等决定着市场应用的发展与走向。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">围绕物联网架构七大方面搭建产业上下游协同关系，可带动产业链的整体发展。例如每个物体上都要加装一个甚至多个芯片，为集成电路、通信设备、传统制造业等关联产业带来发展新机遇。它们存在着相互关联与协同关系，是物联网产业创新发展的关键，也决定着产业的市场需求与发展。　</span><br />
+<span style="font-size:16px;">　　</span><br />
+<span style="font-size:18px;color:#003399;"><strong>共性技术</strong></span><br />
+<span style="font-size:16px;">从物联网技术架构和产业链来看，共性技术也是影响和制约产业发展和创新应用的“新瓶颈”。集中表现在共性基础技术、数字编码技术、通信协议与标准技术、云计算与存储技术、大数据分析模型与算法等五个方面。此间，挖掘以基础技术为主体、以应用技术为纽带的产业“共性技术”是决定物联网能否可持续发展的关键。</span><br />
+<span style="font-size:16px;">而在共性技术中，最不可或缺的就是系统应用设备了。其中，超高频应用设备最为突出。超高频设备以其读取距离远、可同时读多卡等特性，成为广大应用商的首选。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201707/20170728113371897189.jpg" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">深圳捷通科技有限公司成立于2011年，为国家级高新技<span style="display:none;"></span>术企业。公司始终专注于无线射频（RFID）读写器的研发、生产与销售，一直致力于为用户提供低价格、高性能的<a href="http://www.jt-rfid.com/?Product1162/Index.html" target="_blank" title="超高频读写器">超高频读写器</a>产品。&nbsp;公司产品涵盖超高频读写器、超高频<a href="http://www.jt-rfid.com/?Product1163/Index.html" target="_blank" title="读写模块">读写模块</a>、射频天线、电子标签、超高频RFID手持机等。</span> 
+</p>
+<span style="font-size:16px;"></span> 
+<p>
+	<br />
+<span style="font-size:16px;">随着智慧城市、节能减排两大战略目标的确立，在庞大的市场需求牵引与带动下，我国物联网应用创新不断涌现，渗透到了人们日常生活的每一个环节，形成了强大的创新推动力，商业与服务模式日新月异。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span></span><br />
+<span style="font-size:16px;">（来源：图文来源于网络，侵删）</span> 
+</p><div class='article_copyright_class' style='margin-top:10px;padding-top:5px;word-wrap:break-word;word-break:break-all;border-top:dashed 1px #ccc;font-size:12px;font-weight:normal;color:'>本文由RFID超高频读写器专业厂商-深圳市捷通科技有限公司发表。转载此文章须经作者同意，并请附上出处(RFID超高频读写器专业厂商-深圳市捷通科技有限公司)及本页链接。原文链接:http://www.jt-rfid.com/html/Article1169/1142.html</div></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/1143.html">DENSO推出了袖珍型RFID手持终端扫描仪</a><br />下一篇：<a href="/html/Article1169/1140.html">无人超市是否真的能做到真正地“无人”？</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=1142"></script>
+
+</body>
+</html>

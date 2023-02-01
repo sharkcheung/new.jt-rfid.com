@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="无人店，rfid技术，苏宁无人店">
+<meta name="description" content="无人店，rfid技术，苏宁无人店">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> 无人店，rfid技术，苏宁无人店</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">苏宁开了一家有人的“无人店”，认为无人店不会取代有人店</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2017-8-29 15:48:58</p>
+        <div class="neiye-detail-text"><p>
+	<span style="font-size:16px;">苏宁认为，无人店有三个作用：降低成本、记录消费者行为、提高消费者体验。</span> 
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201708/201708291545001414.png" /><span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>“无人店追求的目标不是无人。”</strong></span><br />
+<span style="font-size:16px;">苏宁今天开的无人店似乎就体验了这一点，因为按我现场的体验和公司方面介绍，这家无人店，一定会有人。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">今天，在苏宁徐庄生活广场，苏宁开出了第一家“无人店”，名为苏宁体育biu。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">36氪到现场体验了一下，这家店长下面这样，据说占地43平方米，完全是开放式的，跟我们平时看到的很多四周都是玻璃墙围着的无人店不太一样。眨眼一看觉得有点水，那不是很容易被偷东西吗？苏宁云商IT总部执行副总裁向江旭透露，店门的装修改动了很多遍，一开始也是用的玻璃盒子般的设计，但苏宁的高层觉得原来的装潢跟苏宁其他门店的调性不符合，所以最后改成了开放式。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>一家“有人”的无人店</strong></span><br />
+<span style="font-size:16px;">先给大家讲讲整个体验流程.</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">进店之前，我需要下载一个苏宁金融APP，注册之后账户绑定银行卡，然后开通刷脸支付。完成绑定之后，才可以进店。氪星读者们看看下面的图，成功识别你的脸之后，屏幕上会显示你的名字和银行账户。苏宁方面表示这个人脸识别技术用的是第三方的，但具体公司没有透露。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">然后就可以开始在店里买买买了，据苏宁无人店产品负责人张力介绍，店内大概有90多个SKU。我自己体验的感觉是店内的东西还是太少了，而且卖服装的店居然不能试穿，略不爽。</span> 
+</p>
+<p align="center">
+	<img alt="" src="/up/image/201708/20170829154551005100.png" /><span style="font-size:16px;"></span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">挑好东西之后，在支付闸门前面站一下，面对上方的摄像头识别，屏幕上会显示你的名字和价格，被扣钱之后，你就可以被放出去了。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">打开APP可以看到支付详情。如果你没有买任何东西，可以走无购物通道，带着商品走无购物通道警报会响哦。</span> 
+</p>
+<p align="center">
+	&nbsp;<img alt="" src="/up/image/201708/20170829154690109010.png" /> 
+</p>
+<p align="center">
+	<span style="font-size:16px;"><span style="display:none;"></span>苏宁金融APP截图</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span><span style="font-size:16px;">我们先停下来讲解一下技术细节，整个过程涉及到人脸识别和RFID（射频识别技术），在商品识别方面，主要是用到了RFID技术，部分辅以视觉识别技术。关于RFID技术的缺点，我们在之前的文章里面已经分析过，从现场闸门的高度来看，高于闸门感应区域的商品，很有可能会被“漏掉”。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">对于这个问题，向江旭表示，其实苏宁的闸门也完全能够做高，像阿里的淘咖啡那样把人关在里面识别。另外，即便是有人店，一样可以会有商品的损耗，有小偷。闸门的设计还需要跟现场的整个装潢和调性配合。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">我发现的另外一个问题是，每次我太靠近闸门要拍照时，总会被旁边的工作人员小姐姐阻止，要求我站后一点，否则会误识别到我的人脸，嗯……然后我可能一不小心就被扣钱了。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">What！？你是在逗我吗？那商用的时候怎么办，店里不是一直要有人阻止用户太靠前？小姐姐的回答是，对的，每一家店都会有工作人员。张力也表示，商用的苏宁biu，每一家会配备至少一个最多两个配货员。</span> 
+</p>
+<p>
+	<span style="font-size:16px;">嗯？那还能叫无人店吗？</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:18px;color:#003399;"><strong>无人店的重点并不是无人</strong></span><br />
+<span style="font-size:16px;">无人店开始火起来之后，市场上有着非常多的质疑，认为无人店不能节省多少成本，而且目前无人店打出来的噱头自动贩卖机全都可以解决。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">向江旭对无人店的态度“非常踏实”，似乎无打算以“完全无人”将苏宁包装成一身黑科技的形象。他承认自己在体验苏宁biu的过程中也会发现问题，不过依然认为这个是未来的趋势，并非单纯的噱头。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">苏宁认为，无人店有三个作用：降低成本、记录消费者行为、提高消费者体验。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">他们经过测算后认为，对于同样大小的店面，无人店在前期的技术投入，肯定比有人店高，但是长期来看，节省下来的人力等成本确实可以覆盖前期成本，而且无人店可以24小时营业（但是晚上能有多少销量呢……）。现场的这家店，他们预计是营业一年半左右会开始盈利。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">门店智能化带给商家的另一好处是，可以记录消费者在店里的行为数据。我在现场参观了苏宁的展馆，他们目前月有几十家门店实现了类似技术，根据屏幕显示，用户有三种颜色：红为女性注册用户、蓝色为蓝色注册用户、绿色为未注册用户，我能看到这家店里人流怎么走。向江旭介绍，这些数据可以给商户提供营销上的参考，比如消费者在店里面某个货架前停留了很久却没有买，系统可以给这位用户推送该商品促销信息。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">按张力的介绍，整家店的人流监控靠进口和出口的两台摄像头就可以完成（听起来真是两个强大的摄像头……）。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">无人店最早起源于Amazon Go，毕竟是苏宁从当前热潮中“借来”的词，如果将这套概念套进苏宁自己的话语体系，可能是张近东今年提出的“智慧零售”概念。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">在向江旭的理解中，苏宁做无人店是希望将门店智能化，这套“无人店”解决方案来看，主要是提高支付环节的效率，减少消费者的排队时间，未来收银员的数量可能会减少，门店工作人员主要承担导购的角色。他认为：“无人店追求的目标并不是无人，而是更好的客户体验。”</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">他坦言目前无人店面临最大的阻力，就是技术并未成熟，商家需要在误识别率、效率和成本之间做权衡。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">另外一个阻力是适当的运营，比如无人店适合建多大、适合售卖什么品类的商品、适合建在什么区域、如何建立一套快速的供应链体系？长远来看，向江旭不认为无人店会取代有人店，无人店作为一种新业态，未来会跟有人店一起共存，适用于特定品类的商品和区域。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">我也问了向江旭，怎么看“无人店能做到的自动贩卖机也可以做到”这种观点。他认为现在自动贩卖机只是把原来收银员要做的事情——比如扫码和找零——转嫁给了消费者，并不能提高消费者的支付效率。</span> 
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">根据这种理解，我们完全可以将“无人店”解决方案拆解开，本质上就是为门店提供了“无人收银”和“消费者行为捕捉”两种技术，这两个环节的解决方案同样可被用在改造自动售卖机上——在售卖机上安装摄像头，用户走到前面就可以识别，打开货柜取完物品即可自动扣款。蚂蚁金服前段时间开放的无人值守技术就是如此。</span> 
+</p>
+<p>
+	<span style="font-size:16px;"></span>&nbsp;
+</p>
+<p>
+	<span style="font-size:16px;">（来源：http://36kr.com/p/5090265.html</a></a>)
+</p>
+</a></span><div class='article_copyright_class' style='margin-top:10px;padding-top:5px;word-wrap:break-word;word-break:break-all;border-top:dashed 1px #ccc;font-size:12px;font-weight:normal;color:'>本文由RFID超高频读写器专业厂商-深圳市捷通科技有限公司发表。转载此文章须经作者同意，并请附上出处(RFID超高频读写器专业厂商-深圳市捷通科技有限公司)及本页链接。原文链接:http://www.jt-rfid.com/html/Article1169/1173.html</div></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/1183.html">无人机RFID仓库管理系统揭谜</a><br />下一篇：<a href="/html/Article1169/1172.html">共享汽车的瓶颈能否通过rfid智慧停车解决呢？</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=1173"></script>
+
+</body>
+</html>

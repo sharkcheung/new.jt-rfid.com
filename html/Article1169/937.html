@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>RFID超高频嵌入式模块及应用领域说明-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="RFID嵌入式模块 RFID读写器 RFID扩张芯片 RFID标签">
+<meta name="description" content="深圳捷通科技专注无线识别硬件研发，能够根据现场环境需求进行个性设计，经过无数次测试研发出来 型号：JT-2880模块，它是一款体积小、低功耗、高灵敏度的超高频RFID读写模块，支持EPC C1 G2">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> RFID嵌入式模块 RFID读写器 RFID扩张芯片 RFID标签</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>业内资讯</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Article1169/index.html">业内资讯</a></li>
+      
+      <li><a href="/html/Article1170/index.html">公司动态</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">业内资讯</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1155/index.html" title="资讯中心">资讯中心</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">RFID超高频嵌入式模块及应用领域说明</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2016-7-22 17:00:32</p>
+        <div class="neiye-detail-text"><p style="text-align:center;margin:0cm 0cm 0pt 10.5pt;text-indent:-5.25pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="center">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt 11.25pt;text-indent:-6pt;mso-para-margin-left:.5gd;mso-char-indent-count:-.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:18pt;mso-char-indent-count:1.5;" align="left">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<strong></strong><br />
+<p style="text-align:left;margin:0cm 0cm 0pt;text-indent:18pt;mso-char-indent-count:1.5;" align="left">
+	<span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">&nbsp;&nbsp; 深圳捷通科技专注无线识别硬件研发，</span><span style="white-space:normal;word-spacing:0px;text-transform:none;float:none;color:#333333;font:16px/2 宋体;widows:1;display:inline !important;letter-spacing:normal;text-indent:0px;-webkit-text-stroke-width:0px;">能够根据现场环境需求进行个性设计，经过无数次测试研发出来 </span><span style="font-size:16px;line-height:2;">型号：<span style="color:;"><strong><a href="http://www.jt-rfid.com/?Product1163/1009.html" target="_blank"><span style="color:#003399;">JT-2880模块</span></a></strong></span>，它</span></span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">是一款体积小、低功耗、高灵敏度的</span></span></span><span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;"></span><span style="font-size:16px;line-height:2;"><span style="color:;"><a href="http://www.jt-rfid.com/?Product1163/1009.html" target="_blank"></a></span></span></span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;"><span style="color:;">超高频</span></span><a href="http://www.jt-rfid.com/?Product1163/1009.html" target="_blank"><span style="font-size:16px;color:#003399;line-height:2;"><span style="color:#003399;"><strong>RFID</strong></span></span><span style="font-size:16px;color:#003399;line-height:2;"><span style="color:#003399;"><strong>读写模块</strong></span></span></a></span></span><span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">，支持</span><span style="font-size:16px;line-height:2;">EPC C1 G2 /ISO 18000-6C</span><span style="font-size:16px;line-height:2;">协议，配合</span><span style="font-size:16px;line-height:2;">45x45mm</span><span style="font-size:16px;line-height:2;">的陶瓷天线，读取普通白卡，实测可达到：</span><span style="font-size:16px;line-height:2;">3m</span><span style="font-size:16px;line-height:2;">。</span><span></span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;text-indent:20.25pt;">
+	<span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">&nbsp;可方便地嵌入平板电脑、</span><span style="font-size:16px;line-height:2;">PDA</span><span style="font-size:16px;line-height:2;">等手持终端，实现这类设备的</span><span style="font-size:16px;line-height:2;">RFID</span><span style="font-size:16px;line-height:2;">扩张功能，并广泛应用于物流管理、产品质检管理、仓储管理，人员管理等其他领域。</span></span><span style="mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;text-indent:20.25pt;">
+	<span style="mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;"></span></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">&nbsp;<span style="font-size:24px;">产品特点：</span></span><span></span></span></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■低功耗设计，</span><span style="font-size:16px;line-height:2;">+3.6V~+5.5V</span><span style="font-size:16px;line-height:2;">供电</span><span></span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■灵敏度高，瞬间可读取</span><span style="font-size:16px;line-height:2;">50</span><span style="font-size:16px;line-height:2;">张或以上的标签数</span><span></span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">■支持</span><span style="font-size:16px;line-height:2;">RS232</span><span style="font-size:16px;line-height:2;">串行通讯接口</span><span style="font-size:16px;line-height:2;">(3V TLL</span><span style="font-size:16px;line-height:2;">电平</span><span style="font-size:16px;line-height:2;">)</span></span><span style="mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">■提供</span><span style="font-size:16px;line-height:2;">SDK</span><span style="font-size:16px;line-height:2;">开发包，支持多种开发语言，便于用户二次开发</span></span><span style="mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:24px;line-height:2;">&nbsp;<img alt="" src="/up/image/201607/20160722164332413241.jpg" /></span></span></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:24px;line-height:2;">产品参数：</span><span></span></span></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■通讯协议：</span><span style="font-size:16px;line-height:2;">EPC Global Class1 Gen2 /ISO 18000-6C</span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■频率特征：国标：</span><span style="font-size:16px;line-height:2;">920.625MHz~924.375MHz</span><span style="font-size:16px;line-height:2;">，信道间隔</span><span style="font-size:16px;line-height:2;"> 250kHz </span></span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16px;line-height:2;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">美标：</span><span style="font-size:16px;line-height:2;">902.75MHz~927.25MHz</span><span style="font-size:16px;line-height:2;">，信道间隔</span><span style="font-size:16px;line-height:2;"> 500kHz </span></span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■读取距离：读取</span><span style="font-size:16px;line-height:2;">JT-301(</span><span style="font-size:16px;line-height:2;">远距离白卡</span><span style="font-size:16px;line-height:2;">)</span><span style="font-size:16px;line-height:2;">距离：约</span><span style="font-size:16px;line-height:2;">3m</span><span style="font-size:16px;line-height:2;">；</span><span></span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■写卡距离：写入</span><span style="font-size:16px;line-height:2;">JT-301(</span><span style="font-size:16px;line-height:2;">远距离白卡</span><span style="font-size:16px;line-height:2;">)</span><span style="font-size:16px;line-height:2;">距离：约</span><span style="font-size:16px;line-height:2;">0.3m</span><span style="font-size:16px;line-height:2;">；</span><span></span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■输出功率：</span><span style="font-size:16px;line-height:2;">19~30dBm</span><span style="font-size:16px;line-height:2;">±</span><span style="font-size:16px;line-height:2;">1dBm</span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■工作温度：</span><span style="font-size:16px;line-height:2;">-20</span><span style="font-size:16px;line-height:2;">℃</span><span style="font-size:16px;line-height:2;">~75</span><span style="font-size:16px;line-height:2;">℃</span><span> </span></span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■存储温度：</span><span style="font-size:16px;line-height:2;">-40</span><span style="font-size:16px;line-height:2;">℃</span><span style="font-size:16px;line-height:2;">~85</span><span style="font-size:16px;line-height:2;">℃</span><span> </span></span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■工作湿度：</span><span style="font-size:16px;line-height:2;">5%~95%</span><span style="font-size:16px;line-height:2;">无冷凝</span><span> </span></span></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■待机电流：</span><span style="font-size:16px;line-height:2;">30mA</span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■工作电压：</span><span style="font-size:16px;line-height:2;">+3.6V~+5.5V</span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■工作电流：峰值电流</span><span style="font-size:16px;line-height:2;">560mA</span><span style="font-size:16px;line-height:2;">（发射功率为：</span><span style="font-size:16px;line-height:2;">30dBm</span><span style="font-size:16px;line-height:2;">，且</span><span style="font-size:16px;line-height:2;">5V</span><span style="font-size:16px;line-height:2;">供电）</span><span></span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">■尺</span><span style="font-size:16px;line-height:2;"><span style="font-size:16px;line-height:2;mso-spacerun:yes;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:16px;line-height:2;">寸：</span><span style="font-size:16px;line-height:2;">30x40x7mm</span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><b><span style="font-size:16px;line-height:2;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;">PCB</span></b><b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">板尺寸：</span></span></b></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;"></span><img style="height:446px;width:466px;" alt="" src="/up/image/201607/20160722164460216021.png" width="677" height="677" /><span></span></span></b></span> 
+</p>
+<p style="text-align:center;margin:0cm 0cm 0pt;" align="center">
+	<span><span style="font-size:16pt;mso-no-proof:yes;"></span><b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></b></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></b>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;"></span></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">外接插座引脚定义：</span></span></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><img alt="" src="/up/image/201607/20160722164513191319.png" /><img style="height:375px;width:358px;" alt="" src="/up/image/201607/20160722164589728972.png" width="421" height="472" /><span style="font-size:16px;line-height:2;"></span></span></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;"></span><span></span></span></span></b>&nbsp;
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><span style="font-size:16pt;mso-no-proof:yes;"></span><b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></b></span>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></b>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></b>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></b>
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span><span style="font-size:16px;line-height:2;">开发套件说明：</span><span></span></span></span></b> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><b><span style="font-size:16px;line-height:2;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;mso-tab-count:1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 深圳捷通科技研发部，因</span></span></b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">开发套件是将<span style="color:#003399;"><strong>JT</strong></span><a href="http://www.jt-rfid.com/?Product1163/1009.html" target="_blank"><span style="color:#003399;"><strong>-</strong></span></a></span></span></span><span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;"><a href="http://www.jt-rfid.com/?Product1163/1009.html" target="_blank"><span style="color:#003399;"><strong>2880</strong></span></a>模块的接口板设计好，是为</span></span></span><span><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"><span style="font-size:16px;line-height:2;">了方便用户更直观地检测模块的性能而开发的，用户只需按照项目需求进行测试及软件开发，从而提高了用户的开率。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 捷通科技为您解决困难，捷天下，通万物。</span></span></span> 
+</p>
+<p style="margin:0cm 0cm 0pt;">
+	<span><b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;mso-no-proof:yes;"></span></b><b><span style="font-size:12pt;mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span></b></span>
+</p>
+<p style="text-align:left;margin:0cm 0cm 0pt;" align="left">
+	<span style="mso-bidi-font-family:宋体;mso-hansi-font-family:宋体;"></span>
+</p>
+<p>
+	&nbsp;
+</p></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1169/939.html">RFID技术原理及优势分析</a><br />下一篇：<a href="/html/Article1169/936.html">产线管理的工序重要性及传统工序管理的区别</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=937"></script>
+
+</body>
+</html>

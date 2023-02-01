@@ -1,0 +1,29 @@
+﻿#kwlist{
+	font-size:12px; font-family:verdana,tahoma,宋体; 
+     width:98%; 
+    padding:0px;
+	margin:0px;
+	
+}
+#kwlist div{
+	line-height:22px;
+	text-align:center;
+	padding:0px;
+	margin:0px;
+}
+#kwlist div span{
+	width:29%;
+	border-bottom:1px #CCCCCC dashed;
+	height:22px;
+	padding:0px;
+	margin:0px;
+
+}
+#kwlist div span b{
+	font-weight:normal; color:#FF0000;
+}
+#kwlist .shover{
+	cursor:pointer;
+}
+#tishi{
+font-size:12px;}

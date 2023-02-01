@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>{$DownCategoryKeyword$}-{$Info(113)$}</title>
+<meta name="keywords" content="{$DownCategoryKeyword$}">
+<meta name="description" content="{$DownCategoryDescription$}">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="{$SiteSkin$}css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{$SiteSkin$}js/jquery-1.10.1.min.js"></script>
+<script src="{$SiteSkin$}js/ScrollPic.js" type="text/javascript"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="{$SiteSkin$}js/Png.js"></script>
+<script type="text/javascript">
+EvPNG.fix('div, ul, img, li, input, a');
+</script>
+<![endif]-->
+</head>
+<body>
+<body class="nybody">
+
+{$include(head)$}
+
+{$include(menu)$}
+
+<div style=" padding:0 0.833em; font-size:1em;">
+      <ul class="download" style="padding-bottom:2em;">
+	   {$For(DownList,1/{$ModuleId$}/0/0/1/0/0/0)$}
+        <li>
+		  <a href="/wap{$DownListUrl$}" target="_blank" title="{$DownListTitleAll$}">
+		 <strong style="color:#0090d1">{$DownListTitle$}</strong></a>
+         <span>发布时间：{$DownListDate$}</span>
+		<p>语言：{$DownListLanguage$}&nbsp;&nbsp;下载：{$DownListCount$}次 <p>说明：{$DownListContent$}</p>
+		</li>
+        {$Next$}
+      </ul>
+      <div class="zdypage">{$DownCategoryPage$}</div> 
+
+</div>
+
+{$include(footfix)$}
+</body>
+</html>

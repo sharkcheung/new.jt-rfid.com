@@ -1,0 +1,395 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>{$SiteKeyword$}——{$Info(113)$}</title>
+<link href="{$SiteSkin$}css/style.css?r=1" rel="stylesheet" type="text/css" />
+<link href="{$SiteSkin$}css/idangerous.swiper-2.5.1.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$SiteSkin$}js/jquery-1.10.1.min.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2add4274b517acc369dddbdae6f1f446";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="text/javascript" src="{$SiteSkin$}js/ScrollPic.js"></script>
+<script src="{$SiteSkin$}js/idangerous.swiper-2.5.1.min.js"></script>
+<script type="text/javascript" src="{$SiteSkin$}js/PCASClass.js"></script>
+</head>
+<body>
+
+
+<!--header start-->
+<header id="head">
+ <div class="head">
+   <a href="/wap" class="logo" id="head">
+     <img src="{$SiteLogo$}"/> 
+   </a>
+   <div class="headerrightbox">
+     <h3>{$SiteName$}<span>{$Info(113)$}</span></h3>
+     <p>免费服务热线：<strong>{$Tel400$}</strong></p> 
+   </div>
+ </div>
+</header>
+<!--header end-->
+
+
+
+<!--nav start-->
+<nav>
+  <ul class="mainnav">
+     <li><a href="/wap" class="sy">首页</a></li>
+     {$For(Nav,1/0/1/0)$}
+     <li><a href="/wap{$NavUrl$}">{$NavName$}</a></li>
+     {$Next$}
+  </ul>
+</nav>
+
+<!--nav end-->
+
+
+
+<!--banner start-->
+<section class="banner">
+		<div class="swiper-container">
+              <div class="swiper-wrapper">
+              {$For(ProductList,1/1203/4/3/0/0/0/0)$}
+                <div class="swiper-slide"><a href="/wap{$ProductListUrl$}" title="{$ProductListTitleAll$}"><img alt="{$ProductListTitleAll$}" src="{$ProductListPic$}" /></a></div>
+                {$Next$}
+              </div>
+    	</div>
+        <div class="pagination"></div>
+        <script>
+		  var mySwiper = new Swiper('.banner .swiper-container',{
+			pagination: '.banner .pagination',
+			loop:true,
+			grabCursor: true,
+			paginationClickable: true,
+			autoplayDisableOnInteraction:false,
+			calculateHeight:true,
+			slidesPerView:1,
+			autoplay:2000,
+		  })
+		  </script>
+</section>
+<!--banner end-->
+
+
+<!--product start-->
+<section class="product">
+   <div class="title">
+     <img src="{$SiteSkin$}images/protitle.png" >
+     <h3><span>产品中心</span></h3>
+   </div>
+   <div class="class">
+     <a href="javascript:void(0)" class="act">RFID超高频读写器</a>
+     <a href="javascript:void(0)">RFID超高频读写模块</a>
+     <a href="javascript:void(0)">RFID超高频手持机</a>
+     <a href="javascript:void(0)">RFID超高频天线</a>
+     <a href="javascript:void(0)">RFID超高频电子标签</a>
+   </div>
+   <div class="tablist" style="display:block;">
+      <ul class="list">
+        {$For(ProductList,1/1162/1/4/0/2/0/10)$}
+        <li><a href="/wap{$ProductListUrl$}" title="{$ProductListTitleAll$}">
+        <img src="{$ProductListPic$}"  alt="{$ProductListTitleAll$}" />
+        <p>{$ProductListTitle$}</p>
+        </a></li>
+        {$Next$}
+      </ul>
+   </div>
+   <div class="tablist" style="display:none;">
+      <ul class="list">
+        {$For(ProductList,1/1163/1/4/0/2/0/10)$}
+        <li><a href="/wap{$ProductListUrl$}" title="{$ProductListTitleAll$}">
+        <img src="{$ProductListPic$}"  alt="{$ProductListTitleAll$}" />
+        <p>{$ProductListTitle$}</p>
+        </a></li>
+        {$Next$}
+      </ul>
+   </div>
+   <div class="tablist" style="display:none;">
+      <ul class="list">
+        {$For(ProductList,1/1164/1/4/0/2/0/10)$}
+        <li><a href="/wap{$ProductListUrl$}" title="{$ProductListTitleAll$}">
+        <img src="{$ProductListPic$}"  alt="{$ProductListTitleAll$}" />
+        <p>{$ProductListTitle$}</p>
+        </a></li>
+        {$Next$}
+      </ul>
+    </div>
+   </div>
+   <div class="tablist" style="display:none;">
+      <ul class="list">
+        {$For(ProductList,1/1165/1/4/0/2/0/10)$}
+        <li><a href="/wap{$ProductListUrl$}" title="{$ProductListTitleAll$}">
+        <img src="{$ProductListPic$}"  alt="{$ProductListTitleAll$}" />
+        <p>{$ProductListTitle$}</p>
+        </a></li>
+        {$Next$}
+      </ul>
+   </div>
+   <div class="tablist" style="display:none;">
+      <ul class="list">
+        {$For(ProductList,1/1166/1/4/0/2/0/10)$}
+        <li><a href="/wap{$ProductListUrl$}" title="{$ProductListTitleAll$}">
+        <img src="{$ProductListPic$}"  alt="{$ProductListTitleAll$}" />
+        <p>{$ProductListTitle$}</p>
+        </a></li>
+        {$Next$}
+      </ul>
+   </div>
+</section>
+<script type="text/javascript">
+  $(document).ready(function(e) {
+  $(".product .class a").click(function(){
+  $(".product .class a").removeClass("act");
+  $(this).addClass("act");
+  var tabindex=$(this).index();
+  $(".product .tablist").eq(tabindex).css("display","block").siblings(".tablist").css(  "display","none")
+  })
+  });
+</script>
+<!--product end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="advant">
+  <div class="title"> <img src="{$SiteSkin$}images/choice.png"></div>
+  <div class="reason">
+   <img src="{$SiteSkin$}images/reason.jpg" class="pic">
+   <div class="main">
+      <div class="maintitle">
+        <h3>选择捷通的理由</h3>
+        <p><img src="{$SiteSkin$}images/pic1.jpg"/></p>
+      </div>
+      <div class="text">{$Info(109)$}</div>
+   </div>
+  </div>
+  <div class="advantage">
+   <img src="{$SiteSkin$}images/advantage.jpg" class="pic">
+   <div class="main">
+      <div class="maintitle">
+        <h3>产品优势</h3>
+        <p><img src="{$SiteSkin$}images/pic2.jpg"/></p>
+      </div>
+      <div class="text">{$Info(111)$}</div>
+   </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!--customer start-->
+<section class="customer">
+   <div class="title">
+     <img src="{$SiteSkin$}images/customer.png" >
+     <h3><span>使用客户</span></h3>
+   </div>
+   <ul>
+    {$For(ArticleList,1/1168/1/4/0/2/0/14)$}
+    <li><a href="">
+      <div class="pic">
+        <img src="{$SiteSkin$}images/cover.png" class="cover" />
+        <img src="{$ArticleListPic$}"/>
+      </div>
+      <div class="text">
+      <h3>{$ArticleListTitle$}</h3>
+      <p>{$ArticleList_ZW$}</p>
+      <div>{$ArticleListContent$}</div>
+      <h6>查看详情</h6>
+      </div>
+    </a></li>
+    {$Next$}
+  </ul>
+</section>
+<!--customer end-->
+
+
+<section class="gg"><img src="{$SiteSkin$}images/gg.jpg" ></section>
+
+
+<!--about start-->
+<section class="about">
+   <div class="title">
+    <h3>公司简介<span>about us</span></h3>
+    <a href="/wap{$HomeUrlMore(1158)$}">more +</a>
+   </div>
+  <div class="main"><a href="/wap{$HomeUrlMore(1158)$}">
+    <div class="pic">{$Info(104)$}</div>
+    <div class="text">
+      <h3>{$SiteName$}</h3>
+      <p><span>{$Info(86)$}</span></p>
+    </div>
+  </a></div>
+  <div class="show">
+    <div class="swiper-container" style="cursor:grab;">
+    <ul class="swiper-wrapper">
+     {$For(ArticleList,1/1160/1/8/0/2/0/12)$}
+     <li class="swiper-slide"><a href="/wap{$ArticleListUrl$}">
+       <div class="pic"><img alt="{$ArticleListTitleAll$}" src="{$ArticleListPic$}" /></div>
+     </a></li>
+     {$Next$}
+     </ul>
+   <div class="pagination"></div>
+   </div>
+  </div>
+  <div class="honor">
+    <div class="honortitle">
+      <h3>荣誉资质<span>honor</span></h3>
+      <a href="/wap{$HomeUrlMore(1161)$}">more +</a>
+    </div>
+    <div class="swiper-container" style="cursor:grab;">
+    <ul class="swiper-wrapper">
+     {$For(ArticleList,1/1161/1/8/0/2/0/9)$}
+     <li class="swiper-slide"><a href="/wap{$ArticleListUrl$}">
+       <div class="pic">
+       <img alt="{$ArticleListTitleAll$}" src="{$ArticleListPic$}" />
+       <p>{$ArticleListTitle$}</p>
+       </div>
+       
+     </a></li>
+     {$Next$}
+     </ul>
+   <div class="pagination"></div>
+   </div>
+  </div>
+<script>
+  var Swiperhonor = new Swiper('.honor .swiper-container',{
+	pagination: '.honor .pagination',
+	loop:true,
+	grabCursor: true,
+	paginationClickable: true,
+	slidesPerView:2,
+	calculateHeight:true,
+	autoplay:2500,
+  })
+</script>
+<script>
+  var Swipershow = new Swiper('.show .swiper-container',{
+	pagination: '.show .pagination',
+	loop:true,
+	grabCursor: true,
+	paginationClickable: true,
+	slidesPerView:3,
+	calculateHeight:true,
+	autoplay:2500,
+  })
+</script>
+</section>
+<!--about end-->
+
+
+
+
+
+
+<section class="news">
+  <div class="button">
+      <a href="javascript:void(0)"><span class="act">业内资讯</span></a>
+      <a href="javascript:void(0)"><span>公司动态</span></a>
+      <a href="javascript:void(0)"><span>常见问题</span></a>
+  </div>
+
+   <div class="tablist" style="display:block">
+      {$For(ArticleList,1/1169/1/1/0/2/0/13)$}
+      <div class="content"><a href="/wap{$ArticleListUrl$}">
+        <div class="pic"><img src="{$ArticleListPic$}" width="217" height="144" /></div>
+        <div class="text">
+          <h3>{$ArticleListTitle$}</h3>
+          <p>{$ArticleListContent$}</p>
+        </div>
+      </a></div>
+      {$Next$}
+     <ul class="list">
+     {$For(ArticleList,1/1169/1/8/0/2/0/9)$}
+     {$If({$ListNo$},1,=)$}
+     {$Else$}
+     <li><a href="/wap{$ArticleListUrl$}" title="{$ArticleListTitleAll$}">
+       <p>{$ArticleListTitle$}</p>
+       <em>{$ArticleListDate$}</em>
+     </a></li>
+     {$End If$}
+     {$Next$}   
+     </ul>
+   </div>
+   <div class="tablist" style="display:block">
+      {$For(ArticleList,1/1170/1/1/0/2/0/25)$}
+      <div class="content"><a href="/wap{$ArticleListUrl$}">
+        <div class="pic"><img src="{$ArticleListPic$}" width="217" height="144" /></div>
+        <div class="text"><h3>{$ArticleListTitle$}</h3>
+          <p>{$ArticleListContent$}</p>
+        </div>
+      </a></div>
+      {$Next$}
+     <ul class="list">
+     {$For(ArticleList,1/1170/1/6/0/2/0/16)$}
+     {$If({$ListNo$},1,=)$}
+     {$Else$}
+     <li><a href="/wap{$ArticleListUrl$}" title="{$ArticleListTitleAll$}">
+       <p>{$ArticleListTitle$}</p>
+       <em>{$ArticleListDate$}</em>
+     </a></li>
+     {$End If$}
+     {$Next$}   
+     </ul>
+   </div>
+   <div class="tablist" style="display:none">
+     <div class="faq">
+        {$For(ArticleList,1/1173/1/4/0/0/0/14)$}
+          <dl><a title="{$ArticleListTitle$}" href="/wap{$ArticleListUrl$}">
+           <dt>{$ArticleListTitle$}</dt>
+           <dd>{$ArticleListContent$}</dd>
+         </a></dl>
+         {$Next$}
+    </div>
+   </div>
+<script type="text/javascript">
+  $(document).ready(function(e) {
+  $(".news .button a").click(function(){
+  $(".news .button a span").removeClass("act");
+  $(this).children("span").addClass("act");
+  var tabindex=$(this).index();
+  $(".news .tablist").eq(tabindex).css("display","block").siblings(".tablist").css(  "display","none")
+  })
+  });
+</script>
+</section>
+
+
+
+
+<!--footer start-->
+<footer>
+  <div class="pic">{$Info(112)$}</div>
+  <div class="text">
+  电话：{$Tel400$}<br>
+  Email：{$Email$}<br>
+  公司地址：{$Add$}
+  </div>
+</footer>
+<!--footer end-->
+
+
+<div style='display:none;'><script type='text/javascript' src='{$TjUrl$}/counter.asp?id={$Tjid$}&icon=2'></script></div>
+
+</body>
+</html>

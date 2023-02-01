@@ -1,0 +1,102 @@
+﻿/* CSS Document */
+* {  font-family:tahoma, verdana, 宋体; }
+body { color:#004080; margin:0; padding:0; font-family:tahoma, verdana, 宋体; font-size:11.5px; }
+p{text-align:left; margin:2px 2px 5px 5px;}
+body { text-align:center; background:#fff; line-height:20px; }
+input{
+	font-size:12px;
+}
+a{
+	padding:3px;
+}
+a,a:visited { color:#164483; text-decoration:underline; }
+a:hover { color:#ffffff; text-decoration:none; background:#FF3300; }
+ul,li { list-style; text-align:left; }
+img { border:none; }
+dt{
+	text-align:left;
+}
+input{
+	font-size:12px;
+}
+div{
+	border:0px #E8E8E8 solid;
+}
+form{
+	padding:0px;margin:0px;
+}
+.top{
+	padding:10px; width:96%; background:#fff; text-align:left; line-height:20px;
+	border-bottom:1px #D7E8EA dashed;
+}
+.list{
+	background:#ffffff; width:700px; padding:10px;
+}
+.list b{
+	font-size:14px; color:#0C5A94;padding:0px;margin:4px 0px 8px 0px; 
+}
+.list a{
+	float:right;
+}
+.span{
+	display:none;
+}
+hr{
+    background:#EAEAEA; border:0px; height:1px; margin-bottom:5px;
+}
+h1{
+	font-size:15pt; font-family:黑体; font-weight:normal;
+}
+.page{
+	width:700px; background:#fff;padding:10px; 
+}
+.newsdetail_smtt{
+	display:none;
+}
+
+#newsdetail-content-text,{
+	background:#fff; text-align:left; width:700px; padding:10px; line-height:20px;
+}
+#newsdetail-content-text TBODY FONT{
+   display:none;
+}
+.ad{
+	margin:0 auto; border:1px #FF6600 solid;background:#FFFF99; padding:5px; margin-top:30px; width:600px;
+}
+#pagelist li{
+	float:left; margin-right:10px;
+}
+#pagelist img{
+	display:none;
+}
+
+.td0{
+border:1px solid #AAC7E9; background:#F6FDFF; color:#004080; line-height:30px;
+		background:url('images/td0.gif'); font-weight:bold; font-size:14px; text-align:left; padding-left:20px;
+
+	}
+.td0 form{
+ text-align:center;
+}
+
+#main{
+	margin:15px;
+}
+
+
+#csr{
+	width:700px;
+}
+#trr,#trendFlashContainer,#userCompWd,#userTable,#user_tab_1{
+	display:none;
+}
+#tr{
+	height:200px;
+}
+#areaTable{
+	width:98%;
+}
+#rsTable,#areaTable{
+width:99%; border:1px solid #AAC7E9; background:#F6FDFF; color:#004080; margin-bottom:10px;
+	
+}

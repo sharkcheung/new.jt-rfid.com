@@ -1,0 +1,640 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>RFID读写器的设备选型及应用介绍-深圳市捷通科技有限公司</title>
+<meta name="keywords" content="RFID读写器,RFID天线,RFID电子标签">
+<meta name="description" content="RFID，即射频识别，是一种非接触式的自动识别技术，它通过射频信号自动识别目标对象，可快速地地进行物品追踪和数据交换。而其中RFID读写器及RFID电子标签可利用射频识别实现无接触信息传递并通过所传">
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<link href="http://static.jt-rfid.com/Skin/szjtkj/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="http://static.jt-rfid.com/Skin/szjtkj/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">
+var siteappurl  =window.location.href;
+var siteapppara = siteappurl.split("?")[1] || "";
+uaredirect("/wap"+"/?"+siteapppara);
+</script>
+
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <p class="top-wel">欢迎来到RFID超高频读写器专业厂商-深圳市捷通科技有限公司官方网站！</p>
+    <p class="top-click">
+      <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>|<a href="{$HomeUrlMore(1151)$}">关于我们</a>|<a href="{$HomeUrlMore(1157)$}">联系我们</a>|<a href="http://www.jtspeedwork.com" target="_blank">英文站</a>
+	  <script type="text/javascript">
+      // 设置为主页
+      function SetHome(obj,vrl){
+      try{
+      obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+      }
+      catch(e){
+      if(window.netscape) {
+      try {
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      }
+      catch (e) {
+      alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',vrl);
+      }else{
+      alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+      }
+      }
+      }
+      // 加入收藏 兼容360和IE6
+      function shoucang(sTitle,sURL)
+      {
+      try
+      {
+      window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+      try
+      {
+      window.sidebar.addPanel(sTitle, sURL, "");
+      }
+      catch (e)
+      {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+      }
+      }
+      }
+      </script>
+    </p>
+    <p class="top-icon"><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weibo-icon.png" width="21" height="19" /></a><a href="javascript:void(0)"><img src="http://static.jt-rfid.com/Skin/szjtkj/images/weixin-icon.png" width="21" height="19" /></a></p>
+  </div>
+</div>
+
+<div class="title">
+  <div class="logo">
+    <div class="logo-pic"><img src="http://static.jt-rfid.com/up/image/201604/20160401214279687968.jpg" width="95" height="95" /></div>
+    <div class="logo-text">
+      <p class="logo-text01">RFID超高频读写器专业厂商-深圳市捷通科技有限公司</p>
+      <p class="logo-text02">深圳市捷通科技有限公司</p>
+    </div>
+  </div>
+  <div class="phone">
+  	<div class="dpico"><span class="no1"><a href="http://jtrfid.1688.com/" target="_blank" rel="nofollow">阿里巴巴</a></span><span class="no2"><a href="https://jt-rfid.taobao.com/" target="_blank" rel="nofollow">淘宝店铺</a></span></div>
+      <div class="phone-text02">免费服务热线：<strong>400-002-3191</strong></div>
+  </div>
+</div>
+
+<div class="menu">
+  <ul class="nav">
+    <li><a href="/" class="hover">首页</a></li>
+    
+    <li><a href="/?Info1158.html">关于我们</a><ul>
+<li><a href="/html/Info1158.html" title="公司简介">公司简介</a></li>
+<li><a href="/html/Info1159.html" title="企业文化">企业文化</a></li>
+<li><a href="/html/Article1160/index.html" title="企业风采">企业风采</a></li>
+<li><a href="/html/Article1161/index.html" title="荣誉资质">荣誉资质</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Product1152/index.html">产品中心</a><ul>
+<li><a href="/html/Product1162/index.html" title="RFID UHF 读写器">RFID UHF 读写器</a></li>
+<li><a href="/html/Product1225/index.html" title="2.4G RFID有源读写器">2.4G RFID有源读写器</a></li>
+<li><a href="/html/Product1163/index.html" title="RFID UHF 读写模块">RFID UHF 读写模块</a></li>
+<li><a href="/html/Product1164/index.html" title="RFID UHF 手持机">RFID UHF 手持机</a></li>
+<li><a href="/html/Product1165/index.html" title="RFID UHF 天线">RFID UHF 天线</a></li>
+<li><a href="/html/Product1166/index.html" title="RFID UHF 电子标签">RFID UHF 电子标签</a></li>
+<li><a href="/html/Product1226/index.html" title="2.4G RFID有源电子标签">2.4G RFID有源电子标签</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1153/index.html">解决方案</a><ul>
+<li><a href="/html/Info1189.html" title="RFID UHF产线管理">RFID UHF产线管理</a></li>
+<li><a href="/html/Info1190.html" title="RFID UHF车辆管理">RFID UHF车辆管理</a></li>
+<li><a href="/html/Info1191.html" title="RFID UHF仓库管理">RFID UHF仓库管理</a></li>
+<li><a href="/html/Info1192.html" title="RFID UHF人员管理">RFID UHF人员管理</a></li>
+<li><a href="/html/Info1195.html" title="RFID UHF资产管理">RFID UHF资产管理</a></li>
+<li><a href="/html/Info1196.html" title="RFID UHF钱箱管理">RFID UHF钱箱管理</a></li>
+<li><a href="/html/Info1201.html" title="RFID UHF智能书柜">RFID UHF智能书柜</a></li>
+<li><a href="/html/Info1202.html" title="AGV小车路轨引导管理">AGV小车路轨引导管理</a></li>
+<li><a href="/html/Info1207.html" title="RFID UHF称重管理">RFID UHF称重管理</a></li>
+<li><a href="/html/Info1219.html" title="RFID模具电极管理系统">RFID模具电极管理系统</a></li>
+<li><a href="/html/Info1227.html" title="RFID无人智能售货柜">RFID无人智能售货柜</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1154.html">品牌认证</a><ul>
+<li><a href="/html/Info1167.html" title="品牌优势">品牌优势</a></li>
+<li><a href="/html/Article1168/index.html" title="客户见证">客户见证</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Article1155/index.html">资讯中心</a><ul>
+<li><a href="/html/Article1169/index.html" title="业内资讯">业内资讯</a></li>
+<li><a href="/html/Article1170/index.html" title="公司动态">公司动态</a></li>
+</ul>
+</li>
+    
+    <li><a href="/?Article1173/Index.html">技术支持</a><ul>
+<li><a href="/html/Down1171/index.html" title="资料下载">资料下载</a></li>
+<li><a href="/html/Article1172/index.html" title="测试视频">测试视频</a></li>
+<li><a href="/html/Article1173/index.html" title="常见问题">常见问题</a></li>
+<li><a href="/html/GBook1174.html" title="技术咨询">技术咨询</a></li>
+</ul>
+</li>
+    
+    <li><a href="/html/Info1157.html">联系我们</a></li>
+    
+  </ul>
+	<script type="text/javascript">
+  $(document).ready(function(e) {
+		$(".nav>li:last-child").css("background","none");
+		$(".nav>li>ul>li:last-child").children("a").css("border-bottom","none");		
+		$(".nav>li>ul>li>a").attr( "target" , "_blank" );		
+		$(".nav>li").hover(function(){
+			$(this).children("a").addClass("current").parent("li").siblings().children("a").removeClass("current");
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+			$(this).children("a").removeClass("current");
+		})
+		$(".nav>li>ul>li").hover(function(){
+			$(this).children("ul").stop(true,true).slideDown("fast");
+			}, function(){
+			$(this).children("ul").stop(true,true).slideUp("fast");
+		})
+  });
+  </script>
+</div>
+
+<div class="banner nybanner">
+  <div id="kinMaxShow">
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201608/20160829143856055605.jpg" /> 
+<p>
+	&nbsp;
+</p></a>
+    </div>   
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919095321152115.jpg" /></a>
+    </div>
+    <div>
+      <a href="" title=""><img alt="" src="/up/image/201509/20150919105963326332.jpg" />&nbsp;</a>
+    </div>
+  </div>
+</div>
+
+<div class="search">  
+  <div class="search-form">
+    <form  id="form1" name="form1" method="get" action="/Search/" >
+      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="&nbsp;" />
+    </form>
+  </div>
+  <div class="search-hot"><span>热门搜索：</span> RFID读写器,RFID天线,RFID电子标签</div>
+</div>
+
+<div class="content">
+
+  <div class="left">
+  <div class="left-menu">
+    <div class="left-menu-title"><span>常见问题</span></div>
+    <ul class="left-list">
+      
+      
+      <li><a href="/html/Down1171/index.html">资料下载</a></li>
+      
+      <li><a href="/html/Article1172/index.html">测试视频</a></li>
+      
+      <li><a href="/html/Article1173/index.html">常见问题</a></li>
+      
+      <li><a href="/html/GBook1174.html">技术咨询</a></li>
+      
+      
+    </ul>    
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".left-menu-title span").html($(".path a").eq(1).html());
+			$(".left-list>li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list>li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav>li>a").each(function(){
+        var $href = $(this).attr("href");
+        var $url  =$(".path a").eq(1).attr("href");
+        var $url_2  =window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav>li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list>li>a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list>li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+  </script>
+  
+  <div class="left-contact">
+    <div class="left-contact-title">
+      <h3>联系我们</h3>
+      <div class="left-more"><a href="{$HomeUrlMore(1157)$}">more&gt;&gt;</a></div>
+    </div>
+    <div class="left-contact-text"><p>
+	深圳市捷通科技有限公司
+</p>
+<p>
+	<strong>全国免费热线：</strong>400-002-3191
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>联系人：</strong> 
+</p>
+<p>
+	华东区&nbsp;&nbsp; 郑先生 18938904816<br />
+华南区&nbsp;&nbsp; 周先生 13169906106
+</p>
+<p>
+	<span style="display:none;"></span><span style="display:none;"></span>华中区&nbsp;&nbsp; 程小姐 15361408620<br />
+华北区&nbsp;&nbsp; 何先生 18938644875<br />
+西南
+</p>
+<p>
+	西北&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐先生 13302932422<br />
+东北
+</p>
+<p>
+	江苏省&nbsp;&nbsp;&nbsp;张先生 15151487700
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<strong>网&nbsp; 址：</strong><a href="http://www.jt-rfid.com/">www.jt-rfid.com</a> 
+</p>
+<p>
+	&nbsp;
+</p></div> 
+  </div>
+  
+</div>
+  
+  <div class="main">
+    <div class="right-title">
+      <div class="title-label">常见问题</div>
+      <div class="path"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/?Article1173/Index.html" title="技术支持">技术支持</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="/html/Article1173/index.html" title="常见问题">常见问题</a></div>
+    </div>    
+    <div class="main-content">
+      <div class="neiye-detail">
+        <h1 class="neiye-detail-title">RFID读写器的设备选型及应用介绍</h1>
+        <p class="neiye-detail-subtitle">点击次数:<span id="Click"></span>&nbsp;&nbsp;更新时间:2016-6-14 11:57:30</p>
+        <div class="neiye-detail-text"><p>
+	&nbsp;<span>&nbsp;&nbsp;&nbsp;&nbsp;RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">，即射频识别，是一种非接触式的自动识别技术，它通过射频信号自动识别目标对象，可快速地地进行物品追踪和数据交换。而其中</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器及</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">电子标签可利用射频识别实现无接触信息传递并通过所传递的信息达到识别目的。</span> 
+</p>
+<img alt="" src="/up/image/201606/20160614120381238123.jpg" /> 
+<p>
+	&nbsp;
+</p>
+<p>
+	<img alt="" src="/up/image/201606/20160614115792939293.jpg" /><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;"></span> 
+</p>
+<p>
+	<span style="mso-no-proof:yes;"></span>
+</p>
+<p style="text-align:center;" align="center">
+	<b><span>RFID</span></b><b><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">系统框图</span><span></span></b> 
+</p>
+<p>
+	<span style="mso-no-proof:yes;"></span>
+</p>
+<p>
+	<span><span style="mso-tab-count:1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器一般认为是射频识别即</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">系统的读写终端设备，它不但可以阅读</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">电子标签，还可以改写</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">电子标签的数据，锁定</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">电子标签的数据。</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器应用非常广泛，主要是以用于身份识别，货物识别，安全认证和数据收录等方面，具备安全、准确，快速，扩展、兼容性强等特点。</span> 
+</p>
+<img alt="" src="/up/image/201606/20160614120381468146.jpg" /> 
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="mso-no-proof:yes;"></span>
+</p>
+<p style="text-align:center;" align="center">
+	<b><span style="font-family:宋体;color:red;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">常见的</span><span style="color:red;">RFID</span></b><b><span style="font-family:宋体;color:red;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器</span><span style="color:red;"></span></b> 
+</p>
+<img alt="" src="/up/image/201606/20160614120464716471.jpg" /> 
+<p style="text-align:center;" align="center">
+	&nbsp;
+</p>
+<p style="text-align:center;" align="center">
+	<b><span>RFID</span></b><b><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器的基本组成结构</span><span></span></b> 
+</p>
+<p>
+	<span style="mso-no-proof:yes;"></span>
+</p>
+<p>
+	<span><span style="mso-tab-count:1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">天线是发射和接收射频载波信号的设备，他主要负责将</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器中的电流信号转化成射频载波信号并发送给电子标签，或者接收标签发送过来的射频载波信号并将其转化为电流信号；</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器的天线可以外置也可以内置，一些</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">天线的尺寸较大所以选择独立安装；</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">天线的类型取决于</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器的工作频率和</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">天线的参数。</span> 
+</p>
+<p>
+	<span><span style="mso-tab-count:1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">射频模块主要包括：发射器、射频接收器、时钟发生器和电压调节器等。</span> 
+</p>
+<p>
+	<span><span style="mso-tab-count:1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">逻辑控制模块是整个</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器工作的控制中心、智能单元，是</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器的</span><span>”</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">大脑</span><span>”</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">，</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器在工作时由逻辑控制模块发送指令，射频接口模块按照不同的指令做出不同的操作。</span> 
+</p>
+<p style="text-align:center;" align="center">
+	<b><span>RFID</span></b><b><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器与电子标签的之间的通信</span></b> 
+</p>
+<p style="text-align:center;" align="center">
+	<b><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;"></span><span></span></b>&nbsp;<img alt="" src="/up/image/201606/20160614120545314531.jpg" /> 
+</p>
+<p style="text-align:center;" align="center">
+	<span style="mso-no-proof:yes;"></span>
+</p>
+<p>
+	<span><span style="mso-tab-count:1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">射频识别是一种无线通讯技术，可以通过无线电通讯号识别特定目标并读写相关数据，在</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器和</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">电子标签的通讯中，无线电信号时通过调成无线电频率的电磁场，把数据从附着在物品上的</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">电子标签上传送出去，</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">电子标签含有信息，数米之内可以识别。</span> 
+</p>
+<p style="text-align:center;" align="center">
+	<b><span>RFID</span></b><b><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">电子标签</span><span></span></b> 
+</p>
+<img alt="" src="/up/image/201606/20160614121019121912.jpg" /> 
+<p style="text-align:center;" align="center">
+	&nbsp;
+</p>
+<p>
+	<span style="mso-no-proof:yes;"></span>
+</p>
+<p style="text-align:center;" align="center">
+	<b><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器的技术参数</span><span></span></b> 
+</p>
+<p style="text-indent:21pt;">
+	<span>JT-928</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">，</span><span>R2000</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">远距离四通道读写器是</span><span>UHF<span style="mso-spacerun:yes;">&nbsp; </span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">系列产品之一。该</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器具有非接触、不受环境影响、读写距离远、适应物体高速运动性能好、操作方便，使用国外进口</span><span>IMPINJ</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">芯片：</span><span>R2000</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">芯片，防冲突等优良特性，用途及其广泛，且能外接四个天线，大大降低项目成本，节省研发时间。</span> 
+</p>
+<p>
+	<span><span style="mso-tab-count:1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">目前，</span><span>JT-928</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">应用于不停车收费管理、车牌防伪识别管理、车辆编组调度管理、智能停车场管理、行李包识别管理和码头集装箱管理等等众多领域。</span> 
+</p>
+<p style="line-height:25pt;margin-left:21pt;mso-line-height-rule:exactly;">
+	<b><span style="font-family:宋体;color:#333333;font-size:9pt;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:Arial;">性能参数<span></span></span></b> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">射频功率<span>: 20dBm</span><span style="mso-font-kerning:0pt;">～<span>30dBm(</span>软件可调<span>)</span></span></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">读标签距离<span>:</span>使用<span>12dBi</span>天线＞<span>30m</span>（与标签及环境相关）<span></span></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">写标签距离<span>: </span>使用<span>12dBi</span>天线＞<span>5m</span>（与标签及环境相关）<span></span></span> 
+</p>
+<p style="line-height:12pt;margin-left:21pt;">
+	<b><span style="font-family:宋体;color:#333333;font-size:9pt;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:Arial;">连接能力</span></b><b><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"></span></b> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-font-kerning:0pt;">电源<span>:110</span>～<span>240V/50</span>～<span>60Hz </span></span>
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">电源适配器<span>:12V / 3A</span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">整机功耗：小于等于<span>16W</span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">通讯口</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">:</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">串口和<span>RJ45</span></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">射频界面<span>: TNC</span>内螺纹公头<span></span></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">TCP/IP</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">界面 ：<span>RJ45</span>以太网界面<span></span></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">POE</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">供电：工业级<span>POE</span>供电（需定制）<span></span></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">存储：<span> 8M</span>容量<span>FLASH</span>存储（需定制，容量级别：<span>8M</span>、<span>16M</span>）<span></span></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">时钟：实时时钟显示<span>(</span>需定制<span>)</span></span> 
+</p>
+<p style="line-height:12pt;margin-left:21pt;">
+	<b><span style="font-family:宋体;color:#333333;font-size:9pt;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:Arial;">RFID</span></b><b><span style="font-family:宋体;color:#333333;font-size:9pt;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:Arial;">标准<span></span></span></b> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;mso-font-kerning:0pt;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">工作频率<span>: </span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">902</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-font-kerning:0pt;">～<span>928 MHz</span>（中心频率<span>915MHz</span>）其他国家和地区频率标准可定制</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:ArialMT;mso-font-kerning:0pt;"></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:ArialMT;mso-font-kerning:0pt;">天线</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">: </span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">圆极化<span>/</span>线性化天线<span>(</span>可根据客户需求设计<span>)</span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">支持协议</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">:</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"> ISO18000-6C </span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">（<span>EPC C1 GEN2</span>）<span></span></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">防冲撞</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">: </span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">每秒能读取<span>300</span>张标签<span></span></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">适用电子标签</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">:</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"> UHF</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">频段<span>EPC global Class 1 Gen2</span>标准标签，如<span>Ti</span>、<span>Philips</span>、<span>UPM</span>、<span>Avery Dennison</span>等<span>Gen2</span>标签<span></span></span> 
+</p>
+<p style="line-height:12pt;margin-left:21pt;">
+	<b><span style="font-family:宋体;color:#333333;font-size:9pt;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:Arial;">物理参数</span></b><b><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"></span></b> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">尺寸<span>:</span></span><span> 246×160×30</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">mm</span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">重量<span>:</span></span><span> </span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">整机重约</span><span>2Kg</span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span><span style="font-family:Wingdings;font-size:12pt;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;mso-bidi-font-size:10.0pt;mso-fareast-language:ZH-TW;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">材料</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">: </span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">铝型材</span><span><span style="font-size:12pt;mso-hansi-font-family:宋体;mso-bidi-font-size:10.0pt;mso-fareast-language:ZH-TW;"></span></span> 
+</p>
+<p style="line-height:12pt;margin-left:21pt;">
+	<b><span style="font-family:宋体;color:#333333;font-size:9pt;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:Arial;">环境参数</span></b><b><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"></span></b> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">工作温度<span>: -20</span></span><b><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">~</span></b><span style="font-family:宋体;color:black;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">+</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">70 </span><span style="font-family:宋体;color:black;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:PMingLiU;">℃</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"></span> 
+</p>
+<p style="line-height:12pt;text-indent:-24pt;margin-left:45pt;mso-list:l0 level1 lfo1;tab-stops:45.0pt;">
+	<span style="font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;"><span style="mso-list:Ignore;">l<SPAN style="LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; FONT-SIZE: 7pt; FONT-WEIGHT: normal" Times New Roman?;?>&nbsp;&nbsp; </span></span></span><span style="font-family:宋体;color:black;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:PMingLiU;">存储温度</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:黑体;mso-font-kerning:0pt;">: -30</span><b><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">~</span></b><span style="font-family:宋体;color:black;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;">+80 </span><span style="font-family:宋体;color:black;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:PMingLiU;">℃</span><span style="font-family:宋体;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;"></span> 
+</p>
+<p>
+	<span></span>
+</p>
+<p>
+	<b><span>RFID</span></b><b><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器频率分类</span><span></span></b> 
+</p>
+<p>
+	<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">和我们听的收音机道理一样，</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">电子标签和</span><span>RFID</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">读写器也要调制到相同的频率才能工作。</span><span>LF</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">、</span><span>HF</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">、</span><span>UHF</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">、</span><span>2.4G</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">等这几种频段。</span> 
+</p>
+<p>
+	<span></span>
+</p>
+<p>
+	<b><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">为什么要使用不同的频率？</span><span></span></b> 
+</p>
+<p style="text-indent:21pt;">
+	<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">在操作中有</span><span>4</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">中波段的频率，低频</span><span>(125KHz)</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">、高频</span><span>(13.54MHz)</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">，超高频</span><span>(850-910MHz)</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">，微波</span><span>(2.45GHz)</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">，每一种频率都有它的特点，被用在不同的领域，因此要正确使用就要先选择合适的频率。</span> 
+</p>
+<p>
+	<span></span>
+</p>
+<p>
+	<b><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">我们如何知道哪个频率适合于我们的产品？</span><span></span></b> 
+</p>
+<p>
+	<span><span style="mso-tab-count:1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">不同的频率有不同的特点，因此他们的用途也是各种各样的。</span> 
+</p>
+<p>
+	<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">低频：读取距离近，</span><span>1-2cm</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">左右，穿透力强。成本低；</span> 
+</p>
+<p>
+	<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">高频：读取距离：</span><span>10cm</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">左右，成本低；</span> 
+</p>
+<p>
+	<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">超高频：读取距离：</span><span>0-30m</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">左右，标签种类多样，无源；</span> 
+</p>
+<p>
+	<span>2.4G</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">：读取距离：</span><span>0-100m</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;">左右，标签为有源标签，价格成本高。</span> 
+</p></div>
+      </div>
+      <div class="tips">
+        <div class="page-switch">上一篇：<a href="/html/Article1173/965.html">深圳远距离rfid读写器厂家解读：如何让rfid读写器的识别率达到100%？</a><br />下一篇：<a href="/html/Article1173/929.html">RFID读写器如何连接电脑</a></div>
+        <div class="tip-back"><a href="javascript:history.go(-1);">返回</a></div>          
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+<div class="screen-nav"><a href="/">首页</a><span>丨</span><a href="/?Info1158.html">关于我们</a><span>丨</span><a href="/html/Product1152/index.html">产品中心</a><span>丨</span><a href="/html/Article1153/index.html">解决方案</a><span>丨</span><a href="/html/Info1154.html">品牌认证</a><span>丨</span><a href="/html/Article1155/index.html">资讯中心</a><span>丨</span><a href="/?Article1173/Index.html">技术支持</a><span>丨</span><a href="/html/Info1157.html">联系我们</a></div>
+<div class="screen-foot">  
+  <div class="link">
+    <div class="link-title"><h3>友情链接<span>LINK</span><span>丨</span></h3></div>
+    <div class="link-text"><a href="http://www.jt-rfid.com/" target="_blank">rfid读写器</a><a href="http://www.supoin.com/" target="_blank">手持终端</a><a href="http://www.duoao.com" target="_blank">电梯刷卡</a><a href="http://www.szjiuding.com" target="_blank">停车场管理系统</a><a href="http://www.zhengxingwenshi.com" target="_blank">玻璃温室</a><a href="https://www.minewtech.com" target="_blank">串口蓝牙模块</a></div>
+  </div>  
+  <div class="foot">
+    <div class="foot-left">
+      <dl>
+        <dt><a href="{$HomeUrlMore(1151)$}">关于我们</a></dt>
+        
+        <dd><a href="/html/Info1158.html">公司简介</a></dd>
+        
+        <dd><a href="/html/Info1159.html">企业文化</a></dd>
+        
+        <dd><a href="/html/Article1160/index.html">企业风采</a></dd>
+        
+        <dd><a href="/html/Article1161/index.html">荣誉资质</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1152)$}">产品中心</a></dt>
+        
+        <dd><a href="/html/Product1162/index.html" target="_blank">RFID UHF 读写器</a></dd>
+        
+        <dd><a href="/html/Product1225/index.html" target="_blank">2.4G RFID有源读写器</a></dd>
+        
+        <dd><a href="/html/Product1163/index.html" target="_blank">RFID UHF 读写模块</a></dd>
+        
+        <dd><a href="/html/Product1164/index.html" target="_blank">RFID UHF 手持机</a></dd>
+        
+        <dd><a href="/html/Product1165/index.html" target="_blank">RFID UHF 天线</a></dd>
+        
+        <dd><a href="/html/Product1166/index.html" target="_blank">RFID UHF 电子标签</a></dd>
+        
+        <dd><a href="/html/Product1226/index.html" target="_blank">2.4G RFID有源电子标签</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1156)$}">技术支持</a></dt>
+        
+        <dd><a href="/html/Down1171/index.html">资料下载</a></dd>
+        
+        <dd><a href="/html/Article1172/index.html">测试视频</a></dd>
+        
+        <dd><a href="/html/Article1173/index.html">常见问题</a></dd>
+        
+        <dd><a href="/html/GBook1174.html">技术咨询</a></dd>
+        
+      </dl>
+      <dl>
+        <dt><a href="{$HomeUrlMore(1155)$}">资讯中心</a></dt>
+        
+        <dd><a href="/html/Article1169/index.html">业内资讯</a></dd>
+        
+        <dd><a href="/html/Article1170/index.html">公司动态</a></dd>
+        
+        <dd><a href="/sitemap.html">网站地图</a></dd>
+      </dl>
+    </div>
+    <script>
+			jQuery(function(){
+				$(".foot-left dl:last-child").css("border-right","none");
+			});
+		</script>
+    <div class="foot-text">
+      <p>联系我们</p>
+      <span>全国免费热线 :400-002-3191</span><br />
+
+      <span>总部地址：深圳市南山区松白路1055号丽河工业园7栋4楼</span><br />
+      <span>分公司地址：苏州市姑苏区虎殿路1999号13栋1101室</span><br />
+      <span>网址：www.jt-rfid.com</span><br />
+      <span>Email:2355290400@qq.com</span><br /><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e35611b02935c6c6d0298c6f6def638' type='text/javascript'%3E%3C/script%3E")) </script>
+
+    </div> 
+    <div class="foot-right"><img alt="" src="/up/image/201508/20150831085391229122.jpg" /></div>   
+  </div>
+</div>
+<div class="backtop" style="height: 0;"></div>
+<div style='display:none;float:right;'><script type='text/javascript' src='http://tj.gz005.qebang.cn/counter.asp?id=23&icon=2'></script></div>
+<script src='http://kf.gz005.qebang.cn/kf/?u=szjtkj'  charset='gb2312'></script>
+
+<script type="text/javascript" src="/Skin/szjtkj/js/jquery.kinMaxShow-1.1.min-neiye.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+	$(".backtop").click(function(){
+		$('html,body').animate({scrollTop:0},700)
+	})
+	$(window).scroll(function(){
+		var scrolTop=$(window).scrollTop();
+		if(scrolTop<500){
+			$(".backtop").css("height","0");
+		}else{ 
+			$(".backtop").css("height","58px");
+		}
+	})
+	$(window).scroll();
+});
+</script>
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?581b20484c1bce29017082d4d4ca7132";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/Click.asp?Type=1&Id=914"></script>
+
+</body>
+</html>

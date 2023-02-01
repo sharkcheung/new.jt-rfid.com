@@ -1,0 +1,73 @@
+﻿<aside class="qebang-col-md2 wow fadeInLeft">
+	<nav class="Product_Category">		
+		<h3>{$ModuleName$}</h3>
+		<ul class="left-list">
+      {$If({$ModuleFId$},0,=)$}
+	      {$For(Nav,1/{$ModuleId$}/2/0)$}
+	      <li><a href="{$NavUrl$}">{$NavName$}</a>{$NavSub$}</li>
+	      {$Next$}
+      {$Else$}
+	      {$For(Nav,1/{$ModuleId$}/2/-1)$}
+	      <li><a href="{$NavUrl$}">{$NavName$}</a>{$NavSub$}</li>
+	      {$Next$}
+      {$End If$}
+   </ul> 
+	</nav>
+	<section class="contact">
+		<h3><a href="{$HomeUrlMore(1157)$}">+MORE </a>联系我们</h3>
+		<div class="contact_box">
+			<div class="contact_pic">
+				{$Info(112)$}
+				<span>微信公众号</span>
+			</div>
+			<div class="contact_text">
+				{$Info(114)$}
+			</div>			
+		</div>
+	</section>
+</aside>
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+      $(".Product_Category h3").html($(".path a").eq(1).html());
+			$(".left-list > li").mouseenter(function(){
+				$(this).children("ul").stop(true,true).slideDown("fast").parent("li").siblings().children("ul").stop(true,true).slideUp("fast");
+			})
+			$(".left-list > li").mouseleave(function(){
+				$(this).children("ul").stop(true,true).slideUp("fast");
+			})
+      $(".nav > ul > li > a").each(function(){
+        var $href = $(this).attr("href");
+        var $url = $(".path a").eq(1).attr("href");
+        var $url_2 = window.location.href;
+        var $para = $url.split("?")[1] || "";
+        
+        if($para==""){
+            $(".nav > ul > li:first a").addClass("hover");
+        }
+        if($href.split("?")[1] == $url.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+        if($href.split("?")[1] == $url_2.split("?")[1]){
+    
+            $(this).addClass("hover").parent("li").siblings().children("a").removeClass("hover");
+        }
+      });
+      $(".left-list > li > a").each(function(){ 
+          var $href2 = $(this).attr("href");
+          var $url2  = window.location.href;
+          var $url2_2  =$(".path a:last").attr("href");
+          var $para2 = $url2.split("?")[1] || "";
+          if($para2==""){
+              $(".left-list > li:first a").addClass("hover");
+          }
+          if($href2.split("?")[1] == $url2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+          if($href2.split("?")[1] == $url2_2.split("?")[1]){
+              $(this).parent("li").addClass("hover").siblings("li").removeClass("hover");
+          }
+      });
+    });
+</script>

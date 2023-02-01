@@ -1,0 +1,61 @@
+﻿<header>
+	<div class="head center">		
+		<div class="head_fl clearfix">
+			<a href="/" class="logo"><img src="{$SiteLogo$}" title="{$SiteName$}" alt="{$SiteName$}" /></a>
+			<div class="dwy qebang-show-sm-block">
+				<p>{$Info(116)$}</p>
+				<h3>RFID快速响应硬件平台</h3>
+			</div>
+		</div>
+		<nav class="nav qebang-show-lg-block">
+			<ul class="clearfix">
+				<li><a href="/" class="hover">首页</a></li>
+				<li><a href="{$HomeUrlMore(1152)$}">捷通产品</a>
+					<ul>
+						{$For(Nav,1/1152/1/0)$}
+						<li><a href="{$NavUrl$}">{$NavName$}</a></li>
+						{$Next$}
+					</ul>
+				</li>
+				<li><a href="{$HomeUrlMore(1153)$}">行业应用</a>
+					<ul>
+						{$For(Nav,1/1153/1/0)$}
+						<li><a href="{$NavUrl$}">{$NavName$}</a></li>
+						{$Next$}
+					</ul>
+				</li>
+				<li><a href="{$HomeUrlMore(1156)$}">服务支持</a>
+					<ul>
+						{$For(Nav,1/1156/1/0)$}
+						<li><a href="{$NavUrl$}">{$NavName$}</a></li>
+						{$Next$}
+					</ul>
+				</li>			
+				<li><a href="{$HomeUrlMore(1151)$}">关于捷通</a>
+					<ul>
+						{$For(Nav,1/1151/1/0)$}
+						<li><a href="{$NavUrl$}">{$NavName$}</a></li>
+						{$Next$}
+					</ul>
+				</li>
+			</ul>
+			<div class="menulihover qebang-show-lg-block"></div>		
+		</nav>
+		<div class="menu qebang-hide-lg">
+			<div class="menu_text">MENU</div>
+			<div class="menu_icon"></div>
+		</div>
+		<div class="head_fr">
+			<p class="head_click"><a href="javascript:;" target="_blank"><i><img src="{$SiteSkin$}images/taobao_icon.png"/></i>淘宝店铺</a></p>
+			<p class="head_click"><a href="javascript:;" target="_blank"><i><img src="{$SiteSkin$}images/ali_icon.png"/></i>阿里巴巴</a></p>			
+			<div class="search">
+				<p class="search_icon">搜索</p>
+				<div class="search_form">
+					<form  id="form1" name="form1" method="get" action="{$SiteDir$}Search/" >
+			      <input type="hidden" id="SearchType" name="SearchType" value="0"/><input class="searchbox" name="SearchStr" type="text" id="SearchStr" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}"/><input class="search-btn" type="submit" name="button" id="Searchssk" value="立即搜索" />
+			   </form>
+				</div>
+			</div>			
+		</div>			
+	</div>	
+</header>

@@ -1,0 +1,26 @@
+<div class="nylist">
+  <div class="nylist2 nylbss"><div class="tblbtb"><i class="iconfont">&#xe609;</i></div>{$ModuleName$}</div>
+  <div class="nylist2 nylbxl">{$For(Nav,1/{$ModuleId$}/2/0)$}<a href="/wap{$NavUrl$}" title="{$NavName$}">{$NavName$}</a>{$NavSub$}{$Next$}</div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(e) {
+		var nr=$(".nylbxl").html();
+		$(".nylist2 ul li a").each(function() {
+      this.href="/wap"+$(this).attr("href");
+    });
+		if(nr==""){
+		  $(".nylist2").css("display","none");
+		}
+		$(".nylbss").click(function(){
+				$(".nylbxl").slideUp();
+				$(this).css("margin-bottom","0.208em");
+				$(".tblbtb .iconfont").html("&#xe609;")
+				
+				if(!$(this).next().is(":visible"))
+				{
+					$(this).next().slideDown();
+					$(".tblbtb .iconfont").html("&#xe608;")
+				}
+			})
+  });
+</script>

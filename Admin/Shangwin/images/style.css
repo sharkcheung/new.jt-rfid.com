@@ -1,0 +1,115 @@
+﻿* {
+	margin:0;
+	padding:0;
+	font-family:tahoma, verdana, 宋体;
+}
+html {/* overflow-x: hidden; overflow-y: hidden;*/ }
+a{
+hide-focus: expression(this.hideFocus=true); /* for ie 5+ */
+outline: none; /* for firefox 1.5 + */
+}/*去除点击虚线框*/  
+
+body,td,th {
+	font-size: 12px; border:0px; border-bottom:1px dashed #E4EEF0; padding:1px; color:#444444;
+}
+body{
+	border-bottom:0px;
+}
+#table1 td{
+ border:1px #CDEDFF solid;
+	
+}
+body {
+	margin: 1px;
+	background:white url('page-bg.jpg') repeat-x;
+}
+a {
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+a:active {
+	color: #000;
+	text-decoration: none;
+}
+img {
+	border:none;
+}
+table {
+	border-collapse:collapse;
+}
+ul {
+	list-style:none;
+}
+
+.logo{
+	width:256px;
+	float:left; 
+	height:36px; 
+	margin:1px;
+	margin-right:10px;
+	background:url('BgImg.png');
+	background-position:0 -400px;
+}
+.logo span{
+	float:right; font-size:14px; color:white; font-weight:bold; line-height:35px;
+	margin-right:24px;
+	filter: dropshadow(OffX=1, OffY=1, Color='#777777', Positive='true');
+}
+
+#ListNav {
+	width:100%;
+	background-image:url('BgImg.png');
+	background-position:0 -59px;
+	height:39px;
+}
+#ListNav ul {
+	margin-left:30px;
+	margin-top:5px;
+}
+#ListNav li {
+	float:left; margin-right:5px;
+}
+#ListNav li a {
+	width:80px;
+	height:26px;
+	display:block;
+	text-align:center;
+	line-height:26px;
+	background-image:url('BgImg.png');
+	
+background-position:0px 0px;
+
+}
+#ListNav li a:hover,#ListNav li a:active {
+	background-image:url('BgImg.png');
+	background-position:0px -26px;
+	
+	height:31px;
+	line-height:26px;
+	
+}
+#ListTop {
+	background:#ffffff;
+	font-size:14px;
+	line-height:25px;
+	font-weight:bold;
+    border:1px solid #B6CCDB;
+    padding:3px;
+}
+
+
+/*CSS去处链接虚线
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */
+
+/*a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */
+
+/*a:focus { -moz-outline-style: none; } /* IE不支持 */
