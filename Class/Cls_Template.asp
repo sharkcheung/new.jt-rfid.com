@@ -848,7 +848,7 @@ Class Cls_Template
 			
 			TemplateCode=Replace(TemplateCode,"{$ProductTitle$}",Rs("Fk_Product_Title"))
 			TemplateCode=Replace(TemplateCode,"{$ProductTime$}",Rs("Fk_Product_Time"))
-			TemplateCode=Replace(TemplateCode,"{$ProductVideoFile$}",Rs("Fk_Product_Video_File"))
+			TemplateCode=Replace(TemplateCode,"{$ProductVideoFile$}",trim(Rs("Fk_Product_Video_File") & " "))
 			TemplateCode=Replace(TemplateCode,"{$ProductDate$}",FormatDateTime(Rs("Fk_Product_Time"),2))
 			TemplateCode=Replace(TemplateCode,"{$ProductPic$}",trim(Rs("Fk_Product_Pic")&" "))
 			If Not IsNull(Rs("Fk_Product_PicBig")) Then

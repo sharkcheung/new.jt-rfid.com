@@ -674,8 +674,8 @@ display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overf
 .industry_pic {position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; background-size: cover; }
 .industry_text { padding-left: 70px; padding-top: 155px; position: relative; z-index: 5; width: 50%; box-sizing: border-box; }
 .industry_text h3 { font-size: 28px; color: #FFF;opacity: 0.8; line-height: 40px; margin-bottom: 40px; }
-.industry_text a { font-size: 16px; display: inline-block; padding: 10px 20px; border: 1px solid #FFF; line-height: 30px; color: #FFF; margin-right: 20px; opacity: 0.8; margin-bottom: 10px; transition: all .3s; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s;}
-.industry_text a:hover { background: #2F70D8;}
+.industry_text .industry_textContent a { font-size: 16px; display: inline-block; padding: 10px 20px; border: 1px solid #FFF; line-height: 30px; color: #FFF; margin-right: 20px; opacity: 0.8; margin-bottom: 10px; transition: all .3s; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s;}
+.industry_text .industry_textContent a:hover { background: #2F70D8;}
 
 .ny_bannerInduc { max-height: 962px; position: relative; }
 .ny_bannerInduc img { display: block; width: 100%; height: auto; }
@@ -757,3 +757,12 @@ display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overf
 .induc_bottomClick { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 100%; max-width: 1600px;}
 .induc_bottom a { display: inline-block; border-radius: 30px; text-align: center; border: 1px solid #0F1B2F; font-size: 18px; line-height: 30px; padding: 15px 50px; color: #0F1B2F; margin: 0 50px; transition: all .3s; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; }
 .induc_bottom a:hover { background: #2F70D8; color: #FFF; border: 1px solid #2F70D8; }
+
+.backtop { position: fixed; right: 20px; bottom: 20px; background: url(../images/backtop.png) no-repeat left top transparent; color: #fff; width: 58px; height: 58px; cursor: pointer; z-index: 99999; -webkit-transition: all .3s; transition: all .3s; overflow: hidden; }
+
+.Details_video {}
+.Details_video li { box-sizing: border-box; padding: 10px; }
+.Details_video li iframe { width: 100%; height: 300px;}
+.Details_switch .download {}
+.Details_switch .download li { box-sizing: border-box; padding: 10px; }
+.Details_switch .download li a { margin-bottom: 0; }

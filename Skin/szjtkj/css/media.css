@@ -124,6 +124,7 @@
 	.induc_infoPic img { max-width: 185px; }
 	.induc_infoList li { padding: 0 15px; }
 	.induc_infoList li div { padding: 80px 20px 20px; }
+	
 }
 
 @media only screen and (max-width: 1200px) {	
@@ -238,7 +239,7 @@
 	.industry li { height: 300px; }
 	.industry_text { padding-left: 50px; padding-top: 60px; width: 70%; }
 	.industry_text h3 { font-size: 24px; }
-	.industry_text a { line-height: 24px; padding: 8px 15px; font-size: 14px; margin-right: 10px; }
+	.industry_text .industry_textContent a { line-height: 24px; padding: 8px 15px; font-size: 14px; margin-right: 10px; }
 	
 	.ny_bannerInducBox h3 { font-size: 36px; }
 	.ny_bannerInducBox span:before, .ny_bannerInducBox span:after { width: 50px; }
@@ -410,6 +411,7 @@
 	.induc_info_div p { font-size: 14px; }
 	.induc_bottom { margin-top: 30px; }
 	.induc_bottom a { margin: 0 30px; padding: 10px 30px; font-size: 16px; }
+	
 }
 
 @media only screen and (max-width: 768px) {
@@ -498,7 +500,7 @@
 	.industry li { height: 250px; }
 	.industry_text { padding-left: 30px; padding-top: 40px; }
 	.industry_text h3 { font-size: 20px; margin-bottom: 10px; line-height: 30px; }
-	.industry_text a { padding: 5px 10px; font-size: 14px; }
+	.industry_text .industry_textContent a { padding: 5px 10px; font-size: 14px; }
 	
 	.ny_bannerInducBox h3 { font-size: 24px; margin-bottom: 5px; }
 	.ny_bannerInducBox span { font-size: 16px; }
@@ -541,13 +543,14 @@
 	.industry li { height: 200px; }
 	.industry_text { padding-left: 10px; padding-top: 20px; }
 	.industry_text h3 { font-size: 18px; margin-bottom: 10px; line-height: 30px; }
-	.industry_text a { padding: 5px; font-size: 12px; }
+	.industry_text .industry_textContent a { padding: 5px; font-size: 12px; }
 	
 	.induc_highLight li h3 { margin: 5px 0; font-size: 16px;  }
 	.induc_highLight li div { max-width: 80px; }
 	.induc_fangAnPic img { max-width: 155px; }
 	.induc_infoList li div { padding-top: 35px; }
 	.induc_bottom a { margin: 0 20px; padding: 5px 20px; line-height: 20px; font-size: 12px; }
+	
 }
 
 

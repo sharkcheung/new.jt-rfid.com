@@ -60,32 +60,31 @@
 					</div>
 				</div>
 				<div class="Details_text">
-					<div class="Details_title"><a href="javascript:;" class="hover">产品参数</a><a href="{$Product_lujing$}" target="_blank">资料下载</a><a href="">测试视频</a><a href="javascript:;" class="zxkfu"  target="_blank">在线咨询</a></div>
-					<div class="Details_textTable">
-						<table>
-							<tr><td class="detail_h3" colspan="2">物理参数</td></tr>
-							<tr><td class="Details_textTd"><b>尺寸</b></td><td>180mm x 131mm x 27mm</td></tr>
-							<tr><td class="Details_textTd"><b>重量</b></td><td>0.5kg</td></tr>
-							<tr><td class="Details_textTd"><b>外壳材质</b></td><td>铝合金</td></tr>
-							<tr><td class="Details_textTd"><b>固定孔径</b></td><td>8mm</td></tr>
-							<tr><td class="Details_textTd"><b>天线</b></td><td>内置</td></tr>
-						</table>
-						<table>
-							<tr><td class="detail_h3" colspan="2">性能参数</td></tr>
-							<tr><td class="Details_textTd"><b>工作频率</b></td><td>902mhz-1080mhz</td></tr>
-							<tr><td class="Details_textTd"><b>支持协议</b></td><td>EPC C2 Gen2 ISO18000-6C</td></tr>
-							<tr><td class="Details_textTd"><b>射频功率</b></td><td>0~27dBm</td></tr>
-							<tr><td class="Details_textTd"><b>读取距离</b></td><td>0-100mm</td></tr>
-							<tr><td class="Details_textTd"><b>写入距离</b></td><td>0~40cm</td></tr>
-							<tr><td class="Details_textTd"><b>通讯核口</b></td><td>RS232,RS485,以太网口</td></tr>
-							<tr><td class="Details_textTd"><b>输入输出</b></td><td>1路/O输入</td></tr>
-							<tr><td class="Details_textTd"><b>电源</b></td><td>12V/3A</td></tr>
-						</table>
-						<table>
-							<tr><td class="detail_h3" colspan="2">环境参数</td></tr>
-							<tr><td class="Details_textTd"><b>工作温度</b></td><td>-20℃~55℃</td></tr>
-							<tr><td class="Details_textTd"><b>存储温度</b></td><td>-20℃~55℃</td></tr>
-						</table>
+					<div class="Details_title"><a href="javascript:;" class="hover">产品参数</a><a href="javascript:;">资料下载</a><a href="javascript:;">测试视频</a><a href="javascript:;" class="zxkfu"  target="_blank">在线咨询</a></div>
+					<div class="Details_switch" style="display: block;">
+						<div class="Details_textTable">
+							{$ProductContent$}
+						</div>	
+					</div>
+					<div class="Details_switch" style="display: none;">						
+						<ul class="download clearfix">
+							{$For(ProductDownList,1/{$ProductId$}/1/12/0/0/0/12)$}
+							<li class="qebang-col-xs12 qebang-col-sm6">
+								<a href="{$Product_lujing$}" title="{$ProductTitle$}">
+									<i></i>
+									<h3>{$ProductTitle$}用户手册</h3>
+									<p>{$ProductTime$}</p>
+								</a>
+							</li>
+							{$Next$}
+						</ul>
+					</div>						
+					<div class="Details_switch" style="display: none;">
+						<ul class="Details_video clearfix">
+							{$For(ProductVideoList,1/{$ProductId$}/1/12/0/0/0/12)$}
+							<li class="qebang-col-xs12 qebang-col-sm6 qebang-col-md3"><iframe src='https://player.youku.com/embed/XMTcxNzI5MDcyMA==' frameborder=0 'allowfullscreen'></iframe></li>
+							{$Next$}
+						</ul>
 					</div>
 				</div>
 				<div class="Details_Relevant">
@@ -96,32 +95,6 @@
 							<a href="{$ProductListUrl$}" title="{$ProductListTitleAll$}">
 								<img src="{$ProductListPic$}" title="{$ProductListTitleAll$}"/>
 								<p>{$ProductListTitle$}</p>
-							</a>
-						</div>
-						{$Next$}
-					</div>
-				</div>
-				<div class="Details_Relevant">
-					<h3>关联资料下载</h3>
-					<div class="owl-carousel2 owl-carousel">
-						{$For(ProductDownList,1/{$ProductId$}/1/12/0/0/0/12)$}
-						<div class="item productslist">
-							<a href="{$DownListUrl$}" title="{$DownListTitleAll$}">
-								<img src="{$DownListPic$}" title="{$DownListTitleAll$}"/>
-								<p>{$DownListTitle$}</p>
-							</a>
-						</div>
-						{$Next$}
-					</div>
-				</div>
-				<div class="Details_Relevant">
-					<h3>关联测试视频</h3>
-					<div class="owl-carousel2 owl-carousel">
-						{$For(ProductVideoList,1/{$ProductId$}/1/12/0/0/0/12)$}
-						<div class="item productslist">
-							<a href="{$ArticleListUrl$}" title="{$ArticleListTitleAll$}">
-								<img src="{$ArticleListPic$}" title="{$ArticleListTitleAll$}"/>
-								<p>{$ArticleListTitle$}</p>
 							</a>
 						</div>
 						{$Next$}
@@ -183,6 +156,17 @@
 			1200: {
 				items: 5
 			}
+		}
+	})
+	
+	$(".Details_title a").click(function(){		
+		var index = $(this).index();
+		if(index < 3){
+			$(this).addClass("hover").siblings("a").removeClass("hover");
+			$(".Details_switch").eq(index).css("display","block").siblings(".Details_switch").css("display","none");
+		}else{
+			$(".Details_title a").eq(0).addClass("hover").siblings("a").removeClass("hover");
+			$(".Details_switch").eq(0).css("display","block").siblings(".Details_switch").css("display","none");
 		}
 	})
 </script>
