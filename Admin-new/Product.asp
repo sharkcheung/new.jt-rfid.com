@@ -8,7 +8,7 @@
 '==========================================
 
 '定义页面变量
-Dim Fk_Product_Title,Fk_Product_Content,Fk_Product_Click,Fk_Product_Show,Fk_Product_Time,Fk_Product_Pic,Fk_Product_PicBig,Fk_Product_Template,Fk_Product_FileName,Fk_Product_Recommend,Fk_Product_Subject,Fk_Product_Keyword,Fk_Product_Description,Fk_Product_Color,Fk_Product_Url,Fk_Product_Field,Fk_Product_onTop,Fk_Product_px,Fk_Product_Seotitle
+Dim Fk_Product_Title,Fk_Product_Content,Fk_Product_Click,Fk_Product_Show,Fk_Product_Time,Fk_Product_Pic,Fk_Product_PicBig,Fk_Product_Template,Fk_Product_FileName,Fk_Product_Recommend,Fk_Product_Subject,Fk_Product_Keyword,Fk_Product_Description,Fk_Product_Color,Fk_Product_Url,Fk_Product_Field,Fk_Product_onTop,Fk_Product_px,Fk_Product_Seotitle,Fk_Product_Detail
 Dim Fk_Module_Name,Fk_Module_Id,Fk_Module_Menu,Fk_Module_Dir,Fk_Product_Module
 Dim Temp2,KeyWordlist,kwdrs,ki
 
@@ -502,33 +502,39 @@ $(document).ready(function(){
         <td colspan="2" style="padding:10px;">
 		<div class="dt-detail">
                       <div class="tabbar" id="J_TabBar">
-                          <ul><li class="current"><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',1);return false;"><span>产品详细</span></a></li>                              
-                              <li <%if not chkContentEx1 then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',2);return false;"><span><%=getDesc("fk_product","Fk_Product_ContentEx1")%></span></a></li>
-                              <li <%if not chkContentEx2 then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',3);return false;"><span><%=getDesc("fk_product","Fk_Product_ContentEx2")%></span></a></li>
-                              <li <%if not chkFk_Product_wapimg then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',4);return false;"><span>小程序商品详情</span></a></li>
-                              <li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',5);return false;"><span>资料下载</span></a></li>
-                              <li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',6);return false;"><span>测试视频</span></a></li>
+                          <ul>
+							<li class="current"><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',1);return false;"><span>产品详细</span></a></li>
+							<li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',2);return false;"><span>产品参数</span></a></li>        
+							<li <%if not chkContentEx1 then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',3);return false;"><span><%=getDesc("fk_product","Fk_Product_ContentEx1")%></span></a></li>
+							<li <%if not chkContentEx2 then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',4);return false;"><span><%=getDesc("fk_product","Fk_Product_ContentEx2")%></span></a></li>
+							<li <%if not chkFk_Product_wapimg then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',5);return false;"><span>小程序商品详情</span></a></li>
+							<li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',6);return false;"><span>资料下载</span></a></li>
+							<li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',7);return false;"><span>测试视频</span></a></li>
                           </ul>
                       </div>
                       <!--详细内容-->
                       <div class="product-infoitem" id="TabBar_1">
+                          <textarea name="Fk_Product_Detail" class="<%=Bianjiqi%>" id="Fk_Product_Detail" rows="15" style="width:100%;"></textarea>                          
+                      </div>
+                      <!--详细内容-->
+                      <div class="product-infoitem" id="TabBar_2" style="display:none;">
                           <textarea name="Fk_Product_Content" class="<%=Bianjiqi%>" id="Fk_Product_Content" rows="15" style="width:100%;"></textarea>                          
                       </div>
                       <!--详细内容:end-->
                       
-                      <div class="product-infoitem" id="TabBar_2" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_3" style="display:none;">
 						  <textarea name="Fk_Product_ContentEx1" class="<%=Bianjiqi%>" id="Fk_Product_ContentEx1" rows="15" style="width:100%;"></textarea>
                       </div>
                       
-                      <div class="product-infoitem" id="TabBar_3" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_4" style="display:none;">
 						  <textarea name="Fk_Product_ContentEx2" class="<%=Bianjiqi%>" id="Fk_Product_ContentEx2" rows="15" style="width:100%;"></textarea>
                       </div>
 					  
-                      <div class="product-infoitem" id="TabBar_4" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_5" style="display:none;">
 						  <textarea name="Fk_Product_wapimg" class="<%=Bianjiqi%>" id="Fk_Product_wapimg" rows="15" style="width:100%;"></textarea>
                       </div>
 	  
-                      <div class="product-infoitem" id="TabBar_5" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_6" style="display:none;">
 						  <div class="related_down_div">
 						  <a style="color: #f06100;text-decoration:underline;" href="javascript:void(0);" onclick="OpenBoxNew('Down.asp?Type=10','关联资料下载','800px','500px', '关联选中资料', $('input[name=downId]').map(function(){return $(this).val();}).get(), 'related_down', 'downId');">关联资料下载</a>
 							<ul id="related_down">
@@ -537,7 +543,7 @@ $(document).ready(function(){
 						  </div>
                       </div>
 	  
-                      <div class="product-infoitem" id="TabBar_6" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_7" style="display:none;">
 						  <div class="related_down_div">
 						  <a style="color: #f06100;text-decoration:underline;" href="javascript:void(0);" onclick="OpenBoxNew('Article.asp?Type=10','关联测试视频','800px','500px', '关联选中视频', $('input[name=videoId]').map(function(){return $(this).val();}).get(), 'related_video', 'videoId');">关联测试视频</a>
 							<ul id="related_video">
@@ -628,6 +634,7 @@ Sub ProductAddDo()
 	Fk_Product_Seotitle=FKFun.HTMLEncode(Trim(Request.Form("Fk_Product_Seotitle")))
 	Fk_Product_Keyword=FKFun.HTMLEncode(Trim(Request.Form("Fk_Product_Keyword")))
 	Fk_Product_Description=FKFun.HTMLEncode(Trim(Request.Form("Fk_Product_Description")))
+	Fk_Product_Detail=Request.Form("Fk_Product_Detail")
 	Fk_Product_Content=Request.Form("Fk_Product_Content")
 	Fk_Product_Url=FKFun.HTMLEncode(Trim(Request.Form("Fk_Product_Url")))
 	Fk_Product_Pic=FKFun.HTMLEncode(Trim(Request.Form("Fk_Product_Pic")))
@@ -767,6 +774,7 @@ Sub ProductAddDo()
 		end if
 	
 		Rs("Fk_Product_Content")=Fk_Product_Content
+		Rs("Fk_Product_Detail")=Fk_Product_Detail
 		Rs("Fk_Product_Url")=Fk_Product_Url
 		Rs("Fk_Product_Recommend")=Fk_Product_Recommend
 		Rs("Fk_Product_Subject")=Fk_Product_Subject
@@ -867,6 +875,7 @@ Sub ProductEditForm()
 		Fk_Product_Keyword=Rs("Fk_Product_Keyword")
 		Fk_Product_Description=Rs("Fk_Product_Description")
 		Fk_Product_Content=Rs("Fk_Product_Content")
+		Fk_Product_Detail=Rs("Fk_Product_Detail")
 		Fk_Product_Url=Rs("Fk_Product_Url")
 		Fk_Product_Pic=Rs("Fk_Product_Pic")
 		Fk_Product_PicBig=Rs("Fk_Product_PicBig")
@@ -878,7 +887,7 @@ Sub ProductEditForm()
 		Fk_Product_Subject=Rs("Fk_Product_Subject")
 		Fk_Product_onTop=trim(Rs("Fk_Product_Ip")&" ")
 		Fk_Product_px=Rs("Px")
-		Fk_Product_Video_File=Rs("Fk_Product_Video_File")
+		Fk_Product_Video_File=trim(Rs("Fk_Product_Video_File")&" ")
 		
 		if chkSummary then
 			Fk_Product_Summary=trim(Rs("Fk_Product_Summary")&" ")
@@ -918,7 +927,7 @@ $(document).ready(function(){
 	$("#extMutiImgjs").attr("src","ext/js/extMutiImg.js?r="+Math.random());
 	$("#removeVideo").on("click", function(){
 		console.log(123);
-		$('#Fk_Product_Video_File').val("");
+		$('#Fk_Product_Video_File').val("<%=Fk_Product_Video_File%>");
 		document.getElementById("Fk_Product_Video_Tag").src="";
 		$('#Fk_Product_Video_Div').hide();
 	})
@@ -1050,37 +1059,40 @@ $(document).ready(function(){
         <td colspan="2">
 		<div class="dt-detail">
                       <div class="tabbar" id="J_TabBar">
-                          <ul><li class="current"><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',1);return false;"><span>产品详细</span></a></li>
-	  
-                          
-                              
-                              <li style="<%if not chkContentEx1 then response.write "display:none;"%>"><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',2);return false;"><span><%if chkContentEx1 then response.write getDesc("fk_product","Fk_Product_ContentEx1")%></span></a></li>
-                              <li <%if not chkContentEx2 then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',3);return false;"><span><%if chkContentEx2 then response.write getDesc("fk_product","Fk_Product_ContentEx2")%></span></a></li>
-                              <li <%if not chkFk_Product_wapimg then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',4);return false;"><span>小程序商品详情</span></a></li>
-                              <li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',5);return false;"><span>资料下载</span></a></li>
-                              <li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',6);return false;"><span>测试视频</span></a></li>
+                          <ul>
+							<li class="current"><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',1);return false;"><span>产品详细</span></a></li>
+							<li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',2);return false;"><span>产品参数</span></a></li>  
+							<li style="<%if not chkContentEx1 then response.write "display:none;"%>"><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',3);return false;"><span><%if chkContentEx1 then response.write getDesc("fk_product","Fk_Product_ContentEx1")%></span></a></li>
+							<li <%if not chkContentEx2 then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',4);return false;"><span><%if chkContentEx2 then response.write getDesc("fk_product","Fk_Product_ContentEx2")%></span></a></li>
+							<li <%if not chkFk_Product_wapimg then response.write "style='display:none;'"%>><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',5);return false;"><span>小程序商品详情</span></a></li>
+							<li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',6);return false;"><span>资料下载</span></a></li>
+							<li><a href="javascript:void(0);" onclick="TabSwitch('J_TabBar','TabBar_',7);return false;"><span>测试视频</span></a></li>
                           </ul>
                       </div>
                       <!--详细内容-->
                       <div class="product-infoitem" id="TabBar_1">
+                          <textarea name="Fk_Product_Detail" class="<%=Bianjiqi%>" id="Fk_Product_Detail" rows="15" style="width:100%;"><%=Fk_Product_Detail%></textarea>                          
+                      </div>
+                      <!--详细内容-->
+                      <div class="product-infoitem" id="TabBar_2" style="display:none;">
                           <textarea name="Fk_Product_Content" class="<%=Bianjiqi%>" id="Fk_Product_Content" rows="15" style="width:100%;"><%=Fk_Product_Content%></textarea>                          
                       </div>
                       <!--详细内容:end-->
                       
 	  
-                      <div class="product-infoitem" id="TabBar_2" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_3" style="display:none;">
 						  <%if chkContentEx1 then%><textarea name="Fk_Product_ContentEx1" class="<%=Bianjiqi%>" id="Fk_Product_ContentEx1" rows="15" style="width:100%;"><%=Fk_Product_ContentEx1%></textarea><%end if%>
                       </div>
 	  
-                      <div class="product-infoitem" id="TabBar_3" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_4" style="display:none;">
 						  <%if chkContentEx2 then%><textarea name="Fk_Product_ContentEx2" class="<%=Bianjiqi%>" id="Fk_Product_ContentEx2" rows="15" style="width:100%;"><%=Fk_Product_ContentEx2%></textarea><%end if%>
                       </div>
 	  
-                      <div class="product-infoitem" id="TabBar_4" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_5" style="display:none;">
 						  <%if chkFk_Product_wapimg then%><textarea name="Fk_Product_wapimg" class="<%=Bianjiqi%>" id="Fk_Product_wapimg" rows="15" style="width:100%;"><%=Fk_Product_wapimg%></textarea><%end if%>
                       </div>
 	  
-                      <div class="product-infoitem" id="TabBar_5" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_6" style="display:none;">
 						  <div class="related_down_div">
 						  <a style="color: #f06100;text-decoration:underline;" href="javascript:void(0);" onclick="OpenBoxNew('Down.asp?Type=10','关联资料下载','800px','500px', '关联选中资料', $('input[name=downId]').map(function(){return $(this).val();}).get(), 'related_down', 'downId');">关联资料下载</a>
 							<ul id="related_down">
@@ -1096,7 +1108,7 @@ $(document).ready(function(){
 						  </div>
                       </div>
 	  
-                      <div class="product-infoitem" id="TabBar_6" style="display:none;">
+                      <div class="product-infoitem" id="TabBar_7" style="display:none;">
 						  <div class="related_down_div">
 						  <a style="color: #f06100;text-decoration:underline;" href="javascript:void(0);" onclick="OpenBoxNew('Article.asp?Type=10','关联测试视频','800px','500px', '关联选中视频', $('input[name=videoId]').map(function(){return $(this).val();}).get(), 'related_video', 'videoId');">关联测试视频</a>
 							<ul id="related_video">
@@ -1207,6 +1219,7 @@ Sub ProductEditDo()
 	Fk_Product_Pic=FKFun.HTMLEncode(Trim(Request.Form("Fk_Product_Pic")))
 	Fk_Product_PicBig=Fk_Product_Pic
 	Fk_Product_Content=Request.Form("Fk_Product_Content")
+	Fk_Product_Detail=Request.Form("Fk_Product_Detail")
 	Fk_Product_Url=FKFun.HTMLEncode(Trim(Request.Form("Fk_Product_Url")))
 	Fk_Product_Recommend=","&FKFun.HTMLEncode(Replace(Trim(Request.Form("Fk_Product_Recommend"))," ",""))&","
 	Fk_Product_Subject=","&FKFun.HTMLEncode(Replace(Trim(Request.Form("Fk_Product_Subject"))," ",""))&","
@@ -1297,6 +1310,7 @@ Sub ProductEditDo()
 		Rs("Fk_Product_Show")=Fk_Product_Show
 		Rs("Fk_Product_click")=Fk_Product_click
 		Rs("Fk_Product_Content")=Fk_Product_Content
+		Rs("Fk_Product_Detail")=Fk_Product_Detail
 		Rs("Fk_Product_FileName")=Fk_Product_FileName
 		Rs("Fk_Product_Template")=Fk_Product_Template
 		Rs("Fk_Product_Ip")=Fk_Product_onTop

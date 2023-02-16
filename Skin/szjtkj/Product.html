@@ -33,6 +33,11 @@
 						<div class="qebang-col-md6">
 							<div class="swiper-container gallery-top">
 						    <ul class="swiper-wrapper">
+					        <li>
+					        	<video width="100%" height="100%" controls autoplay>
+										  <source src="{$ProductVideoFile$}" type="video/mp4">
+										</video>
+					        </li>
 					        {$ProductPicSlidesImgs$}
 						    </ul>
 						    <div class="swiper-button-next swiper-button-black"></div>
@@ -40,6 +45,7 @@
 							</div>
 						  <div class="swiper-container gallery-thumbs">
 					    	<ul class="swiper-wrapper">
+					        <li><img src="{$ProductPicSlidesFirst$}" alt=""/><div><i></i></div></li>
 					        {$ProductPicSlidesImgs$}
 					    	</ul>					    	
 						  </div>
@@ -60,8 +66,13 @@
 					</div>
 				</div>
 				<div class="Details_text">
-					<div class="Details_title"><a href="javascript:;" class="hover">产品参数</a><a href="javascript:;">资料下载</a><a href="javascript:;">测试视频</a><a href="javascript:;" class="zxkfu"  target="_blank">在线咨询</a></div>
+					<div class="Details_title"><a href="javascript:;" class="hover">产品详情</a><a href="javascript:;">产品参数</a><a href="javascript:;">资料下载</a><a href="javascript:;">测试视频</a><a href="javascript:;" class="zxkfu"  target="_blank">在线咨询</a></div>
 					<div class="Details_switch" style="display: block;">
+						<div class="Details_content">
+							{$ProductDetail$}
+						</div>	
+					</div>
+					<div class="Details_switch" style="display: none;">
 						<div class="Details_textTable">
 							{$ProductContent$}
 						</div>	
@@ -82,7 +93,7 @@
 					<div class="Details_switch" style="display: none;">
 						<ul class="Details_video clearfix">
 							{$For(ProductVideoList,1/{$ProductId$}/1/12/0/0/0/12)$}
-							<li class="qebang-col-xs12 qebang-col-sm6 qebang-col-md3"><iframe src='https://player.youku.com/embed/XMTcxNzI5MDcyMA==' frameborder=0 'allowfullscreen'></iframe></li>
+							<li class="qebang-col-xs12 qebang-col-sm6 qebang-col-md3">{$ProductListContent$}</li>
 							{$Next$}
 						</ul>
 					</div>

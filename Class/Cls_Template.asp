@@ -869,12 +869,13 @@ Class Cls_Template
 			'edittime:2014年12月17日
 			'editby: shark
 			'-------------------
-			dim FK_Product_SlidesImgs,FK_Product_summary,FK_Product_SlidesFirst,Fk_Product_ContentEx1,Fk_Product_ContentEx2,TempImg,SlidesImgs
+			dim FK_Product_SlidesImgs,FK_Product_summary,FK_Product_SlidesFirst,Fk_Product_ContentEx1,Fk_Product_ContentEx2,TempImg,SlidesImgs,Fk_Product_Detail
 			FK_Product_SlidesImgs=Trim(Rs("FK_Product_SlidesImgs")&" ")
 			FK_Product_summary=Trim(Rs("FK_Product_summary")&" ")
 			FK_Product_SlidesFirst=Trim(Rs("FK_Product_SlidesFirst")&" ")
 			Fk_Product_ContentEx1=Trim(Rs("Fk_Product_ContentEx1")&" ")
 			Fk_Product_ContentEx2=Trim(Rs("Fk_Product_ContentEx2")&" ")
+			Fk_Product_Detail=Trim(Rs("Fk_Product_Detail")&" ")
 			
 			if instr(TemplateCode,"{$ProductPicSlidesImgList$}")>0 then
 				TemplateCode=Replace(TemplateCode,"{$ProductPicSlidesImgList$}",FK_Product_SlidesImgs)
@@ -897,6 +898,7 @@ Class Cls_Template
 			TemplateCode=Replace(TemplateCode,"{$ProductPicSummary$}",FK_Product_summary)
 			TemplateCode=Replace(TemplateCode,"{$Product_ContentEx1$}",Fk_Product_ContentEx1)
 			TemplateCode=Replace(TemplateCode,"{$Product_ContentEx2$}",Fk_Product_ContentEx2)
+			TemplateCode=Replace(TemplateCode,"{$ProductDetail$}",Fk_Product_Detail)
 			
 			'-------------------------------------------------------
 			
